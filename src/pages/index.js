@@ -5,7 +5,7 @@ import '../styles/global.css';
 
 //asssets
 import logoArena from '../images/siteglobal/arenaLogo.svg'
-import bannerBackground from '../images/hero/building-offices-arena.jpg'
+import bannerBackground from '../images/mainpage/buildoffices.jpg'
 
 // markup
 const IndexPage = () => {
