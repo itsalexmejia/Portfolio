@@ -2,5 +2,5 @@ module.exports = {
   siteMetadata: {
     title: "Arena",
   },
-  plugins: [],
+  plugins: ['gatsby-plugin-postcss'],
 };
