@@ -4,8 +4,8 @@ import { Menu, Transition } from '@headlessui/react'
 import '../styles/global.css';
 
 //asssets
-import logoArena from "../images/global/arenaLogo.svg"
-import bannerBackground from "../images/Hero/building-offices-arena.jpg"
+import logoArena from '../images/siteglobal/arenaLogo.svg'
+import bannerBackground from '../images/hero/building-offices-arena.jpg'
 
 // markup
 const IndexPage = () => {
