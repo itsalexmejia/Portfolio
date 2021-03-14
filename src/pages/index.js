@@ -4,7 +4,8 @@ import { Menu, Transition } from '@headlessui/react'
 import '../styles/global.css';
 
 //asssets
-import profilePicture from "../images/arenaLogo.svg"
+import logoArena from "../images/global/arenaLogo.svg"
+import bannerBackground from "../images/Hero/building-offices-arena.jpg"
 
 // markup
 const IndexPage = () => {
@@ -21,7 +22,7 @@ const IndexPage = () => {
         <div className="flex justify-start lg:w-0 lg:flex-1">
           <a href="#">
             <span className="sr-only">Workflow</span>
-            <img className="h-8 w-auto sm:h-10" src={profilePicture} alt=""/>
+            <img className="h-8 w-auto sm:h-10" src={logoArena} alt=""/>
           </a>
         </div>
         <div className="-mr-2 -my-2 md:hidden">
@@ -159,11 +160,11 @@ const IndexPage = () => {
           </a>
         </nav>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+          {/*<a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
             Sign in
-          </a>
+              </a>*/}
           <a href="#" className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-            Sign up
+            Contáctanos
           </a>
         </div>
       </div>
@@ -184,7 +185,7 @@ const IndexPage = () => {
           <div className="pt-5 pb-6 px-5">
             <div className="flex items-center justify-between">
               <div>
-                <img className="h-8 w-auto" src={profilePicture} alt="Workflow"/>
+                <img className="h-8 w-auto" src={logoArena} alt="Workflow"/>
               </div>
               <div className="-mr-2">
                 <button type="button" className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -267,7 +268,7 @@ const IndexPage = () => {
                 Sign up
               </a>
               <p className="mt-6 text-center text-base font-medium text-gray-500">
-                Existing customer?
+                Existing customer? 
                 <a href="#" className="text-gray-900">
                   Sign in
                 </a>
@@ -287,8 +288,8 @@ const IndexPage = () => {
         <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
           <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
             <div className="absolute inset-0">
-              <img className="h-full w-full object-cover" src={profilePicture} alt="People working on laptops"/>
-              <div className="absolute inset-0 bg-indigo-700"></div>
+              <img className="h-full w-full object-cover" src={bannerBackground} alt="Edificios, Fotografia de las oficinas de area"/>
+              {/*<div className="absolute inset-0 bg-indigo-700"></div>*/}
               {/*style="mix-blend-mode: multiply;"*/}
             </div>
             <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -318,23 +319,23 @@ const IndexPage = () => {
       <div className="bg-gray-100">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-            Trusted by over 5 very average small businesses
+            Nuestros partners confían en nosotros
           </p>
           <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={profilePicture} alt="Tuple"/>
+              <img className="h-12" src={logoArena} alt="Tuple"/>
             </div>
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={profilePicture} alt="Mirage"/>
+              <img className="h-12" src={logoArena} alt="Mirage"/>
             </div>
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src={profilePicture} alt="StaticKit"/>
+              <img className="h-12" src={logoArena} alt="StaticKit"/>
             </div>
             <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-              <img className="h-12" src={profilePicture} alt="Transistor"/>
+              <img className="h-12" src={logoArena} alt="Transistor"/>
             </div>
             <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-              <img className="h-12" src={profilePicture} alt="Workcation"/>
+              <img className="h-12" src={logoArena} alt="Workcation"/>
             </div>
           </div>
         </div>
