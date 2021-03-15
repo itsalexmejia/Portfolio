@@ -16,6 +16,7 @@ const IndexPage = () => {
   return (
 
     <div>
+      {/* This is a new env */}
       {/* This example requires Tailwind CSS v2.0+ */}
       <div className="min-h-screen bg-white">
         <header>
@@ -313,6 +314,8 @@ const IndexPage = () => {
               <div className="mt-4"><a className="inline-block px-5 py-3 shadow-lg bg-indigo-500 text-white rounded-lg uppercase tracking-wider font-semibold text-sm" href="#">Book your escape</a></div>
             </div>
           </div>
+
+          <div></div>
 
 
 
