@@ -18,7 +18,7 @@ import HeaderNavigation from "../components/navigation/header"
 const IndexPage = ({data}) => {
 
   return (
-
+    
     <div>
       <Helmet
       title={data.site.siteMetadata.title}
@@ -31,6 +31,8 @@ const IndexPage = ({data}) => {
       {/* This example requires Tailwind CSS v2.0+ */}
       <div className="min-h-screen bg-white">
 
+        <HeaderNavigation/>
+        <HeaderNavigation/>
         <HeaderNavigation/>
 
         <main>

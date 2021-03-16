@@ -228,9 +228,9 @@ const HeaderNavigation = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Pricing</a>
 
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Partners</a>
+                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Aliados</a>
 
-                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Company</a>
+                  <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</a>
                 </div>
                 <div className="mt-6">
                   <a href="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Sign up</a>
