@@ -38,7 +38,7 @@ const IndexPage = ({data}) => {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link to="/">
                   <span className="sr-only">Arena Analytics</span>
-                  <img className="h-8 w-auto sm:h-10" src={logoArena} alt="" />
+                  <img className="h-8 w-auto sm:h-10" src={logoArena} alt="Nuevo logo de Arena Analytics" />
                 </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -54,7 +54,7 @@ const IndexPage = ({data}) => {
                 <div className="relative">
                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
                   <button type="button" onClick={() => setIsOpen(!isOpen)} className="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
-                    <span>Solutions</span>
+                    <span>Soluciones</span>
                     {/*
                 Heroicon name: solid/chevron-down
 
@@ -149,9 +149,9 @@ const IndexPage = ({data}) => {
                   </Transition>
                 </div>
 
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Partners</a>
-                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Company</a>
+                {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a> */}
+                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Aliados</a>
+                <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Nosotros</a>
               </nav>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 {/*<a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>*/}
@@ -283,8 +283,8 @@ const IndexPage = ({data}) => {
                     <p className="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">Aliados de negocio de nuestros clientes en el desarrollo e implementación de soluciones que ayuden a mejorar y eficientar procesos con el mejor talento disponible, incrementando la rentabilidad.</p>
                     <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                       <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                        <a href="#" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Get started</a>
-                        <a href="template.js" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Live demo</a>
+                        <Link to="/" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Comenzemos</Link>
+                        <Link to="startFile" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Ver video</Link>
                       </div>
                     </div>
                   </div>
