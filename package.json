@@ -16,8 +16,11 @@
   "dependencies": {
     "@headlessui/react": "^0.3.1",
     "gatsby": "^3.0.1",
+    "gatsby-plugin-react-helmet": "^4.0.0",
+    "gatsby-source-contentful": "^5.0.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",

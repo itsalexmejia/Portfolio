@@ -1,6 +1,9 @@
 import * as React from "react"
 import { useState } from 'react'
-import { Menu, Transition } from '@headlessui/react'
+import { Transition } from '@headlessui/react'
+import { graphql, Link } from 'gatsby'
+import { Helmet } from 'react-helmet'
+
 
 //css
 import '../styles/global.css';
@@ -9,13 +12,23 @@ import '../styles/global.css';
 import logoArena from '../images/siteglobal/arenaLogo.svg'
 import bannerBackground from '../images/mainpage/buildoffices.jpg'
 
+//Components
+import Card from "../components/card"
+
+
 // markup
-const IndexPage = () => {
+const IndexPage = ({data}) => {
   const [isOpen, setIsOpen] = useState(false)
   const [isOpenMobile, setIsOpenMobile] = useState(false)
   return (
 
     <div>
+      <Helmet
+      title={data.site.siteMetadata.title}
+      >
+        <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"/>
+      </Helmet>
+
       {/* This is a new env */}
       {/* This example requires Tailwind CSS v2.0+ */}
       <div className="min-h-screen bg-white">
@@ -23,10 +36,10 @@ const IndexPage = () => {
           <div className="relative bg-white">
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="#">
+                <Link to="/">
                   <span className="sr-only">Arena Analytics</span>
                   <img className="h-8 w-auto sm:h-10" src={logoArena} alt="" />
-                </a>
+                </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
                 <button type="button" onClick={() => setIsOpenMobile(!isOpenMobile)} className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
@@ -305,26 +318,20 @@ const IndexPage = () => {
           </div>
 
           {/* More main page content here... */}
-          <div className="bg-gray-200">
-            <div className="px-8 py-12">
-              <img className="h-10" src={logoArena} alt="logo arena" />
-              <img className="mt-6 rounded-lg shadow-xl" src={bannerBackground} alt="buildings" />
-              <h1 className="mt-6 text-2xl font-bold text-gray-900">You can work from anywhere. <span className="text-indigo-500">Take advantage of it.</span></h1>
-              <p className="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie rhoncus odio. In hac habitasse platea dictumst. </p>
-              <div className="mt-4"><a className="inline-block px-5 py-3 shadow-lg bg-indigo-500 text-white rounded-lg uppercase tracking-wider font-semibold text-sm" href="#">Book your escape</a></div>
-            </div>
-          </div>
 
-          <div></div>
+
+         
+        
+
+        <Card data={data}/> 
+
+
+        
 
 
 
         </main>
       </div>
-
-
-
-
     </div>
 
 
@@ -332,5 +339,32 @@ const IndexPage = () => {
 
   )
 }
+
+export const query = graphql`
+  query ArenaQuery {
+    site{
+      siteMetadata{
+        title
+        description
+        keywords
+      }
+    }
+    allContentfulTestConnection(
+      sort: {fields: [createdAt], order: ASC}
+      filter: {node_locale: {eq: "en-US"}}
+    )
+      {
+      edges{
+        node{
+          title
+          title2
+          description
+          url
+          createdAt
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
