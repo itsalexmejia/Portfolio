@@ -13,6 +13,7 @@ import bannerBackground from '../images/mainpage/buildoffices.jpg'
 //components
 import Card from "../components/card"
 import HeaderNavigation from "../components/navigation/header"
+import FooterNavigation from "../components/navigation/footer";
 
 
 // markup
@@ -96,6 +97,8 @@ const IndexPage = ({data}) => {
         
 
         <Card data={data}/> 
+
+        <FooterNavigation/>
 
 
         
