@@ -32,8 +32,6 @@ const IndexPage = ({data}) => {
       <div className="min-h-screen bg-white">
 
         <HeaderNavigation/>
-        <HeaderNavigation/>
-        <HeaderNavigation/>
 
         <main>
           <div>
