@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet'
 import '../styles/global.css';
 
 //assets
+import favicon from "../images/favicon.ico"
 import logoArena from '../images/siteglobal/arenaLogo.svg'
 import bannerBackground from '../images/mainpage/buildoffices.jpg'
 
@@ -23,6 +24,7 @@ const IndexPage = ({data}) => {
       <Helmet
       title={data.site.siteMetadata.title}
       >
+        <link rel="icon" href={favicon} />
         {/* <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"/> */}
         <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale = 1.0, user-scalable = no, viewport-fit = cover"/>
       </Helmet>
