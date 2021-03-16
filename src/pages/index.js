@@ -351,7 +351,7 @@ export const query = graphql`
     }
     allContentfulTestConnection(
       sort: {fields: [createdAt], order: ASC}
-      filter: {node_locale: {eq: "en-US"}}
+      filter: {node_locale: {eq: "es-MX"}}
     )
       {
       edges{
