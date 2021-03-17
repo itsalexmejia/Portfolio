@@ -17,7 +17,7 @@ const Card = ({data}) => {
                   <img className="mt-6 rounded-lg shadow-xl" src={bannerBackground} alt="buildings" />
                   <h1 className="mt-6 text-2xl font-bold text-gray-900">{edge.node.title} <span className="text-indigo-500">{edge.node.title2} </span></h1>
                   <p className="mt-2 text-gray-600">{edge.node.description}</p>
-                  <div className="mt-4"><Link to="" className="inline-block px-5 py-3 shadow-lg bg-indigo-500 text-white rounded-lg uppercase tracking-wider font-semibold text-sm" href="#">{edge.node.url}</Link></div>
+                  <div className="mt-4"><Link to="/" className="inline-block px-5 py-3 shadow-lg bg-indigo-500 text-white rounded-lg uppercase tracking-wider font-semibold text-sm" href="#">{edge.node.url}</Link></div>
               </div>
           </div>
         ))} 
