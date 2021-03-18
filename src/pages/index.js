@@ -8,7 +8,7 @@ import '../styles/global.css';
 //assets
 import favicon from "../images/favicon.ico"
 import logoArena from '../images/siteglobal/arenaLogo.svg'
-import bannerBackground from '../images/mainpage/buildoffices.jpg'
+import bannerBackground from '../images/mainpage/buildoffices.jpeg'
 
 //components
 import Card from "../components/card"
@@ -45,7 +45,7 @@ const IndexPage = ({data}) => {
                 <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
                   <div className="absolute inset-0">
                     <img className="h-full w-full object-cover" src={bannerBackground} alt="Edificios, Fotografia de las oficinas de area" />
-                    {/*<div className="absolute inset-0 bg-indigo-700"></div>*/}
+                    <div className="absolute inset-0 bg-indigo-500" style={{mixBlendMode: 'multiply'}}></div>
                     {/*style="mix-blend-mode: multiply;"*/}
                   </div>
                   <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
