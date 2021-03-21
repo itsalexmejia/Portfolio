@@ -36,7 +36,7 @@ const HeaderNavigation = () => {
           <div className="relative">
             {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
             <button type="button" onClick={() => setIsOpen(!isOpen)} className="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
-              <span>Soluciones</span>
+              <span>Servicios</span>
               {/*
           Heroicon name: solid/chevron-down
 
@@ -131,9 +131,11 @@ const HeaderNavigation = () => {
             </Transition>
           </div>
 
-          {/* <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a> */}
-          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Aliados</a>
+          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Industrias</a>
+          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Insights</a>
+          <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Trabaja en Arena</a>
           <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">Nosotros</a>
+
         </nav>
         <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           {/*<a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>*/}

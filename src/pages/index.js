@@ -16,6 +16,7 @@ import HeaderNavigation from "../components/navigation/header"
 import FooterNavigation from "../components/navigation/footer";
 import CardMaster from "../components/cardMaster";
 import HeroHome from "../components/hero";
+import Example from "../components/navigation/select";
 
 
 // markup
@@ -61,6 +62,8 @@ const IndexPage = ({data}) => {
 
             {/* Logo cloud */}
             <div className="bg-gray-100">
+              <div className="bg-indigo-700"><Example/></div>
+              
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                   <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Nuestros partners confían en nosotros</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
