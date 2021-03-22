@@ -8,15 +8,15 @@ import '../styles/global.css';
 //assets
 import favicon from "../images/favicon.ico"
 import logoArena from '../images/siteglobal/arenaLogo.svg'
-import bannerBackground from '../images/mainpage/buildoffices.jpeg'
+
 
 //components
 import Card from "../components/card"
-import HeaderNavigation from "../components/navigation/header"
 import FooterNavigation from "../components/navigation/footer";
 import CardMaster from "../components/cardMaster";
 import HeroHome from "../components/hero";
-import Example from "../components/navigation/select";
+import MenuTop from "../components/navigation/menu";
+import BackgroundHeader from "../components/content/header";
 
 
 // markup
@@ -37,32 +37,30 @@ const IndexPage = ({data}) => {
       {/* This example requires Tailwind CSS v2.0+ */}
       <div className="container-iphonex min-h-screen bg-white">
 
-        <HeaderNavigation/>
-
+        <MenuTop/>
         <main>
           <div>
             {/* Hero card */}
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-              <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              
-              {data.allContentfulC01Hero.edges.map(edge => (
-                <HeroHome
-                  title = {edge.node.title}
-                  title2 = {edge.node.title2}
-                  body = {edge.node.body}
-                  primaryButton = {edge.node.primaryButton}
-                  secondaryButton = "Ver video"
-                  image = {edge.node.image.file.url}
-                  alt = {edge.node.image.title}
-                />
-              ))}
+              <div className="max-w-7xl mx-auto mt-10 sm:px-6 lg:px-8">
+                {data.allContentfulC01Hero.edges.map(edge => (
+                  <HeroHome
+                    title = {edge.node.title}
+                    title2 = {edge.node.title2}
+                    body = {edge.node.body}
+                    primaryButton = {edge.node.primaryButton}
+                    secondaryButton = "Ver video"
+                    image = {edge.node.image.file.url}
+                    alt = {edge.node.image.title}
+                  />
+                ))}
               </div>
             </div>
+            
 
             {/* Logo cloud */}
             <div className="bg-gray-100">
-              <div className="bg-indigo-700"><Example/></div>
               
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                   <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Nuestros partners confían en nosotros</p>
@@ -90,16 +88,16 @@ const IndexPage = ({data}) => {
           {/* More main page content here... */}
 
 
-         
+         <BackgroundHeader/>
         
 
         <Card data={data}/> 
 
-        {data.allContentfulTestConnection.edges.map(edge => (
+        {/* {data.allContentfulTestConnection.edges.map(edge => (
           <CardMaster
             title = {edge.node.title}
           />
-        ))} 
+        ))}  */}
 
         <FooterNavigation/>
 
