@@ -11,12 +11,10 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 
 
 //components
+import Layout from "../components/layout"
 import Card from "../components/card"
-import FooterNavigation from "../components/navigation/footer";
 import CardMaster from "../components/cardMaster";
 import HeroHome from "../components/hero";
-import MenuTop from "../components/navigation/menu";
-import BackgroundHeader from "../components/content/header";
 
 
 // markup
@@ -24,28 +22,21 @@ const IndexPage = ({data}) => {
 
   return (
     
-    <div>
-      <Helmet
-      title={data.site.siteMetadata.title}
-      >
+    <Layout>
+      <Helmet title={data.site.siteMetadata.title}>
         <link rel="icon" href={favicon} />
         {/* <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"/> */}
         <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale = 1.0, user-scalable = no, viewport-fit = cover"/>
       </Helmet>
 
-      {/* This is a new env */}
-      {/* This example requires Tailwind CSS v2.0+ */}
-      <div className="container-iphonex min-h-screen bg-white">
 
-        <MenuTop/>
-        <main>
           <div>
             {/* Hero card */}
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-              <div className="max-w-7xl mx-auto mt-10 sm:px-6 lg:px-8">
+              <div className="container-iphonex max-w-7xl mx-auto mt-10 sm:px-6 lg:px-8">
                 {data.allContentfulC01Hero.edges.map(edge => (
-                  <HeroHome
+                  <HeroHome key={edge.node.title}
                     title = {edge.node.title}
                     title2 = {edge.node.title2}
                     body = {edge.node.body}
@@ -86,9 +77,6 @@ const IndexPage = ({data}) => {
             </div>
 
           {/* More main page content here... */}
-
-
-         <BackgroundHeader/>
         
 
         <Card data={data}/> 
@@ -99,16 +87,9 @@ const IndexPage = ({data}) => {
           />
         ))}  */}
 
-        <FooterNavigation/>
 
 
-        
-
-
-
-        </main>
-      </div>
-    </div>
+    </Layout>
 
 
 
