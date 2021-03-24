@@ -72,7 +72,7 @@ const MenuTop = () => {
                           </nav>
                           <div className="flex items-center md:ml-12">
                               {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</Link> */}
-                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
+                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
                           </div>
                       </div>
                   </div>
@@ -99,7 +99,7 @@ const MenuTop = () => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/cursor-click */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
@@ -119,7 +119,7 @@ const MenuTop = () => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/chart-bar */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
@@ -139,7 +139,7 @@ const MenuTop = () => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/shield-check */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -159,7 +159,7 @@ const MenuTop = () => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/view-grid */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -391,7 +391,7 @@ const MenuTop = () => {
                                     <nav>
                                         <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     {/* Heroicon name: outline/chart-bar */}
                                                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
@@ -401,7 +401,7 @@ const MenuTop = () => {
                                             </Link>
 
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     {/* Heroicon name: outline/cursor-click */}
                                                     <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
@@ -424,7 +424,7 @@ const MenuTop = () => {
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
                                 <div className="mt-6">
-                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-600 hover:bg-indigo-700">Contáctanos</Link>
+                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-indigo-700">Contáctanos</Link>
                                     {/* <p className="mt-6 text-center text-base font-medium text-gray-500">Existing customer? <Link to="/" className="text-indigo-600 hover:text-indigo-500">Sign in</Link></p> */}
                                 </div>
                             </div>
