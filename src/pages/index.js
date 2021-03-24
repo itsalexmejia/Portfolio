@@ -1,9 +1,11 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 //css
 import '../styles/global.css';
+import 'swiper/swiper-bundle.css';
 
 //assets
 import favicon from "../images/favicon.ico"
@@ -14,6 +16,7 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 import Layout from "../components/layout"
 import Card from "../components/card"
 import HeroHome from "../components/hero";
+
 
 
 // markup
@@ -34,17 +37,26 @@ const IndexPage = ({data}) => {
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
               <div className="container-iphonex max-w-7xl mx-auto sm:px-6 sm:pt-8 lg:px-8">
+              <Swiper
+                spaceBetween={20}
+                loop = {true}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+              >
                 {data.allContentfulC01Hero.edges.map(edge => (
-                  <HeroHome key={edge.node.title}
-                    title = {edge.node.title}
-                    title2 = {edge.node.title2}
-                    body = {edge.node.body}
-                    primaryButton = {edge.node.primaryButton}
-                    secondaryButton = "Ver video"
-                    image = {edge.node.image.file.url}
-                    alt = {edge.node.image.title}
-                  />
+                  <SwiperSlide>
+                    <HeroHome key={edge.node.title}
+                      title = {edge.node.title}
+                      title2 = {edge.node.title2}
+                      body = {edge.node.body}
+                      primaryButton = {edge.node.primaryButton}
+                      secondaryButton = "Ver video"
+                      image = {edge.node.image.file.url}
+                      alt = {edge.node.image.title}
+                    />
+                  </SwiperSlide>
                 ))}
+                </Swiper>
               </div>
             </div>
             
