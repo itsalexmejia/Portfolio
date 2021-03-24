@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 
 //css
@@ -13,7 +13,6 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 //components
 import Layout from "../components/layout"
 import Card from "../components/card"
-import CardMaster from "../components/cardMaster";
 import HeroHome from "../components/hero";
 
 
@@ -34,7 +33,7 @@ const IndexPage = ({data}) => {
             {/* Hero card */}
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-              <div className="container-iphonex max-w-7xl mx-auto mt-10 sm:px-6 lg:px-8">
+              <div className="container-iphonex max-w-7xl mx-auto sm:px-6 sm:pt-8 lg:px-8">
                 {data.allContentfulC01Hero.edges.map(edge => (
                   <HeroHome key={edge.node.title}
                     title = {edge.node.title}
