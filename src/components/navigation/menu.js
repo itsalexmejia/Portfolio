@@ -20,7 +20,7 @@ const MenuTop = () => {
       <header>
           <div className="relative bg-white">
               <div className="relative z-20 shadow">
-                  <div className="max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
+                  <div className="container-iphonex max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10">
                       <div>
                           <Link to="/" className="flex">
                               <span className="sr-only">Arena Analytics</span>
