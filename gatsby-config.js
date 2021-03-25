@@ -12,6 +12,8 @@ module.exports = {
       options: {
         spaceId: `tuez5ho5t4m9`,
         accessToken: `7yhrhqPBF_N4XeAq_U7r4ggnWB42LfYILmzqExkakog`,
+        // host: `preview.contentful.com`,
+        // accessToken: `XhMFcGfDacsYA6H4jCPNV2M7LEFRxGwgE8vYfFmMejE`,
       },
     },
     `gatsby-plugin-react-helmet`,
