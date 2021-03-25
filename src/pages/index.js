@@ -109,7 +109,7 @@ const IndexPage = ({data}) => {
 }
 
 export const query = graphql`
-  query ArenaAnalyticsQuery {
+query ArenaAnalyticsQuery {
   site {
     siteMetadata {
       title
@@ -134,7 +134,6 @@ export const query = graphql`
   allContentfulC01Hero(
     filter: {node_locale: {eq: "es-MX"}}
     sort: {fields: [createdAt], order: ASC}
-    limit: 1
   ) {
     edges {
       node {
