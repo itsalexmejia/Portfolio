@@ -41,22 +41,17 @@ class BlogPostContentful extends React.Component {
 export default BlogPostContentful
 
 export const pageQuery = graphql`
-query BlogPostBySlug($slug: String!) {
-  contentfulC01Hero(slug: { eq: $slug })  {
-        title
-        title2
-        image {
-          file {
-            url
-          }
-          title
-          description
-        }
-        introduction
-        content {
-          raw
-        }
-        slug
-      }
+query BlogPostBySlug($slug: String = "") {
+
+  contentfulC01Hero(slug: {eq: $slug}) {
+    slug
+    title
+    title2
+    introduction
+    content {
+      raw
+    }
+  }
+  
 }
 `
