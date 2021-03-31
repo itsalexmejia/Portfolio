@@ -39,7 +39,7 @@ const IndexPage = ({data}) => {
               <div className="max-w-7xl mx-auto sm:px-6 sm:pt-8 lg:px-8">
               <Swiper
                 spaceBetween={20}
-                loop = {true}
+                loop = {false}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
               >
@@ -48,8 +48,9 @@ const IndexPage = ({data}) => {
                     <HeroHome key={edge.node.title}
                       title = {edge.node.title}
                       title2 = {edge.node.title2}
-                      body = {edge.node.body}
-                      primaryButton = {edge.node.primaryButton}
+                      body = {edge.node.introduction}
+                      linkUrl = {edge.node.slug}
+                      primaryButton = {edge.node.labelLink}
                       secondaryButton = "Ver video"
                       image = {edge.node.image.file.url}
                       alt = {edge.node.image.title}
@@ -109,6 +110,7 @@ const IndexPage = ({data}) => {
 }
 
 export const query = graphql`
+
 query ArenaAnalyticsQuery {
   site {
     siteMetadata {
@@ -139,21 +141,23 @@ query ArenaAnalyticsQuery {
       node {
         title
         title2
-        body
-        primaryButton
-        primaryButtonUrl
         image {
           file {
             url
           }
           title
+          description
         }
         createdAt
         id
+        slug
+        labelLink
+        introduction
       }
     }
   }
 }
+
 `
 
 export default IndexPage

@@ -1,6 +1,6 @@
 // import React from "react"
 import * as React from "react"
-import BackgroundHeader from "../components/content/header"
+import BackgroundHeader from "../components/content/header/header-bg"
 import Layout from "../components/layout"
 
 
