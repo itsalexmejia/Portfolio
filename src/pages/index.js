@@ -14,7 +14,7 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 
 //components
 import Layout from "../components/layout"
-import Card from "../components/card"
+// import Card from "../components/card"
 import HeroHome from "../components/hero";
 
 
@@ -133,9 +133,9 @@ query ArenaAnalyticsQuery {
       }
     }
   }
+
   allContentfulC01Hero(
-    filter: {node_locale: {eq: "es-MX"}}
-    sort: {fields: [createdAt], order: ASC}
+    sort: {fields: [createdAt], order: DESC}
   ) {
     edges {
       node {
@@ -149,13 +149,13 @@ query ArenaAnalyticsQuery {
           description
         }
         createdAt
-        id
         slug
         labelLink
         introduction
       }
     }
   }
+
 }
 
 `
