@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
             {/* Hero card */}
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-              <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+              <div className="max-w-7xl mx-auto sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
               <Swiper
                 spaceBetween={20}
                 loop = {false}
