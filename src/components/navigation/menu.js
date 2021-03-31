@@ -421,7 +421,7 @@ const MenuTop = () => {
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link>
                                     <Link to="/work-with-us/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Trabaja en Arena</Link>
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
-                                    <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
+                                    <Link to="/nosotros/gente-y-liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
                                 <div className="mt-6">
                                     <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-indigo-700">Contáctanos</Link>

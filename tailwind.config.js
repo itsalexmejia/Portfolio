@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        brandtitle: ['NexaBold', 'sans-serif'],
+        arena: ['Poppins', 'sans-serif'],
       },
       colors:{
         brand: {

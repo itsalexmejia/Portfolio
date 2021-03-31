@@ -15,7 +15,7 @@ const PeopleGrid = props => {
               <div className="space-y-4">
                 <div className="text-lg leading-6 font-medium space-y-1">
                   <h3>{props.name}</h3>
-                  <p className="text-arena-600">{props.position}</p>
+                  <p className="font-arena text-brand-600">{props.position}</p>
                 </div>
                 <div className="text-lg">
                   <p className="text-gray-500">{props.description}</p>
