@@ -91,7 +91,7 @@ const IndexPage = ({data}) => {
           {/* More main page content here... */}
         
 
-        <Card data={data}/> 
+        {/* <Card data={data}/>  */}
 
         {/* {data.allContentfulTestConnection.edges.map(edge => (
           <CardMaster
