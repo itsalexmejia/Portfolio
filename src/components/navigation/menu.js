@@ -54,7 +54,7 @@ const MenuTop = () => {
 
                               <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Industrias</Link>
                               {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Insights</Link> */}
-                              <Link to="/work-with-us/" className="text-base font-medium text-gray-500 hover:text-gray-900">Trabaja en Arena</Link>
+                              <Link to="/work-with-us/" className="text-base font-medium text-gray-500 hover:text-gray-900">Carreras</Link>
 
                               <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
@@ -94,12 +94,12 @@ const MenuTop = () => {
               {(ref) => (
                       <div className="hidden md:block absolute z-10 inset-x-0 transform shadow-lg">
                           <div className="bg-white">
-                              <div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-4 lg:px-8 lg:py-12 xl:py-16">
+                              <div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:gap-10 lg:px-8 lg:py-12 xl:py-16">
 
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/cursor-click */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
@@ -119,7 +119,7 @@ const MenuTop = () => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/chart-bar */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
@@ -139,16 +139,16 @@ const MenuTop = () => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
                                                   {/* Heroicon name: outline/shield-check */}
                                                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                    </svg>
+                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                </svg>
                                               </span>
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Servicio 3</p>
+                                                  <p className="text-base font-medium text-gray-900">Partners</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
@@ -156,25 +156,6 @@ const MenuTop = () => {
                                       </div>
                                   </Link>
 
-                                  <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
-                                      <div className="flex md:h-full lg:flex-col">
-                                          <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
-                                                  {/* Heroicon name: outline/view-grid */}
-                                                  <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                    </svg>
-                                              </span>
-                                          </div>
-                                          <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
-                                              <div>
-                                                  <p className="text-base font-medium text-gray-900">Servicio 4</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                              </div>
-                                              <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
-                                          </div>
-                                      </div>
-                                  </Link>
                               </div>
                           </div>
                           <div className="bg-gray-50">
@@ -191,7 +172,7 @@ const MenuTop = () => {
                                   </div>
                                   
                                   <div className="flow-root">
-                                      <Link to="/" className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
+                                      <Link to="/insights/" className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">
                                           {/* Heroicon name: outline/check-circle */}
                                           <svg className="flex-shrink-0 h-6 w-6 text-brand-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
@@ -409,9 +390,21 @@ const MenuTop = () => {
                                                 </div>
                                                 <div className="ml-4 text-base font-medium text-gray-900">Analytics</div>
                                             </Link>
+
+                                            <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                    {/* Heroicon name: outline/cursor-click */}
+                                                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                    </svg>
+                                                </div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Partners</div>
+                                            </Link>
+
+
                                         </div>
                                         <div className="mt-8 text-base">
-                                            <Link to="/" className="font-medium text-brand-600 hover:text-indigo-500">Ver últimos insights <span aria-hidden="true">&rarr;</span></Link>
+                                            <Link to="/insights/" className="font-medium text-brand-600 hover:text-indigo-500">Ver últimos insights <span aria-hidden="true">&rarr;</span></Link>
                                         </div>
                                     </nav>
                                 </div>
@@ -419,7 +412,7 @@ const MenuTop = () => {
                             <div className="py-6 px-5">
                                 <div className="grid grid-cols-2 gap-4">
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link>
-                                    <Link to="/work-with-us/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Trabaja en Arena</Link>
+                                    <Link to="/work-with-us/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Carreras</Link>
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
                                     <Link to="/nosotros/gente-y-liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
