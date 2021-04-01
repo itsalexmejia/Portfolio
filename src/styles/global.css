@@ -8,6 +8,10 @@
 
 @layer components{
 
+    .bg-radial{
+        background-image: radial-gradient(circle farthest-corner at 50% 50%,#12192c,#000);
+    }
+
     .btn{
         @apply inline-block px-5 py-3 rounded-lg focus:outline-none focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm sm:text-base
     }

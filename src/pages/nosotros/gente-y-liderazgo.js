@@ -6,17 +6,21 @@ import { graphql } from 'gatsby'
 import TextHeader from "../../components/content/header/header-txt"
 import PeopleGrid from "../../components/content/people-grid"
 import Layout from "../../components/layout"
+import ActionBackground from "../../components/content/actions/bg-action"
 
 
 const GentePage = ({data}) => {
 
     return (
         <Layout>
-            <TextHeader
-                headline="Meet our leadership"
-                title="Executive Profiles"
-                caption="Our partners put our clients first, with a relentless focus on championing bold ideas that help them achieve the extraordinary."
-            />
+            {data.allContentfulC03ContentHeader.edges.map(edge => (
+                <TextHeader
+                    key = {edge.node.id}
+                    headline={edge.node.headline}
+                    title={edge.node.title}
+                    caption={edge.node.caption}
+                />
+            ))}
 
             <div className="bg-white">
                 <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
@@ -36,6 +40,8 @@ const GentePage = ({data}) => {
                     </div>
                 </div>
             </div>
+
+            <ActionBackground/>
             
         </Layout>
     )
@@ -63,6 +69,19 @@ query ExecutiveProfiles {
       }
     }
   }
+
+  allContentfulC03ContentHeader(filter: {atPage: {eq: "leadership"}}, limit: 1) {
+    edges {
+      node {
+        headline
+        title
+        caption
+        atPage
+        id
+      }
+    }
+  }
+
 }
 `
 
