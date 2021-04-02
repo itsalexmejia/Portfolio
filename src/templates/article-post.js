@@ -10,7 +10,7 @@ import TextHeader from '../components/content/header/header-txt'
 
 class BlogPostContentful extends React.Component {
   render() {
-    const post = this.props.data.contentfulC01Hero
+    const post = this.props.data.contentfulC01HeroInsights
     // const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
@@ -43,7 +43,7 @@ export default BlogPostContentful
 export const pageQuery = graphql`
 query BlogPostBySlug($slug: String = "") {
 
-  contentfulC01Hero(slug: {eq: $slug}) {
+  contentfulC01HeroInsights(slug: {eq: $slug}) {
     slug
     title
     title2

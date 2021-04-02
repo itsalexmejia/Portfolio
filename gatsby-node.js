@@ -11,7 +11,7 @@ exports.createPages = ({ graphql, actions }) => {
         `
           {
            
-            allContentfulC01Hero{
+            allContentfulC01HeroInsights{
                 edges {
                   node {
                     title
@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
                     }
                     createdAt
                     id
-                    labelLink
+                    buttonText
                     introduction
                     content {
                       raw
@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const posts = result.data.allContentfulC01Hero.edges
+        const posts = result.data.allContentfulC01HeroInsights.edges
 
         posts.forEach(post => {
           createPage({

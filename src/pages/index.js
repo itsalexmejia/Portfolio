@@ -1,11 +1,11 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 //css
 import '../styles/global.css';
-import 'swiper/swiper-bundle.css';
+// import 'swiper/swiper-bundle.css';
 
 //assets
 import favicon from "../images/favicon.ico"
@@ -14,8 +14,9 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 
 //components
 import Layout from "../components/layout"
-// import Card from "../components/card"
 import HeroHome from "../components/hero";
+import PostCard from "../components/content/insights/post-cards";
+import GridThree from "../components/content/grid-three";
 
 
 
@@ -37,34 +38,74 @@ const IndexPage = ({data}) => {
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
               <div className="max-w-7xl mx-auto sm:px-6 sm:pt-6 lg:px-8 lg:pt-8">
-              <Swiper
+              {/* <Swiper
                 spaceBetween={20}
                 loop = {false}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
               >
-                {data.allContentfulC01Hero.edges.map(edge => (
+                {data.allContentfulC01HeroInsights.edges.map(edge => (
                   <SwiperSlide>
                     <HeroHome key={edge.node.title}
                       title = {edge.node.title}
                       title2 = {edge.node.title2}
                       body = {edge.node.introduction}
                       linkUrl = {edge.node.slug}
-                      primaryButton = {edge.node.labelLink}
+                      primaryButton = {edge.node.buttonText}
                       secondaryButton = "Ver video"
                       image = {edge.node.image.file.url}
                       alt = {edge.node.image.title}
                     />
                   </SwiperSlide>
                 ))}
-                </Swiper>
+                </Swiper> */}
+                {data.allContentfulC01HeroInsights.edges.map(edge => (
+                  <HeroHome 
+                      key={edge.node.title}
+                      title = {edge.node.title}
+                      title2 = {edge.node.title2}
+                      body = {edge.node.introduction}
+                      linkUrl = {edge.node.slug}
+                      primaryButton = {edge.node.buttonText}
+                      secondaryButton = "Ver video"
+                      image = {edge.node.image.file.url}
+                      alt = {edge.node.image.title}
+                    />
+                ))}
               </div>
             </div>
+
+            {/* Insights Cards */}
+
+          <div className="relative bg-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+            <div className="relative max-w-7xl mx-auto">
+              <div className="text-center">
+                <h2 className="text-3xl tracking-tight font-extrabold text-testcolor-900 sm:text-4xl">Our Latest Thinking</h2>
+                <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">From insights to action, the path to 360° value starts here.</p>
+              </div>
+              <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+              {data.allContentfulEntry.edges.map(edge => (
+                <PostCard 
+                  key = {edge.node.id}
+                  image = {edge.node.image.file.url}
+                  type = {edge.node.typeOfArticle}
+                  title = {edge.node.title}
+                  title2 = {edge.node.title2}
+                  introduction = {edge.node.introduction}
+                  linkUrl = {edge.node.slug}
+                />
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Services we offer */}
+
+          {/* <GridThree/> */}
             
 
             {/* Logo cloud */}
-            <div className="bg-gray-100">
-              
+            <div className="bg-white">            
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                   <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Nuestros partners confían en nosotros</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
@@ -89,16 +130,10 @@ const IndexPage = ({data}) => {
             </div>
 
           {/* More main page content here... */}
+
+
+          
         
-
-        {/* <Card data={data}/>  */}
-
-        {/* {data.allContentfulTestConnection.edges.map(edge => (
-          <CardMaster
-            title = {edge.node.title}
-          />
-        ))}  */}
-
 
 
     </Layout>
@@ -119,44 +154,54 @@ query ArenaAnalyticsQuery {
       keywords
     }
   }
-  allContentfulTestConnection(
-    sort: {fields: [createdAt], order: ASC}
-    filter: {node_locale: {eq: "es-MX"}}
+  allContentfulC01HeroInsights(
+    sort: {order: DESC, fields: [createdAt]}
+    limit: 1
+    filter: {featuredInsight: {eq: true}}
   ) {
     edges {
       node {
-        title
-        title2
-        description
-        url
-        createdAt
-      }
-    }
-  }
-
-  allContentfulC01Hero(
-    sort: {fields: [createdAt], order: DESC}
-  ) {
-    edges {
-      node {
-        title
-        title2
         image {
           file {
             url
           }
           title
-          description
         }
-        createdAt
-        slug
-        labelLink
+        typeOfArticle
+        title
+        title2
         introduction
+        buttonText
+        slug
+        id
+        createdAt
       }
     }
   }
-
+  allContentfulEntry(limit: 3) {
+    edges {
+      node {
+        ... on ContentfulC01HeroInsights {
+          image {
+            file {
+              url
+            }
+            title
+          }
+          typeOfArticle
+          title
+          title2
+          introduction
+          buttonText
+          slug
+          id
+          createdAt
+        }
+      }
+    }
+  }
 }
+
 
 `
 
