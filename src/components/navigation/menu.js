@@ -8,6 +8,7 @@ import { Transition } from '@headlessui/react'
 //assets
 import logoArena from '../../images/siteglobal/arenaLogo.svg'
 import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
+import { ChatAlt2Icon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
 
 // markup
 const MenuTop = () => {
@@ -100,15 +101,15 @@ const MenuTop = () => {
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
-                                                  {/* Heroicon name: outline/cursor-click */}
-                                                  <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                                                    </svg>
+
+
+                                                  <ChatAlt2Icon className="h-6 w-6"/>
+
                                               </span>
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Consultoría</p>
+                                                  <p className="text-base font-medium text-gray-900">Práctica de Consultoría</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
@@ -120,15 +121,14 @@ const MenuTop = () => {
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
-                                                  {/* Heroicon name: outline/chart-bar */}
-                                                  <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-                                                    </svg>
+
+                                                <PresentationChartBarIcon className="h-6 w-6"/>
+                                                  
                                               </span>
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Analytics</p>
+                                                  <p className="text-base font-medium text-gray-900">Ciencia de datos</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
@@ -140,15 +140,13 @@ const MenuTop = () => {
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-md bg-arena-500 text-white sm:h-12 sm:w-12">
-                                                  {/* Heroicon name: outline/shield-check */}
-                                                  <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                                </svg>
+                                                  <UserGroupIcon className="h-6 w-6"/>
+                                                  
                                               </span>
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Partners</p>
+                                                  <p className="text-base font-medium text-gray-900">Soluciones tecnológicas</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
@@ -373,32 +371,25 @@ const MenuTop = () => {
                                         <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
-                                                    {/* Heroicon name: outline/chart-bar */}
-                                                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                                                    </svg>
+                                                    <ChatAlt2Icon className="h-6 w-6"/>
+                                                    
                                                 </div>
-                                                <div className="ml-4 text-base font-medium text-gray-900">Consultoría</div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Práctica de Consultoría</div>
                                             </Link>
 
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
-                                                    {/* Heroicon name: outline/cursor-click */}
-                                                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
-                                                    </svg>
+                                                    <PresentationChartBarIcon className="h-6 w-6"/>
+                                                    
                                                 </div>
-                                                <div className="ml-4 text-base font-medium text-gray-900">Analytics</div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Ciencia de datos</div>
                                             </Link>
 
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-brand-500 text-white sm:h-12 sm:w-12">
-                                                    {/* Heroicon name: outline/cursor-click */}
-                                                    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                                    </svg>
+                                                    <UserGroupIcon className="h-6 w-6"/>
                                                 </div>
-                                                <div className="ml-4 text-base font-medium text-gray-900">Partners</div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Soluciones tecnológicas</div>
                                             </Link>
 
 

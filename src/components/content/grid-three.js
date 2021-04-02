@@ -1,70 +1,76 @@
 import * as React from "react"
-// import { Link } from 'gatsby'
+import { Link } from 'gatsby'
+
+//icons
+import { ChatAlt2Icon, PresentationChartBarIcon, UserGroupIcon } from '@heroicons/react/outline'
 
 // markup
 const GridThree = props => {
   return (
+        <div className="py-16 bg-gray-100">
+          <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            {/* <h2 className="sr-only">A better way to send money.</h2> */}
 
-    <div className="bg-brand-700">
-      <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-        <h2 className="font-arena text-3xl font-extrabold text-white tracking-tight">We champion the bold to achieve the extraordinary.</h2>
-        <p className="mt-4 max-w-3xl text-lg text-testcolor-200">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis. Blandit aliquam sit nisl euismod mattis in.</p>
-        <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+            <div className="lg:text-center">
+              <h2 className="font-arena text-base text-arena-600 font-semibold tracking-wide uppercase">How We Help</h2>
+              <p className="font-arena mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Consulting Services</p>
+              <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Our management consulting services focus on our clients' most critical issues and opportunities</p>
+            </div>
 
-          <div>
-            <div>
-              <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                {/* Heroicon name: outline/inbox */}
-                <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                </svg>
-              </span>
-            </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-medium text-white">Unlimited Inboxes</h3>
-              <p className="mt-2 text-base text-testcolor-200">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</p>
-            </div>
-          </div>
-    
-          <div>
-            <div>
-              <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                {/* Heroicon name: outline/users */}
-                <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </span>
-            </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-medium text-white">Manage Team Members</h3>
-              <p className="mt-2 text-base text-indigo-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
-    
-          <div>
-            <div>
-              <span className="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10">
-                {/* Heroicon name: outline/trash */}
-                <svg className="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                </svg>
-              </span>
-            </div>
-            <div className="mt-6">
-              <h3 className="text-lg font-medium text-white">Spam Report</h3>
-              <p className="mt-2 text-base text-indigo-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
-              </p>
-            </div>
-          </div>
 
+            <dl className="mt-10 space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
+
+              <div>
+                <dt>
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-arena-500 text-white">
+                    <ChatAlt2Icon className="h-6 w-6" />
+                  </div>
+                  <p className="mt-5 text-lg leading-6 font-medium text-gray-900">Práctica de Consultoría</p>
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                <div className="mt-4 flex lg:flex-shrink-0">
+                  <div className="inline-flex rounded-md shadow">
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-arena-50">Learn more</Link>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <dt>
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-arena-500 text-white">
+                    <PresentationChartBarIcon className="h-6 w-6" />
+                  </div>
+                  <p className="mt-5 text-lg leading-6 font-medium text-gray-900">Ciencia de datos</p>
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                <div className="mt-4 flex lg:flex-shrink-0">
+                  <div className="inline-flex rounded-md shadow">
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-arena-50">Learn more</Link>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <dt>
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-arena-500 text-white">
+                    <UserGroupIcon className="h-6 w-6" />
+                  </div>
+                  <p className="mt-5 text-lg leading-6 font-medium text-gray-900">Soluciones tecnológicas </p>
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                <div className="mt-4 flex lg:flex-shrink-0">
+                  <div className="inline-flex rounded-md shadow">
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-arena-50">Learn more</Link>
+                  </div>
+                </div>
+              </div>
+
+              
+
+
+            </dl>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    
   )
 }
 

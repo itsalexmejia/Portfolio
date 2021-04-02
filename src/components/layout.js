@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <div className="min-h-screen bg-white">
         <MenuTop/>
         <main>
-          <div className="pt-16 sm:pt-14 lg:pt-16">{children}</div>  
+          <div className="pt-lay-mob sm:pt-lay">{children}</div>  
         </main>
         <FooterNavigation/>
     </div>

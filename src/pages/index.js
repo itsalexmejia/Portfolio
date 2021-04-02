@@ -16,9 +16,12 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 import Layout from "../components/layout"
 import HeroHome from "../components/hero";
 import PostCard from "../components/content/insights/post-cards";
-// import GridThree from "../components/content/grid-three";
-import BackgroundHeader from "../components/content/header/header-bg";
+import GridThree from "../components/content/grid-three";
+// import BackgroundHeader from "../components/content/header/header-bg";
 import ActionImageLeft from "../components/content/actions/image-left-action";
+import AlertHome from "../components/content/alert";
+import StatsHome from "../components/content/stats";
+import CardimageAction from "../components/content/actions/card-image";
 
 
 
@@ -28,11 +31,18 @@ const IndexPage = ({data}) => {
   return (
     
     <Layout>
+
       <Helmet title={data.site.siteMetadata.title}>
         <link rel="icon" href={favicon} />
         {/* <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"/> */}
         <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale = 1.0, user-scalable = no, viewport-fit = cover"/>
       </Helmet>
+
+      {/* Mensaje impoortante */}
+      <AlertHome/>
+      
+
+      
 
 
           <div>
@@ -77,41 +87,12 @@ const IndexPage = ({data}) => {
               </div>
             </div>
 
-            {/* Insights Cards */}
-
-          <div className="relative bg-gray-100 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-            <div className="relative max-w-7xl mx-auto">
-              <div className="text-center">
-                <h2 className="text-3xl tracking-tight font-extrabold text-testcolor-900 sm:text-4xl">Our Latest Thinking</h2>
-                <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">From insights to action, the path to 360° value starts here.</p>
-              </div>
-              <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              {data.allContentfulEntry.edges.map(edge => (
-                <PostCard 
-                  key = {edge.node.id}
-                  image = {edge.node.image.file.url}
-                  type = {edge.node.typeOfArticle}
-                  title = {edge.node.title}
-                  title2 = {edge.node.title2}
-                  introduction = {edge.node.introduction}
-                  linkUrl = {edge.node.slug}
-                  altText = {edge.node.image.title} 
-                />
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* <ActionImageLeft/> */}
-
-          {/* Services we offer */}
-
-          {/* <GridThree/> */}
-            
-
+            <GridThree/>
+            <ActionImageLeft/>
+            <StatsHome/>
 
             {/* Logo cloud */}
-            <div className="bg-white">            
+            <div className="bg-gray-100">            
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
                   <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Nuestros partners confían en nosotros</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
@@ -134,6 +115,40 @@ const IndexPage = ({data}) => {
                 </div>
               </div>
             </div>
+
+            <CardimageAction/>
+
+            {/* Insights Cards */}
+
+          <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+            <div className="relative max-w-7xl mx-auto">
+              <div className="text-center">
+                <h2 className="text-3xl tracking-tight font-extrabold text-testcolor-900 sm:text-4xl">Our Latest Thinking</h2>
+                <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">From insights to action, the path to 360° value starts here.</p>
+              </div>
+              <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+              {data.allContentfulEntry.edges.map(edge => (
+                <PostCard 
+                  key = {edge.node.id}
+                  image = {edge.node.image.file.url}
+                  type = {edge.node.typeOfArticle}
+                  title = {edge.node.title}
+                  title2 = {edge.node.title2}
+                  introduction = {edge.node.introduction}
+                  linkUrl = {edge.node.slug}
+                  altText = {edge.node.image.title} 
+                />
+                ))}
+              </div>
+            </div>
+          </div>
+            
+
+
+            
+
+            
+
 
           {/* More main page content here... */}
 
