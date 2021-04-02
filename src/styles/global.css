@@ -9,7 +9,7 @@
 @layer components{
 
     .bg-radial{
-        background-image: radial-gradient(circle farthest-corner at 50% 50%,#12192c,#000);
+        background-image: radial-gradient(circle farthest-corner at 30% 40%,#192951,#000);
     }
 
     .btn{

@@ -16,8 +16,9 @@ import logoArena from '../images/siteglobal/arenaLogo.svg'
 import Layout from "../components/layout"
 import HeroHome from "../components/hero";
 import PostCard from "../components/content/insights/post-cards";
-import GridThree from "../components/content/grid-three";
+// import GridThree from "../components/content/grid-three";
 import BackgroundHeader from "../components/content/header/header-bg";
+import ActionImageLeft from "../components/content/actions/image-left-action";
 
 
 
@@ -94,17 +95,20 @@ const IndexPage = ({data}) => {
                   title2 = {edge.node.title2}
                   introduction = {edge.node.introduction}
                   linkUrl = {edge.node.slug}
+                  altText = {edge.node.image.title} 
                 />
                 ))}
               </div>
             </div>
           </div>
 
+          {/* <ActionImageLeft/> */}
+
           {/* Services we offer */}
 
           {/* <GridThree/> */}
             
-          <BackgroundHeader/>
+
 
             {/* Logo cloud */}
             <div className="bg-white">            
