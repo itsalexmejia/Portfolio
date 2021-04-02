@@ -17,6 +17,7 @@ import Layout from "../components/layout"
 import HeroHome from "../components/hero";
 import PostCard from "../components/content/insights/post-cards";
 import GridThree from "../components/content/grid-three";
+import BackgroundHeader from "../components/content/header/header-bg";
 
 
 
@@ -103,6 +104,7 @@ const IndexPage = ({data}) => {
 
           {/* <GridThree/> */}
             
+          <BackgroundHeader/>
 
             {/* Logo cloud */}
             <div className="bg-white">            
