@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 const PostCard = props => {
   return (
       
-    <Link to={`/insights/${props.linkUrl}`} className="flex flex-col rounded-lg shadow-lg overflow-hidden sm:hover:shadow-2xl">
+    <Link to={`/insights/${props.linkUrl}`} className="flex flex-col rounded-lg shadow-lg overflow-hidden transition-all ease-in-out sm:hover:shadow-2xl">
           <div className="flex-shrink-0">
               <img className="h-48 w-full object-cover" src={props.image} alt={props.altText} />
           </div>
