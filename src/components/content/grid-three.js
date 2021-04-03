@@ -30,7 +30,7 @@ const GridThree = props => {
                 <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
                 <div className="mt-4 flex lg:flex-shrink-0">
                   <div className="inline-flex rounded-md shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-arena-50">Learn more</Link>
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-gray-50">Learn more</Link>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const GridThree = props => {
                 <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
                 <div className="mt-4 flex lg:flex-shrink-0">
                   <div className="inline-flex rounded-md shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-arena-50">Learn more</Link>
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-gray-50">Learn more</Link>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const GridThree = props => {
                 <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
                 <div className="mt-4 flex lg:flex-shrink-0">
                   <div className="inline-flex rounded-md shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-arena-50">Learn more</Link>
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-gray-50">Learn more</Link>
                   </div>
                 </div>
               </div>

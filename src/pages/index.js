@@ -94,7 +94,7 @@ const IndexPage = ({data}) => {
             {/* Logo cloud */}
             <div className="bg-gray-100">            
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                  <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Nuestros partners confían en nosotros</p>
+                  <p className="font-arena text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">We collaborate with these leading partners</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                       <img className="h-12" src={logoArena} alt="Tuple" />
