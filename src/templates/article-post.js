@@ -37,7 +37,8 @@ class BlogPostContentful extends React.Component {
 
           <TextHeader
             headline="Meet our leadership"
-            title= {post.title}
+            title = {post.title}
+            title2 = {post.title2}
             caption="Teamwork makes the dream work"
           />
 

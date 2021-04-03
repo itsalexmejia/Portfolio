@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.arena-analytics.com/#about`,
     description: `Consultoria de inteligencia artificial`,
     keywords:`analytics, consultoria`,
+    author: `gatsbyjs`,
   },
   plugins: [
     'gatsby-plugin-postcss',
