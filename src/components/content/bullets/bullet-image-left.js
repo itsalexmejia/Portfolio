@@ -1,3 +1,4 @@
+import { PuzzleIcon, SparklesIcon } from '@heroicons/react/outline'
 import * as React from 'react'
 
 // markup
@@ -15,11 +16,8 @@ const ImageLeftBullet = props => {
                       <dl className="mt-10 space-y-10">
                           <div className="relative">
                               <dt>
-                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-arena-500 text-white">
-                                      {/* <!-- Heroicon name: outline/annotation --> */}
-                                      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                                      </svg>
+                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                                      <SparklesIcon className="h-6 w-6"/>                                   
                                   </div>
                                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Exposure con C-levels</p>
                               </dt>
@@ -28,11 +26,8 @@ const ImageLeftBullet = props => {
 
                           <div className="relative">
                               <dt>
-                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-arena-500 text-white">
-                                      {/* <!-- Heroicon name: outline/mail --> */}
-                                      <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                      </svg>
+                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                                      <PuzzleIcon className="h-6 w-6"/>
                                   </div>
                                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Proyectos en empresas líderes en México</p>
                               </dt>
