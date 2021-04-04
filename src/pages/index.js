@@ -26,7 +26,7 @@ import GridThree from "../components/content/grid-three";
 // import BackgroundHeader from "../components/content/header/header-bg";
 import ActionImageLeft from "../components/content/actions/image-left-action";
 import AlertHome from "../components/content/alert";
-import StatsHome from "../components/content/stats";
+import StatsHome from "../components/content/bullets/stats";
 import CardimageAction from "../components/content/actions/card-image";
 
 

@@ -20,8 +20,8 @@ const HeroHome = props => {
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl text-testcolor-200 sm:max-w-3xl">{props.body}</p>
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                    <Link to={`/insights/${props.linkUrl}`} className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-testcolor-700 bg-white hover:bg-testcolor-50 sm:px-8">{props.primaryButton}</Link>
-                    <Link to="/" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-testcolor-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">{props.secondaryButton}</Link>
+                    <Link to={`/insights/${props.linkUrl}`} className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-3xl shadow-sm text-testcolor-700 bg-white hover:bg-testcolor-50 sm:px-8">{props.primaryButton}</Link>
+                    <Link to="/" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-3xl shadow-sm text-white bg-testcolor-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">{props.secondaryButton}</Link>
                     </div>
                 </div>
             </div>

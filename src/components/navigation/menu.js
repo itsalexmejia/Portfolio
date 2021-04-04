@@ -11,7 +11,7 @@ import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
 import { ChatAlt2Icon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
 
 // markup
-const MenuTop = () => {
+const MenuTop = ({data}) => {
 
     const [openServiciosDesk, setOpenServiciosDesk] = useState(false)
     const [openMoreDesk, setOpenMoreDesk] = useState(false)
@@ -72,8 +72,7 @@ const MenuTop = () => {
                               </div>
                           </nav>
                           <div className="flex items-center md:ml-12">
-                              {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</Link> */}
-                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
+                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
                           </div>
                       </div>
                   </div>
@@ -109,7 +108,7 @@ const MenuTop = () => {
                                                   <p className="text-base font-medium text-gray-900">Práctica de Consultoría</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
-                                              <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
+                                              <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
                                       </div>
                                   </Link>
@@ -128,12 +127,12 @@ const MenuTop = () => {
                                                   <p className="text-base font-medium text-gray-900">Ciencia de datos</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
-                                              <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
+                                              <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
                                       </div>
                                   </Link>
 
-                                  <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                                  <Link to="/servicios/partners/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
@@ -146,7 +145,7 @@ const MenuTop = () => {
                                                   <p className="text-base font-medium text-gray-900">Soluciones tecnológicas</p>
                                                   <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                               </div>
-                                              <p className="mt-2 text-sm font-medium text-brand-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
+                                              <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
                                       </div>
                                   </Link>
@@ -233,19 +232,10 @@ const MenuTop = () => {
                                                   <svg className="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                                   </svg>
-                                                  <span className="ml-4">Gente &amp; Liderazgo</span>
+                                                  <span className="ml-4">Liderazgo</span>
                                               </Link>
                                           </li>
 
-                                          <li className="flow-root">
-                                              <Link to="/" className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
-                                                  {/* Heroicon name: outline/briefcase */}
-                                                  <svg className="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                  </svg>
-                                                  <span className="ml-4">Responsabilidad Social</span>
-                                              </Link>
-                                          </li>
 
                                           <li className="flow-root">
                                               <Link to="/" className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
@@ -263,6 +253,16 @@ const MenuTop = () => {
                                   <div>
                                       <h3 className="text-sm font-medium tracking-wide text-gray-500 uppercase">Ligas de interes</h3>
                                       <ul className="mt-5 space-y-6">
+
+                                            <li className="flow-root">
+                                              <Link to="/" className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
+                                                  {/* Heroicon name: outline/briefcase */}
+                                                  <svg className="flex-shrink-0 h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                  </svg>
+                                                  <span className="ml-4">Responsabilidad Social</span>
+                                              </Link>
+                                          </li>
 
                                           <li className="flow-root">
                                               <Link to="/" className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">
@@ -325,7 +325,7 @@ const MenuTop = () => {
                                       </ul>
                                   </div>
                                   <div className="mt-6 text-sm font-medium">
-                                      <Link to="/" className="text-arena-600 hover:text-indigo-500"> Ver todos los insights <span aria-hidden="true">&rarr;</span></Link>
+                                      <Link to="/" className="text-arena-600 hover:text-brand-500"> Ver todos los insights <span aria-hidden="true">&rarr;</span></Link>
                                   </div>
                               </div>
                           </div>
@@ -382,7 +382,7 @@ const MenuTop = () => {
                                                 <div className="ml-4 text-base font-medium text-gray-900">Ciencia de datos</div>
                                             </Link>
 
-                                            <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                            <Link to="/servicios/partners/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     <UserGroupIcon className="h-6 w-6"/>
                                                 </div>
@@ -405,8 +405,7 @@ const MenuTop = () => {
                                     <Link to="/nosotros/gente-y-liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
                                 <div className="mt-6">
-                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-indigo-700">Contáctanos</Link>
-                                    {/* <p className="mt-6 text-center text-base font-medium text-gray-500">Existing customer? <Link to="/" className="text-indigo-600 hover:text-indigo-500">Sign in</Link></p> */}
+                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700">Contáctanos</Link>                                   
                                 </div>
                             </div>
                         </div>

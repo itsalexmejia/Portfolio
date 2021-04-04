@@ -20,7 +20,7 @@ const ActionImageLeft = props => {
                   </div>
                   <h2 className="font-arena mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">We champion the bold to achieve the extraordinary.</h2>
                   <p className="mt-6 text-lg text-gray-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nihil ea rerum ipsa. Nostrum consectetur sequi culpa doloribus omnis, molestiae esse placeat, exercitationem magnam quod molestias quia aspernatur deserunt voluptatibus.</p>
-                  <Link to="#" className="mt-8 w-full bg-arena-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-md text-white hover:bg-brand-700 sm:mt-10 sm:w-auto">See more about us</Link>
+                  <Link to="#" className="mt-8 w-full bg-arena-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-3xl text-white hover:bg-brand-700 sm:mt-10 sm:w-auto">See more about us</Link>
                   {/* <div className="mt-8 overflow-hidden"></div> */}
 
               </div>

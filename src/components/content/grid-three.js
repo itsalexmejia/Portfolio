@@ -29,8 +29,8 @@ const GridThree = props => {
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
                 <div className="mt-4 flex lg:flex-shrink-0">
-                  <div className="inline-flex rounded-md shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-gray-50">Learn more</Link>
+                  <div className="inline-flex rounded-3xl shadow">
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-3xl text-arena-600 bg-white hover:bg-gray-50">Conoce más</Link>
                   </div>
                 </div>
               </div>
@@ -44,8 +44,8 @@ const GridThree = props => {
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
                 <div className="mt-4 flex lg:flex-shrink-0">
-                  <div className="inline-flex rounded-md shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-gray-50">Learn more</Link>
+                  <div className="inline-flex rounded-3xl shadow">
+                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-3xl text-arena-600 bg-white hover:bg-gray-50">Conoce más</Link>
                   </div>
                 </div>
               </div>
@@ -57,10 +57,10 @@ const GridThree = props => {
                   </div>
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">Soluciones tecnológicas </p>
                 </dt>
-                <dd className="mt-2 text-base text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                <dd className="mt-2 text-base text-gray-500">Hemos seleccionado soluciones tecnológicas soportadas por Inteligencia Artificial y que habiliten a la operación para lograr resultados reales.</dd>
                 <div className="mt-4 flex lg:flex-shrink-0">
-                  <div className="inline-flex rounded-md shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-gray-50">Learn more</Link>
+                  <div className="inline-flex rounded-3xl shadow">
+                    <Link to="/servicios/partners/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-3xl text-arena-600 bg-white hover:bg-gray-50">Conoce más</Link>
                   </div>
                 </div>
               </div>

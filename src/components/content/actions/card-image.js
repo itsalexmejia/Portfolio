@@ -18,7 +18,7 @@ const CardimageAction = props => {
               <span className="block">arena &amp; You</span>
             </h2>
             <p className="mt-4 text-lg leading-6 text-testcolor-100">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
-            <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-arena-600 hover:bg-indigo-50">Start here</Link>
+            <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-3xl shadow px-5 py-3 inline-flex items-center text-base font-medium text-arena-600 hover:bg-indigo-50">Start here</Link>
           </div>
         </div>
         <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
