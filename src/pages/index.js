@@ -9,7 +9,13 @@ import '../styles/global.css';
 
 //assets
 import favicon from "../images/favicon.ico"
-import logoArena from '../images/siteglobal/arenaLogo.svg'
+// import logoArena from '../images/siteglobal/arenaLogo.svg'
+
+import logoHome1 from '../images/siteglobal/logo-home-1.png'
+import logoHome2 from '../images/siteglobal/logo-home-2.png'
+import logoHome3 from '../images/siteglobal/logo-home-3.png'
+import logoHome4 from '../images/siteglobal/logo-home-4.png'
+import logoHome5 from '../images/siteglobal/logo-home-5.png'
 
 
 //components
@@ -97,19 +103,19 @@ const IndexPage = ({data}) => {
                   <p className="font-arena text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">We collaborate with these leading partners</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12" src={logoArena} alt="Tuple" />
+                      <img className="h-12" src={logoHome1} alt="Tuple" />
                     </div>
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12" src={logoArena} alt="Mirage" />
+                      <img className="h-12" src={logoHome2} alt="Mirage" />
                     </div>
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12" src={logoArena} alt="StaticKit" />
+                      <img className="h-12" src={logoHome3} alt="StaticKit" />
                     </div>
                     <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                      <img className="h-12" src={logoArena} alt="Transistor" />
+                      <img className="h-12" src={logoHome4} alt="Transistor" />
                     </div>
                     <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                      <img className="h-12" src={logoArena} alt="Workcation" />
+                      <img className="h-12" src={logoHome5} alt="Workcation" />
                     </div>
                   </div>
                 </div>

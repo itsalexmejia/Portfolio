@@ -1,15 +1,14 @@
 import * as React from "react"
 
 //assets
-import bannerBackground from '../../../images/mainpage/work-at-arena.jpg'
 
 // markup
 const BackgroundHeader = props => {
   return (
 
-  <div className="relative bg-indigo-800">
+  <div className="relative bg-testcolor-800">
     <div className="absolute inset-0">
-      <img className="w-full h-full object-cover" src={bannerBackground} alt=""/>
+      <img className="w-full h-full object-cover" src={props.image} alt={props.alt}/>
       <div className="absolute inset-0 bg-testcolor-700" style={{mixBlendMode: "multiply"}} aria-hidden="true"></div>
     </div>
     <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">

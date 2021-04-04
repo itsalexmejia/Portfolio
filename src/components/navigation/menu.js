@@ -55,7 +55,7 @@ const MenuTop = () => {
 
                               <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Industrias</Link>
                               {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Insights</Link> */}
-                              <Link to="/work-with-us/" className="text-base font-medium text-gray-500 hover:text-gray-900">Carreras</Link>
+                              <Link to="/careers/" className="text-base font-medium text-gray-500 hover:text-gray-900">Careers</Link>
 
                               <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
@@ -400,7 +400,7 @@ const MenuTop = () => {
                             <div className="py-6 px-5">
                                 <div className="grid grid-cols-2 gap-4">
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link>
-                                    <Link to="/work-with-us/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Carreras</Link>
+                                    <Link to="/careers/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Careers</Link>
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
                                     <Link to="/nosotros/gente-y-liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>

@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 //Components
 import TextHeader from "../../components/content/header/header-txt"
-import PeopleGrid from "../../components/content/people-grid"
+import PeopleGrid from "../../components/content/people/people-grid"
 import Layout from "../../components/layout"
 import ActionBackground from "../../components/content/actions/bg-action"
 
