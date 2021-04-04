@@ -22,7 +22,7 @@ import logoHome5 from '../images/siteglobal/logo-home-5.png'
 import Layout from "../components/layout"
 import HeroHome from "../components/hero";
 import PostCard from "../components/content/insights/post-cards";
-import GridThree from "../components/content/grid-three";
+import GridThree from "../components/content/bullets/grid-three";
 // import BackgroundHeader from "../components/content/header/header-bg";
 import ActionImageLeft from "../components/content/actions/image-left-action";
 import AlertHome from "../components/content/alert";
