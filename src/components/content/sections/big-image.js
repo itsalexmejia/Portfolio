@@ -11,7 +11,7 @@ const BigImageSection = props => {
           <p className="font-arena mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">¡Sé uno más de nosotros!</p>
           <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">Nos gusta sentirnos satisfechos con cada día que trabajamos juntos y con nuestros clientes en sus retos de negocio. Somos responsables de lo que proponemos. Identificamos las necesidades del cliente y logramos generar cambios positivos y de impacto.</p>
         </div>
-        <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80">
+        <div className="mt-12 -mb-10 sm:-mb-24 lg:-mb-80 lg:h-screen">
           <img className="rounded-xl shadow-xl ring-1 ring-black ring-opacity-5" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt=""/>
         </div>
       </div>

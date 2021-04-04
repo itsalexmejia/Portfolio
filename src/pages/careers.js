@@ -23,7 +23,7 @@ const CareersPage = ({data}) => {
                   alt={edge.node.image.title}
               />
           ))}
-          <div className="bg-white">
+          <div className="bg-gray-50">
               <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
                   <div className="space-y-12">
                       <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
@@ -44,8 +44,9 @@ const CareersPage = ({data}) => {
                   </div>
               </div>
           </div>
-          <BigImageSection/>
           <ImageLeftBullet/>
+          <BigImageSection/>
+          
       </Layout>
   )
 }
