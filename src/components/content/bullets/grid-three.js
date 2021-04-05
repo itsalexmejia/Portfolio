@@ -18,7 +18,7 @@ const GridThree = props => {
             </div>
 
 
-            <dl className="mt-10 space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
+            <dl className="mt-10 space-y-14 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
 
               <div>
                 <dt>
