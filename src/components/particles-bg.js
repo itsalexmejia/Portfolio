@@ -46,7 +46,7 @@ const ParticlesAnimation = props => {
                           }
                       },
                       size: {
-                          value: 3.5,
+                          value: 3,
                           random: true,
                           anim: {
                               enable: false,
@@ -64,7 +64,7 @@ const ParticlesAnimation = props => {
                       },
                       move: {
                           enable: true,
-                          speed: .3,
+                          speed: .4,
                           direction: 'none',
                           random: false,
                           straight: false,
@@ -80,12 +80,18 @@ const ParticlesAnimation = props => {
                   interactivity: {
                         detect_on: 'canvas',
                       events: {
+
                           onhover: {
+                            parallax:{
+                                enable: false,
+                                force: 2,
+                                smooth: 2000,
+                            },
                               enable: true,
                               mode: 'bubble',
                           },
                           onclick: {
-                              enable: false,
+                              enable: true,
                               mode: 'push',
                           },
                           resize: true
@@ -101,7 +107,7 @@ const ParticlesAnimation = props => {
                               distance: 316.35045140775964,
                               size: 2,
                               duration: 3.8935440173262723,
-                              opacity: 0.7,
+                              opacity: 0.9,
                               speed: 3
                           },
                           repulse: {
