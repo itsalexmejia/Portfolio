@@ -21,7 +21,7 @@ const ParticlesAnimation = props => {
                           value: "#ffffff",
                       },
                       shape: {
-                          // type: circle,
+                          type: 'circle',
                           stroke: {
                               width: 0,
                               color: "#000000",
@@ -30,7 +30,7 @@ const ParticlesAnimation = props => {
                               nb_sides: 5
                           },
                           image: {
-                              // src: img/github.svg,
+                              src: 'img/github.svg',
                               width: 100,
                               height: 100
                           }
@@ -64,11 +64,11 @@ const ParticlesAnimation = props => {
                       },
                       move: {
                           enable: true,
-                          speed: 1,
-                          // direction: none,
-                          random: true,
+                          speed: .3,
+                          direction: 'none',
+                          random: false,
                           straight: false,
-                          // out_mode: out,
+                          out_mode: 'out',
                           bounce: false,
                           attract: {
                               enable: false,
@@ -78,15 +78,15 @@ const ParticlesAnimation = props => {
                       }
                   },
                   interactivity: {
-                      // detect_on: canvas,
+                        detect_on: 'canvas',
                       events: {
                           onhover: {
                               enable: true,
-                              // mode: bubble
+                              mode: 'bubble',
                           },
                           onclick: {
                               enable: false,
-                              // mode: push
+                              mode: 'push',
                           },
                           resize: true
                       },
@@ -118,7 +118,7 @@ const ParticlesAnimation = props => {
                   },
               }}
           />
-          <div className="absolute inset-1"></div>
+          {/* <div className="absolute inset-1"></div> */}
       </div>
 
     
