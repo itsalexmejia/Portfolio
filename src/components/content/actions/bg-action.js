@@ -15,7 +15,7 @@ const ActionBackground = props => {
                   <span className="block">Descubre cómo podemos ayudarte.</span>
               </h2>
               <p className="mt-4 text-lg leading-6 text-bluearena-100">¿Deseas obtener más información sobre alguna oferta de servicio?</p>
-              <a href="mailto:alex@me.com" className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-indigo-50 sm:w-auto">
+              <a href="mailto:alex@me.com" className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-arena-600 bg-white hover:bg-bluearena-50 sm:w-auto">
                   <MailIcon className="mr-3 -ml-1 h-5 w-5 text-arena-400" />
                   Contáctanos
               </a>

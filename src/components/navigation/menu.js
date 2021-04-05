@@ -354,7 +354,7 @@ const MenuTop = ({data}) => {
                                         <img className="h-8 w-auto" src={logoArena} alt="Workflow" />
                                     </div>
                                     <div className="-mr-2">
-                                        <button type="button" onClick={() => setOpenServiciosMob(!openServiciosMob)} className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                        <button type="button" onClick={() => setOpenServiciosMob(!openServiciosMob)} className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-bluearena-500">
                                             <span className="sr-only">Cerrar menu</span>
                                             {/* Heroicon name: outline/x */}
                                             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -392,7 +392,7 @@ const MenuTop = ({data}) => {
 
                                         </div>
                                         <div className="mt-8 text-base">
-                                            <Link to="/insights/" className="font-medium text-brand-600 hover:text-indigo-500">Ver últimos insights <span aria-hidden="true">&rarr;</span></Link>
+                                            <Link to="/insights/" className="font-medium text-brand-600 hover:text-bluearena-500">Ver últimos insights <span aria-hidden="true">&rarr;</span></Link>
                                         </div>
                                     </nav>
                                 </div>
