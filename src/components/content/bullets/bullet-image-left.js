@@ -16,7 +16,7 @@ const ImageLeftBullet = props => {
                       <dl className="mt-10 space-y-10">
                           <div className="relative">
                               <dt>
-                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                                       <SparklesIcon className="h-6 w-6"/>                                   
                                   </div>
                                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Exposure con C-levels</p>
@@ -26,7 +26,7 @@ const ImageLeftBullet = props => {
 
                           <div className="relative">
                               <dt>
-                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                                  <div className="absolute flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                                       <PuzzleIcon className="h-6 w-6"/>
                                   </div>
                                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Proyectos en empresas líderes en México</p>

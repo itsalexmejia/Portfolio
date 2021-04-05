@@ -99,7 +99,7 @@ const MenuTop = ({data}) => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
                                                   <ChatAlt2Icon className="h-6 w-6"/>
                                               </span>
                                           </div>
@@ -116,7 +116,7 @@ const MenuTop = ({data}) => {
                                   <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
 
                                                 <PresentationChartBarIcon className="h-6 w-6"/>
                                                   
@@ -135,7 +135,7 @@ const MenuTop = ({data}) => {
                                   <Link to="/servicios/partners/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
-                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
+                                              <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
                                                   <UserGroupIcon className="h-6 w-6"/>
                                                   
                                               </span>
@@ -367,7 +367,7 @@ const MenuTop = ({data}) => {
                                     <nav>
                                         <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     <ChatAlt2Icon className="h-6 w-6"/>
                                                     
                                                 </div>
@@ -375,7 +375,7 @@ const MenuTop = ({data}) => {
                                             </Link>
 
                                             <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     <PresentationChartBarIcon className="h-6 w-6"/>
                                                     
                                                 </div>
@@ -383,7 +383,7 @@ const MenuTop = ({data}) => {
                                             </Link>
 
                                             <Link to="/servicios/partners/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     <UserGroupIcon className="h-6 w-6"/>
                                                 </div>
                                                 <div className="ml-4 text-base font-medium text-gray-900">Soluciones tecnológicas</div>

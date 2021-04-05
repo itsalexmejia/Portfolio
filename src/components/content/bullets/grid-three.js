@@ -22,7 +22,7 @@ const GridThree = props => {
 
               <div>
                 <dt>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                     <ChatAlt2Icon className="h-6 w-6" />
                   </div>
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle1}</p>
@@ -37,7 +37,7 @@ const GridThree = props => {
 
               <div>
                 <dt>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                     <PresentationChartBarIcon className="h-6 w-6" />
                   </div>
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle2}</p>
@@ -52,7 +52,7 @@ const GridThree = props => {
 
               <div>
                 <dt>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-arena-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                     <UserGroupIcon className="h-6 w-6" />
                   </div>
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle3}</p>
