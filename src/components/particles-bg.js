@@ -59,7 +59,7 @@ const ParticlesAnimation = props => {
                           enable: true,
                           distance: 100,
                           color: "#ffffff",
-                          opacity: 0.2,
+                          opacity: 0.5,
                           width: 0.20000000000000004
                       },
                       move: {
