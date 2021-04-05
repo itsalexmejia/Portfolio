@@ -5,8 +5,8 @@ import ParticlesAnimation from "./particles-bg";
 
 const HeroHome = props => {
     return (
-        <div className="relative bg-radial overflow-hidden shadow-xl sm:rounded-2xl sm:overflow-hidden">
-
+        <div className="relative bg-radial overflow-hidden sm:overflow-hidden">
+{/* sm:rounded-2xl */}
             {/* <div className="absolute inset-0">
                 <img className="h-full w-full object-cover" src={props.image} alt={props.alt} />
                 <div className="absolute inset-0 bg-bluearena-700" style={{mixBlendMode: 'multiply'}}></div>
