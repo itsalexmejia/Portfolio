@@ -25,4 +25,4 @@
     .btn-seconday{
         @apply bg-gray-300 hover:bg-gray-200 focus:ring-gray-300 focus:ring-opacity-50 active:bg-gray-500 text-gray-800
     }
-} 
+}

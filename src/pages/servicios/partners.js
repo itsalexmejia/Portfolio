@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import ActionBackground from "../../components/content/actions/bg-action"
 
@@ -17,6 +17,7 @@ const PartnersPage = ({data}) => {
                   alt={edge.node.image.title}
               />
           ))} */}
+
 
           <ActionBackground/>
     </Layout>

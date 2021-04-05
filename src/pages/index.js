@@ -93,14 +93,26 @@ const IndexPage = ({data}) => {
               </div>
             </div>
 
-            <GridThree/>
+            <GridThree
+              headline = "Cómo ayudamos"
+              title = "Nuestros servicios"
+              caption = "Utilizamos nuestra experiencia y conocimiento para generar e implementar estrategias, procesos y mejores prácticas." 
+              bulletTitle1 = "Práctica de Consultoría"
+              bulletCaption1 = "Beneficios tangibles y sostenibles a nuestros clientes en rentabilidad y ventas. Eficiencias operativas, flujo de efectivo y servicio."              
+              bulletTitle2 = "Ciencia de datos"
+              bulletCaption2 = "Aprovechamos la información que nuestros clientes ya tienen para generar análisis de valor que habiliten la toma de decisiones."
+              bulletTitle3 = "Soluciones tecnológicas"
+              bulletCaption3 = "Hemos seleccionado soluciones tecnológicas soportadas por Inteligencia Artificial y que habiliten a la operación para lograr resultados reales."
+              buttonShows = "flex"
+            />
+
             <ActionImageLeft/>
             <StatsHome/>
 
             {/* Logo cloud */}
             <div className="bg-gray-100">            
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                  <p className="font-arena text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">We collaborate with these leading partners</p>
+                  <p className="font-arena text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Colaboramos con estos socios líderes</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                       <img className="h-12" src={logoHome1} alt="Tuple" />
@@ -129,8 +141,8 @@ const IndexPage = ({data}) => {
           <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
             <div className="relative max-w-7xl mx-auto">
               <div className="text-center">
-                <h2 className="text-3xl tracking-tight font-extrabold text-testcolor-900 sm:text-4xl">Our Latest Thinking</h2>
-                <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">From insights to action, the path to 360° value starts here.</p>
+                <h2 className="text-3xl tracking-tight font-extrabold text-testcolor-900 sm:text-4xl">Insights por arena analytics</h2>
+                <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">De las ideas a la acción, el camino hacia el valor de 360 ​​° comienza aquí.</p>
               </div>
               <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
               {data.allContentfulEntry.edges.map(edge => (
