@@ -44,7 +44,7 @@ class BlogPostContentful extends React.Component {
 
           <div>
             <img className="" src={post.image.file.url} alt={post.image.title} />
-            <div className="mx-auto prose prose-testcolor">
+            <div className="mx-auto prose prose-bluearena">
               <h1>{post.title}</h1>
               <div>{post.content.raw}</div>
               <div dangerouslySetInnerHTML={{ __html: documentToHtmlString(post.content.raw) }} />

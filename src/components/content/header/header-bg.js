@@ -6,10 +6,10 @@ import * as React from "react"
 const BackgroundHeader = props => {
   return (
 
-  <div className="relative bg-testcolor-800">
+  <div className="relative bg-bluearena-800">
     <div className="absolute inset-0">
       <img className="w-full h-full object-cover" src={props.image} alt={props.alt}/>
-      <div className="absolute inset-0 bg-testcolor-700" style={{mixBlendMode: "multiply"}} aria-hidden="true"></div>
+      <div className="absolute inset-0 bg-bluearena-700" style={{mixBlendMode: "multiply"}} aria-hidden="true"></div>
     </div>
     <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
       <h1 className="font-arena text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">{props.title}</h1>

@@ -14,10 +14,10 @@ const CardimageAction = props => {
         <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
           <div className="lg:self-center">
             <h2 className="font-arena text-3xl font-extrabold text-white sm:text-4xl">
-              <span className="block">Carreas.</span>
+              <span className="block">Carreras.</span>
               <span className="block">arena &amp; Tú</span>
             </h2>
-            <p className="mt-4 text-lg leading-6 text-testcolor-100">En Arena Analytics nos interesan las personas ansiosas por generar valor y con ganas de innovar.</p>
+            <p className="mt-4 text-lg leading-6 text-bluearena-100">En Arena Analytics nos interesan las personas ansiosas por generar valor y con ganas de innovar.</p>
             <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-3xl shadow px-5 py-3 inline-flex items-center text-base font-medium text-arena-600 hover:bg-indigo-50">Comienza aquí</Link>
           </div>
         </div>

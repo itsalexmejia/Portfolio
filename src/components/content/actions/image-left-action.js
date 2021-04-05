@@ -14,7 +14,7 @@ const ActionImageLeft = props => {
           <div className="relative max-w-7xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
               <div className="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10">
                   <div>
-                      <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-testcolor-50 text-white">
+                      <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-bluearena-50 text-white">
                           <LibraryIcon className="h-6 w-6 text-brand-500" />
                       </div>
                   </div>
