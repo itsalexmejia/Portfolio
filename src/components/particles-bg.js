@@ -46,7 +46,7 @@ const ParticlesAnimation = props => {
                           }
                       },
                       size: {
-                          value: 3,
+                          value: 3.5,
                           random: true,
                           anim: {
                               enable: false,
@@ -59,14 +59,14 @@ const ParticlesAnimation = props => {
                           enable: true,
                           distance: 100,
                           color: "#ffffff",
-                          opacity: 0.5,
+                          opacity: 0.6,
                           width: 0.20000000000000004
                       },
                       move: {
                           enable: true,
                           speed: 1,
                           // direction: none,
-                          random: false,
+                          random: true,
                           straight: false,
                           // out_mode: out,
                           bounce: false,

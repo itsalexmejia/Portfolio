@@ -8,7 +8,7 @@ const ActionBackground = props => {
   return (
       <div className="relative bg-radial overflow-hidden">
           <ParticlesAnimation/>
-          <div className="relative inset-2 max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+          <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
               <h2 className="text-center font-arena">
                   <span className="block text-base font-semibold text-white tracking-wide uppercase">Trabajemos juntos.</span>
                   <span className="mt-4 block text-3xl font-extrabold text-white sm:text-5xl">Descubre cómo podemos ayudarte.</span>
