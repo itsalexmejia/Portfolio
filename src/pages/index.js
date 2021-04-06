@@ -116,19 +116,19 @@ const IndexPage = ({data}) => {
                   <p className="font-arena text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Colaboramos con estos socios líderes</p>
                   <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12" src={logoHome1} alt="Tuple" />
+                      <img className="h-12 object-contain" src={logoHome1} alt="Tuple" />
                     </div>
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12" src={logoHome2} alt="Mirage" />
+                      <img className="h-12 object-contain" src={logoHome2} alt="Mirage" />
                     </div>
                     <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12" src={logoHome3} alt="StaticKit" />
+                      <img className="h-12 object-contain" src={logoHome3} alt="StaticKit" />
                     </div>
                     <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                      <img className="h-12" src={logoHome4} alt="Transistor" />
+                      <img className="h-12 object-contain" src={logoHome4} alt="Transistor" />
                     </div>
                     <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                      <img className="h-12" src={logoHome5} alt="Workcation" />
+                      <img className="h-12 object-contain" src={logoHome5} alt="Workcation" />
                     </div>
                   </div>
                 </div>

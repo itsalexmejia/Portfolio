@@ -16,7 +16,7 @@ const HeroHome = props => {
             {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
                 <h1 className="font-arena text-center">
                     <span className="block text-arena-200 text-base font-semibold tracking-wide uppercase">{props.title}</span>
-                    <span className="block text-white mt-4 text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl xl:text-7xl">{props.title2}</span>
+                    <span className="block text-white mt-4 text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl xl:text-7xl xl:leading-tight">{props.title2}</span>
                 </h1>
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl text-bluearena-50 opacity-80 sm:max-w-3xl">{props.body}</p>
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">

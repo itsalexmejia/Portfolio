@@ -18,7 +18,7 @@ const CardimageAction = props => {
               <span className="block">arena &amp; Tú</span>
             </h2>
             <p className="mt-4 text-lg leading-6 text-bluearena-100">En Arena Analytics nos interesan las personas ansiosas por generar valor y con ganas de innovar.</p>
-            <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-3xl shadow px-5 py-3 inline-flex items-center text-base font-medium text-arena-600 hover:bg-bluearena-50">Comienza aquí</Link>
+            <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-3xl shadow px-5 py-3 inline-flex items-center text-base font-semibold text-arena-600 hover:bg-bluearena-50">Comienza aquí</Link>
           </div>
         </div>
         <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">

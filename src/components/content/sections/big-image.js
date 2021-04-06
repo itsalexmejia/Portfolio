@@ -5,7 +5,7 @@ import { ExternalLinkIcon } from "@heroicons/react/outline"
 // markup
 const BigImageSection = props => {
   return (
-    <div className="relative bg-gray-50 pt-16 overflow-hidden sm:pt-24 lg:pt-24">
+    <div className="relative bg-gray-100 pt-16 overflow-hidden sm:pt-24 lg:pt-24">
       <div className="mx-auto max-w-md px-4 text-center sm:px-6 sm:max-w-3xl lg:px-8 lg:max-w-7xl">
         <div>
           <h2 className="font-arena text-base font-semibold tracking-wider text-arena-600 uppercase">¿Te gustan los retos?</h2>
