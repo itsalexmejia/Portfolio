@@ -15,6 +15,7 @@ import logoHome5 from '../../images/siteglobal/logo-home-5.png'
 // markup
 const PartnersPage = ({data}) => {
   return (
+    
     <Layout>
       {data.allContentfulC03ContentHeader.edges.map(edge => (
               <BackgroundHeader
