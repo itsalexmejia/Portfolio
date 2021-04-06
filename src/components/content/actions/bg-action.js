@@ -10,7 +10,7 @@ const ActionBackground = props => {
           <ParticlesAnimation/>
           <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
               <h2 className="text-center font-arena">
-                  <span className="block text-base font-semibold text-white tracking-wide uppercase">Trabajemos juntos.</span>
+                  <span className="block text-base font-semibold text-arena-50 tracking-wide uppercase">Trabajemos juntos.</span>
                   <span className="mt-4 block text-3xl font-extrabold text-white sm:text-5xl">Descubre cómo podemos ayudarte.</span>
               </h2>
               <p className="mt-4 text-lg leading-6 text-bluearena-100">¿Deseas obtener más información sobre alguna oferta de servicio?</p>

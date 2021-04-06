@@ -21,6 +21,7 @@ const CareersPage = ({data}) => {
                   caption={edge.node.caption}
                   image={edge.node.image.file.url}
                   alt={edge.node.image.title}
+                  video = {edge.node.video.file.url}
               />
           ))}
           <div className="bg-gray-50">
@@ -93,6 +94,11 @@ query Careers {
             url
           }
           title
+        }
+        video {
+          file {
+            url
+          }
         }
       }
     }

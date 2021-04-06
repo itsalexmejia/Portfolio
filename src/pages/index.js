@@ -133,6 +133,7 @@ const IndexPage = ({data}) => {
                   </div>
                 </div>
               </div>
+            
             </div>
 
             <CardimageAction/>
