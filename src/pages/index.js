@@ -143,7 +143,7 @@ const IndexPage = ({data}) => {
           <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
             <div className="relative max-w-7xl mx-auto">
               <div className="text-center">
-                <h2 className="text-3xl tracking-tight font-extrabold text-bluearena-900 sm:text-4xl">Insights por arena analytics</h2>
+                <h2 className="text-3xl tracking-tight font-extrabold text-bluearena-900 sm:text-4xl">Insights por Arena Analytics</h2>
                 <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">De las ideas a la acción, el camino hacia el valor de 360 ​​° comienza aquí.</p>
               </div>
               <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
