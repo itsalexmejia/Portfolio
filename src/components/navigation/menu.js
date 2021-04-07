@@ -39,7 +39,11 @@ const MenuTop = ({data}) => {
                       </div>
                       <div className="hidden md:flex-1 md:flex md:items-center md:justify-between">
                           <nav className="flex space-x-10">
-                              <div className="relative">
+                            
+                                
+                                <Link to="/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">Inicio</Link>
+                              
+                                <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
                                   <button type="button" onClick={() => setOpenServiciosDesk(!openServiciosDesk) & setOpenMoreDesk(false)} className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
                                       <span>Servicios</span>
@@ -53,9 +57,9 @@ const MenuTop = ({data}) => {
                                   </button>
                               </div>
 
-                              <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Industrias</Link>
+                              {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Industrias</Link> */}
                               {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Insights</Link> */}
-                              <Link to="/careers/" className="text-base font-medium text-gray-500 hover:text-gray-900">Careers</Link>
+                              <Link to="/careers/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">Careers</Link>
 
                               <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
@@ -70,6 +74,7 @@ const MenuTop = ({data}) => {
                                       </svg>
                                   </button>
                               </div>
+                          
                           </nav>
                           <div className="flex items-center md:ml-12">
                               <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
