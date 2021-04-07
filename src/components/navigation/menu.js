@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 
 //assets
-import logoArena from '../../images/siteglobal/arenaLogo.svg'
+import logoArena from '../../images/siteglobal/arenaLogo2.svg'
 import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
 import { ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
 import FlyoutMenu from "./flyout"
@@ -207,33 +207,26 @@ const MenuTop = ({data}) => {
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                   <Link to="/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
                                       <OfficeBuildingIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
-
-                                      
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Sobre Nosotros</p>
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-
                                   <Link to="/nosotros/gente-y-liderazgo/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
 
                                       <UserGroupIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
-                                      
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Liderazgo</p>
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-
                                   <Link to="/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
                                       <GlobeIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
-                                      
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Responsabilidad Social</p>
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-
                               </div>
                           </div>
                       </div>
