@@ -137,7 +137,7 @@ const MenuTop = ({data}) => {
                                       </div>
                                   </Link>
 
-                                  <Link to="/servicios/partners/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">
+                                  <Link to="/servicios/partners/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50" activeClassName="bg-arena-50 rounded-xl">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
