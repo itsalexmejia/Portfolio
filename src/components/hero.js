@@ -12,7 +12,7 @@ const HeroHome = props => {
                 <div className="absolute inset-0 bg-bluearena-700" style={{mixBlendMode: 'multiply'}}></div>
             </div> */}
            <ParticlesAnimation/>
-            <div className="mx-auto relative px-4 py-20 sm:px-6 sm:py-24 md:px-9 lg:py-48 lg:max-w-6xl">
+            <div className="mx-auto relative px-4 py-20 sm:px-6 sm:py-24 md:px-9 xl:py-40 xl:max-w-6xl">
             {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
                 <h1 className="font-arena text-center">
                     <span className="block text-arena-200 text-base font-semibold tracking-wide uppercase">{props.title}</span>

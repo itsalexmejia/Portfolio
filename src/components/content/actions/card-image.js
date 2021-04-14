@@ -7,7 +7,7 @@ const CardimageAction = props => {
 
 
 
-  <div className="bg-white pt-10 relative">
+  <div className="bg-white relative">
     <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
     <div className="relative z-10 max-w-7xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
       <div className="bg-brand-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 transition-all ease-in-out sm:hover:shadow-2xl">
