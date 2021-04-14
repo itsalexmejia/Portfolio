@@ -6,10 +6,10 @@ import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 
 //assets
-import logoArena from '../../images/siteglobal/arenaLogo2.svg'
-import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
+import logoArena from '../../images/siteglobal/arenaLogo.svg'
+// import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
 import { ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
-import FlyoutMenu from "./flyout"
+// import FlyoutMenu from "./flyout"
 
 // markup
 const MenuTop = ({data}) => {
@@ -78,7 +78,7 @@ const MenuTop = ({data}) => {
                           
                           </nav>
                           <div className="flex items-center md:ml-12">
-                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
+                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
                           </div>
                       </div>
                   </div>
@@ -305,7 +305,7 @@ const MenuTop = ({data}) => {
                                     <Link to="/nosotros/gente-y-liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
                                 <div className="mt-6">
-                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-3xl shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700">Contáctanos</Link>                                   
+                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700">Contáctanos</Link>                                   
                                 </div>
                             </div>
                         </div>

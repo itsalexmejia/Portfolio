@@ -5,7 +5,7 @@ import ParticlesAnimation from "./particles-bg";
 
 const HeroHome = props => {
     return (
-        <div className="relative bg-radial overflow-hidden sm:overflow-hidden">
+        <div className="relative bg-radial overflow-hidden rounded-3xl rounded-t-none sm:overflow-hidden">
 {/* sm:rounded-2xl */}
             {/* <div className="absolute inset-0">
                 <img className="h-full w-full object-cover" src={props.image} alt={props.alt} />
@@ -21,8 +21,8 @@ const HeroHome = props => {
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl text-bluearena-50 opacity-80 sm:max-w-3xl">{props.body}</p>
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                     <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                    <Link to={`/insights/${props.linkUrl}`} className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-arena-700 bg-white hover:bg-bluearena-50 sm:px-8 sm:py-4">{props.primaryButton}</Link>
-                    <Link to="/" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-bluearena-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8 sm:py-4">{props.secondaryButton}</Link>
+                    <Link to={`/insights/${props.linkUrl}`} className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-arena-700 bg-white hover:bg-bluearena-50 sm:px-8">{props.primaryButton}</Link>
+                    <Link to="/" className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg shadow-sm text-white bg-bluearena-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">{props.secondaryButton}</Link>
                     </div>
                 </div>
             </div>

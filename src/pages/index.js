@@ -21,7 +21,7 @@ import logoHome5 from '../images/siteglobal/logo-home-5.png'
 //components
 import Layout from "../components/layout"
 import HeroHome from "../components/hero";
-import PostCard from "../components/content/insights/post-cards";
+// import PostCard from "../components/content/insights/post-cards";
 import GridThree from "../components/content/bullets/grid-three";
 // import BackgroundHeader from "../components/content/header/header-bg";
 import ActionImageLeft from "../components/content/actions/image-left-action";
@@ -55,7 +55,7 @@ const IndexPage = ({data}) => {
             {/* Hero card */}
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-              <div className="mx-auto">
+              <div className="mx-auto px-5">
               {/*sm:px-6 sm:pt-6 lg:px-8 lg:pt-8 max-w-7xl */}
               {/* <Swiper
                 spaceBetween={20}
@@ -110,6 +110,8 @@ const IndexPage = ({data}) => {
             <ActionImageLeft/>
             <StatsHome/>
 
+            <CardimageAction/>
+
             {/* Logo cloud */}
             <div className="bg-gray-100">            
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
@@ -136,11 +138,11 @@ const IndexPage = ({data}) => {
             
             </div>
 
-            <CardimageAction/>
+            
 
             {/* Insights Cards */}
 
-          <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+          {/* <div className="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
             <div className="relative max-w-7xl mx-auto">
               <div className="text-center">
                 <h2 className="text-3xl tracking-tight font-extrabold text-bluearena-900 sm:text-4xl">Insights por Arena Analytics</h2>
@@ -161,7 +163,7 @@ const IndexPage = ({data}) => {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
             
 
 

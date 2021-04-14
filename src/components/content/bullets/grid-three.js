@@ -7,7 +7,7 @@ import { ChatAlt2Icon, PresentationChartBarIcon, UserGroupIcon } from '@heroicon
 // markup
 const GridThree = props => {
   return (
-        <div className="py-16 bg-gray-100">
+        <div className="py-24 bg-gray-100">
           <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             {/* <h2 className="sr-only">A better way to send money.</h2> */}
 
@@ -28,11 +28,8 @@ const GridThree = props => {
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle1}</p>
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">{props.bulletCaption1}</dd>
-                <div className={`mt-4 ${props.buttonShows} lg:flex-shrink-0`}>
-                  <div className="inline-flex rounded-3xl shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-3xl text-arena-600 bg-white hover:bg-gray-50">Conoce más</Link>
-                  </div>
-                </div>
+                <Link to = "/" className={`mt-2 text-sm font-medium space-x-1 text-arena-600 transition-all ease-in-out ${props.buttonShows} lg:mt-4 hover:space-x-3`}> <span>Conoce más</span> <span aria-hidden="true">&rarr;</span></Link>
+
               </div>
 
               <div>
@@ -43,11 +40,7 @@ const GridThree = props => {
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle2}</p>
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">{props.bulletCaption2}</dd>
-                <div className={`mt-4 ${props.buttonShows} lg:flex-shrink-0`}>
-                  <div className="inline-flex rounded-3xl shadow">
-                    <Link to="/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-3xl text-arena-600 bg-white hover:bg-gray-50">Conoce más</Link>
-                  </div>
-                </div>
+                <Link to = "/" className={`mt-2 text-sm font-medium space-x-1 text-arena-600 transition-all ease-in-out ${props.buttonShows} lg:mt-4 hover:space-x-3`}> <span>Conoce más</span> <span aria-hidden="true">&rarr;</span></Link>
               </div>
 
               <div>
@@ -58,11 +51,8 @@ const GridThree = props => {
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle3}</p>
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">{props.bulletCaption3}</dd>
-                <div className={`mt-4 ${props.buttonShows} lg:flex-shrink-0`}>
-                  <div className="inline-flex rounded-3xl shadow">
-                    <Link to="/servicios/partners/" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-3xl text-arena-600 bg-white hover:bg-gray-50">Conoce más</Link>
-                  </div>
-                </div>
+                <Link to = "/servicios/partners/" className={`mt-2 text-sm font-medium space-x-1 text-arena-600 transition-all ease-in-out ${props.buttonShows} lg:mt-4 hover:space-x-3`}> <span>Conoce más</span> <span aria-hidden="true">&rarr;</span></Link>
+                
               </div>
 
               

@@ -7,8 +7,8 @@ const CardimageAction = props => {
 
 
 
-  <div className="bg-white relative">
-      <div className="absolute inset-x-0 top-0 h-1/2 bg-gray-100"></div>
+  <div className="bg-white pt-10 relative">
+    <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
     <div className="relative z-10 max-w-7xl mx-auto pt-10 px-4 sm:px-6 lg:px-8">
       <div className="bg-brand-700 rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 transition-all ease-in-out sm:hover:shadow-2xl">
         <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
@@ -18,7 +18,7 @@ const CardimageAction = props => {
               <span className="block">Arena &amp; Tú</span>
             </h2>
             <p className="mt-4 text-lg leading-6 text-bluearena-100">En Arena Analytics nos interesan las personas ansiosas por generar valor y con ganas de innovar.</p>
-            <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-3xl shadow px-5 py-3 inline-flex items-center text-base font-semibold text-arena-600 hover:bg-bluearena-50">Comienza aquí</Link>
+            <Link to="/careers/" className="mt-8 bg-white border border-transparent rounded-lg shadow px-5 py-3 inline-flex items-center text-base font-semibold text-arena-600 hover:bg-bluearena-50">Comienza aquí</Link>
           </div>
         </div>
         <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">

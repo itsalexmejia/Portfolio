@@ -11,7 +11,7 @@ const BigImageSection = props => {
           <h2 className="font-arena text-base font-semibold tracking-wider text-arena-600 uppercase">¿Te gustan los retos?</h2>
           <p className="font-arena mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">¡Sé uno más de nosotros!</p>
           <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">Nos gusta sentirnos satisfechos con cada día que trabajamos juntos y con nuestros clientes en sus retos de negocio. Somos responsables de lo que proponemos. Identificamos las necesidades del cliente y logramos generar cambios positivos y de impacto.</p>
-          <a href="https://www.linkedin.com/company/arena-analytics/jobs/" className="mt-8 w-full bg-brand-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-3xl text-white hover:bg-arena-600 sm:mt-10 sm:w-auto" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/company/arena-analytics/jobs/" className="mt-8 w-full bg-brand-600 border border-transparent px-5 py-3 inline-flex items-center justify-center text-base font-medium rounded-lg text-white hover:bg-arena-600 sm:mt-10 sm:w-auto" target="_blank" rel="noreferrer">
             Ve nuestras vacantes
             <ExternalLinkIcon className="-mr-1 ml-3 h-5 w-5 text-white opacity-80"/>
           </a>
