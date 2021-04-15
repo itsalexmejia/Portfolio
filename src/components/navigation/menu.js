@@ -78,7 +78,7 @@ const MenuTop = ({data}) => {
                           
                           </nav>
                           <div className="flex items-center md:ml-12">
-                              <Link to="/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400">Contáctanos</Link>
+                              <Link to="/contacto/" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700 active:bg-brand-400" activeClassName="bg-gray-400">Contáctanos</Link>
                           </div>
                       </div>
                   </div>
@@ -212,7 +212,7 @@ const MenuTop = ({data}) => {
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-                                  <Link to="/nosotros/gente-y-liderazgo/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
+                                  <Link to="/nosotros/liderazgo/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
 
                                       <UserGroupIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
                                       <div className="ml-4">
@@ -302,10 +302,10 @@ const MenuTop = ({data}) => {
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link>
                                     <Link to="/careers/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Careers</Link>
                                     <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
-                                    <Link to="/nosotros/gente-y-liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
+                                    <Link to="/nosotros/liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
                                 <div className="mt-6">
-                                    <Link to="/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700">Contáctanos</Link>                                   
+                                    <Link to="/contacto/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700" activeClassName="bg-gray-400">Contáctanos</Link>                                   
                                 </div>
                             </div>
                         </div>
