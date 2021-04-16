@@ -29,6 +29,8 @@ const GentePage = ({data}) => {
             headline={edge.node.headline}
             title={edge.node.title}
             caption={edge.node.caption}
+            image={edge.node.image.file.url}
+            alt={edge.node.image.title}
           />
         ))}
 
@@ -99,6 +101,12 @@ query ExecutiveProfiles {
         caption
         atPage
         id
+        image {
+          file {
+            url
+          }
+          title
+        }
       }
     }
   }

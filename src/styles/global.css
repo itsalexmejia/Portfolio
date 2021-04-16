@@ -7,10 +7,20 @@
 
 @layer components{
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.5);
+        right:10px;
+        padding: 30px;
+        color: #192951 !important;
+        fill: #192951 !important;
+        stroke: #192951 !important;
+    }
+
     body{
         @apply antialiased
     }
-
     .bg-radial{
         background-image: radial-gradient(circle farthest-corner at 30% 40%,#192951,#000);
     }

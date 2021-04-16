@@ -2,53 +2,113 @@ import * as React from "react"
 import { graphql } from 'gatsby'
 // import { Link } from "gatsby"
 
+// Slider
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import SwiperCore, { Autoplay, Navigation } from 'swiper';
+
 //Components
 import Layout from "../components/layout"
-import BackgroundHeader from "../components/content/header/header-bg"
-import PeopleCircle from "../components/content/people/people-circle"
+// import BackgroundHeader from "../components/content/header/header-bg"
+// import PeopleCircle from "../components/content/people/people-circle"
 import BigImageSection from "../components/content/sections/big-image"
 import ImageLeftBullet from "../components/content/bullets/bullet-image-left"
+import PeopleSlide from "../components/content/people/people-slide"
+import HeaderLeft from "../components/content/header/header-left"
+import GridThreeBg from "../components/content/bullets/grid-three-bg";
 
+// SwiperCore.use([EffectFade]);
+SwiperCore.use([Navigation, Autoplay]);
 
 // markup
 const CareersPage = ({data}) => {
   return (
-      <Layout>
-          {data.allContentfulC03ContentHeader.edges.map(edge => (
-              <BackgroundHeader
+    <Layout>
+
+      {data.allContentfulC03ContentHeader.edges.map(edge => (
+        <HeaderLeft
+          key={edge.node.id}
+          headline={edge.node.headline}
+          title={edge.node.title}
+          caption={edge.node.caption}
+          image={edge.node.image.file.url}
+          alt={edge.node.image.title}
+        />
+      ))}
+
+      <GridThreeBg />
+
+      {/* {data.allContentfulC03ContentHeader.edges.map(edge => (
+        <BackgroundHeader
+          key={edge.node.id}
+          title={edge.node.title}
+          caption={edge.node.caption}
+          image={edge.node.image.file.url}
+          alt={edge.node.image.title}
+          video={edge.node.video.file.url}
+        />
+      ))} */}
+
+      <div className="bg-gray-50">
+        <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
+          <div className="space-y-12">
+            <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-3xl">
+              <h2 className="font-arena text-3xl font-extrabold tracking-tight text-brand-700 sm:text-4xl sm:leading-snug">Nos interesan las personas ansiosas por generar valor y con ganas de innovar</h2>
+              <p className="font-arena text-base font-semibold text-arena-600 tracking-wide uppercase">¡Conoce a nuestro equipo!</p>
+            </div>
+
+            <section className="py-0 overflow-hidden border-t">
+              <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <Swiper
+                  // effect="fade"
+                  autoplay = {
+                    {delay: 2000, disableOnInteraction: true}
+                  }
+                  spaceBetween={0}
+                  loop={true}
+                  navigation
+                  pagination={{ clickable: true }}
+                  onSlideChange={() => console.log('slide change')}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  {data.allContentfulC02OurTeam.edges.map(edge => (
+                    <SwiperSlide className="bg-gray-50">
+                      <PeopleSlide
+                        key={edge.node.id}
+                        name={edge.node.name}
+                        position={edge.node.position}
+                        image={edge.node.image.file.url}
+                        alt={edge.node.image.title}
+                        quote={edge.node.longDescription.childMarkdownRemark.html}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </section>
+
+            {/* <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
+              {data.allContentfulC02OurTeam.edges.map(edge => (
+                <PeopleCircle
                   key={edge.node.id}
-                  title={edge.node.title}
-                  caption={edge.node.caption}
+                  name={edge.node.name}
+                  position={edge.node.position}
                   image={edge.node.image.file.url}
                   alt={edge.node.image.title}
-                  video = {edge.node.video.file.url}
-              />
-          ))}
-          <div className="bg-gray-50">
-              <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
-                  <div className="space-y-12">
-                      <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-                          <h2 className="font-arena text-3xl font-extrabold tracking-tight text-brand-700 sm:text-4xl">Conoce a nuestro equipo</h2>
-                          <p className="text-xl text-gray-500">Nos interesan las personas ansiosas por generar valor y con ganas de innovar</p>
-                      </div>
-                      <ul className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl">
-                          {data.allContentfulC02OurTeam.edges.map(edge => (
-                              <PeopleCircle
-                                  key={edge.node.id}
-                                  name={edge.node.name}
-                                  position={edge.node.position}
-                                  image={edge.node.image.file.url}
-                                  alt={edge.node.image.title}
-                              />
-                          ))}
-                      </ul>
-                  </div>
-              </div>
+                />
+              ))}
+            </ul> */}
           </div>
-          <ImageLeftBullet/>
-          <BigImageSection/>
-          
-      </Layout>
+        </div>
+      </div>
+
+
+
+
+      <ImageLeftBullet />
+      <BigImageSection />
+
+    </Layout>
   )
 }
 
@@ -75,6 +135,11 @@ query Careers {
           }
           title
         }
+        longDescription {
+          childMarkdownRemark {
+            html
+          }
+        }
         position
         executiveProfile
         id
@@ -88,6 +153,7 @@ query Careers {
         title
         atPage
         caption
+        headline
         id
         image {
           file {
