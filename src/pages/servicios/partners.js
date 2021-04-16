@@ -5,54 +5,43 @@ import Layout from "../../components/layout"
 import ActionBackground from "../../components/content/actions/bg-action"
 import BackgroundHeader from "../../components/content/header/header-bg"
 
-import logoHome1 from '../../images/siteglobal/logo-home-1.png'
-import logoHome2 from '../../images/siteglobal/logo-home-2.png'
-import logoHome3 from '../../images/siteglobal/logo-home-3.png'
-import logoHome4 from '../../images/siteglobal/logo-home-4.png'
-import logoHome5 from '../../images/siteglobal/logo-home-5.png'
+import GridTwo from "../../components/content/bullets/grid-card-three"
+
 
 
 // markup
 const PartnersPage = ({data}) => {
   return (
-    
     <Layout>
       {data.allContentfulC03ContentHeader.edges.map(edge => (
-              <BackgroundHeader
-                  key={edge.node.id}
-                  title={edge.node.title}
-                  caption={edge.node.caption}
-                  image={edge.node.image.file.url}
-                  alt={edge.node.image.title}
-                  video = {edge.node.video.file.url}
+        <BackgroundHeader
+          key={edge.node.id}
+          title={edge.node.title}
+          caption={edge.node.caption}
+          image={edge.node.image.file.url}
+          alt={edge.node.image.title}
+          video={edge.node.video.file.url}
+        />
+      ))}
+      <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div className="relative max-w-7xl mx-auto">
+          <div className="space-y-5 sm:mx-auto sm:max-w-xl lg:max-w-4xl text-center">
+            <p className="text-base text-gray-800 md:text-xl md:leading-relaxed">Nuestros partners ayudan en los diferentes eslabones de la cadena de valor y habilitan nuestras soluciones enfocadas en industrias de retail, bienes de consumo y B2B. </p>
+          </div>
+          <div className="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none">
+            {data.allContentfulC04Partners.edges.map(edge => (
+              <GridTwo
+                image={edge.node.logo.file.url}
+                alt={edge.node.logo.title}
+                name={edge.node.name}
+                description={edge.node.description.childMarkdownRemark.html}
+                url={edge.node.linkTo}
               />
-          ))}
-
-<div className="bg-gray-100">            
-                <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                  <p className="font-arena text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Colaboramos con estos socios líderes</p>
-                  <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                    <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12 object-contain" src={logoHome1} alt="Tuple" />
-                    </div>
-                    <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12 object-contain" src={logoHome2} alt="Mirage" />
-                    </div>
-                    <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                      <img className="h-12 object-contain" src={logoHome3} alt="StaticKit" />
-                    </div>
-                    <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                      <img className="h-12 object-contain" src={logoHome4} alt="Transistor" />
-                    </div>
-                    <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                      <img className="h-12 object-contain" src={logoHome5} alt="Workcation" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-          <ActionBackground/>
+            ))}
+          </div>
+        </div>
+      </div>
+      <ActionBackground />
     </Layout>
   )
 }
@@ -89,5 +78,27 @@ query Partners {
       }
     }
   }
+
+  allContentfulC04Partners(sort: {order: ASC, fields: createdAt}) {
+    edges {
+      node {
+        logo {
+          file {
+            url
+          }
+          title
+        }
+        name
+        description {
+          childMarkdownRemark {
+            html
+          }
+        }
+        linkTo
+        createdAt
+      }
+    }
+  }
+
 }
 `

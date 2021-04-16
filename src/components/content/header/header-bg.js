@@ -10,7 +10,7 @@ const BackgroundHeader = props => {
   <div className="relative bg-bluearena-800">
     <div className="absolute inset-0 overflow-hidden">
       <img className="w-full h-full object-cover" src={props.image} alt={props.alt}/>
-      <video className="absolute inset-0 min-w-full min-h-full" autoPlay muted loop>
+      <video className="hidden absolute inset-0 min-w-full min-h-full md:block" autoPlay muted loop>
         <source src={props.video} type="video/mp4"/>
       </video>
       <div className="absolute inset-0 bg-bluearena-700" style={{mixBlendMode: "multiply"}} aria-hidden="true"></div>

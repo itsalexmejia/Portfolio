@@ -19,7 +19,7 @@ const PeopleGrid = props => {
 
             <div className="font-arena leading-6 font-semibold space-y-1">
               <h3 className="text-xl ">{props.name}</h3>
-              <p className="text-base text-arena-400">{props.position}</p>
+              <p className="text-base text-arena-400">Conoce más</p>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ const PeopleGrid = props => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+              <Dialog.Overlay className="fixed inset-0 bg-brand-900 bg-opacity-80 transition-opacity" />
             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}
