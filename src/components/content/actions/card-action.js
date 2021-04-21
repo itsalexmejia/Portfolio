@@ -22,9 +22,9 @@ const CardAction = props => {
                 </div>
 
                 <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-                    <div className={`md:${props.alignText} md:w-1/2 md:pl-10`}>
-                        <h2 className="text-base font-semibold uppercase tracking-wider text-arena-900">{props.headline}</h2>
-                        <p className="mt-2 text-brand text-3xl font-extrabold tracking-tight sm:text-4xl">{props.organizationName}</p>
+                    <div className={`md:${props.alignText} md:w-1/2 md:pl-10 md:pr-10`}>
+                        {/* <h2 className="font-arena text-base font-semibold uppercase tracking-wider text-arena-900">{props.headline}</h2> */}
+                        <p className="font-arena mt-2 text-brand text-3xl font-extrabold tracking-tight sm:text-4xl">{props.organizationName}</p>
                         <p className="mt-3 text-lg text-gray-600">{props.introduction}</p>
                         <div className="mt-8">
                             <div className="inline-flex rounded-md shadow">

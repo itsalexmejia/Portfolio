@@ -6,6 +6,7 @@ import Layout from "../../components/layout"
 //components
 import HeaderLeft from "../../components/content/header/header-left"
 import CardAction from "../../components/content/actions/card-action"
+import { UsersIcon } from "@heroicons/react/outline"
 
 
 // markup
@@ -22,6 +23,15 @@ const ResPage = ({data}) => {
           alt={edge.node.image.title}
         />
       ))}
+
+      <div className="relative bg-gray-50 pt-16 pb-20 px-4 border-b border-gray-200 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div className="relative max-w-7xl mx-auto">
+          <div className="space-y-5 sm:mx-auto sm:max-w-xl lg:max-w-4xl text-center">
+            <p className="text-base text-gray-800 md:text-xl md:leading-relaxed">Hemos apoyado a organizaciones de la sociedad civil colaborando a lograr sus objetivos y así contribuir al desarrollo de México en diversos frentes críticos.</p>
+            <h2 className="font-arena text-base font-semibold uppercase tracking-wider text-arena-900">Algunas de las organizaciones con las que trabajamos son:</h2>
+          </div>
+        </div></div>
+
       {data.allContentfulC05Organizaciones.edges.map(edge => (
         <CardAction
           headline={edge.node.headline}

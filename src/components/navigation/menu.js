@@ -46,7 +46,7 @@ const MenuTop = ({data}) => {
                               
                                 <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                                  <button type="button" onClick={() => setOpenServiciosDesk(!openServiciosDesk) & setOpenMoreDesk(false)} className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
+                                  <button type="button" onClick={() => setOpenServiciosDesk(!openServiciosDesk) & setOpenMoreDesk(false)} className="group bg-white rounded-lg text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
                                       <span>Servicios</span>
                                       {/*
                                         Heroicon name: solid/chevron-down
@@ -64,7 +64,7 @@ const MenuTop = ({data}) => {
 
                               <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                                  <button type="button" onClick={() => setOpenMoreDesk(!openMoreDesk) & setOpenServiciosDesk(false)} className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
+                                  <button type="button" onClick={() => setOpenMoreDesk(!openMoreDesk) & setOpenServiciosDesk(false)} className="group bg-white rounded-lg text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
                                       <span>Nosotros</span>
                                       {/*
                                         Heroicon name: solid/chevron-down
@@ -205,7 +205,7 @@ const MenuTop = ({data}) => {
                       <div className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-2 px-2 w-screen max-w-md sm:px-0">
                           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                  <Link to="/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                                  <Link to="/nosotros/que-hacemos/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
                                       <OfficeBuildingIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Sobre Nosotros</p>
@@ -250,7 +250,7 @@ const MenuTop = ({data}) => {
                             <div className="pt-5 pb-6 px-5 sm:pb-8">
                                 <div className="flex items-center justify-between">
                                     <div>
-                                        <img className="h-8 w-auto" src={logoArena} alt="Workflow" />
+                                        <img className="h-8 w-auto" src={logoArena} alt="arenalogos" />
                                     </div>
                                     <div className="-mr-2">
                                         <button type="button" onClick={() => setOpenServiciosMob(!openServiciosMob)} className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-bluearena-500">
@@ -298,9 +298,10 @@ const MenuTop = ({data}) => {
                             </div>
                             <div className="py-6 px-5">
                                 <div className="grid grid-cols-2 gap-4">
-                                    <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link>
+                                    {/* <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link> */}
                                     <Link to="/careers/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Careers</Link>
-                                    <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
+                                    <Link to="/nosotros/que-hacemos/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
+                                    <Link to="/nosotros/responsabilidad/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Responsabilidad Social</Link>
                                     <Link to="/nosotros/liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
                                 </div>
                                 <div className="mt-6">
