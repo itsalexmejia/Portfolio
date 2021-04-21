@@ -71,7 +71,7 @@ query ResponsabilidadGraph {
       }
     }
   }
-  allContentfulC05Organizaciones {
+  allContentfulC05Organizaciones(sort: {order: ASC, fields: createdAt}) {
     edges {
       node {
         headline
