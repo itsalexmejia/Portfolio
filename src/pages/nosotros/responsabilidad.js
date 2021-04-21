@@ -30,7 +30,10 @@ const ResPage = ({data}) => {
             <p className="text-base text-gray-800 md:text-xl md:leading-relaxed">Hemos apoyado a organizaciones de la sociedad civil colaborando a lograr sus objetivos y así contribuir al desarrollo de México en diversos frentes críticos.</p>
             <h2 className="font-arena text-base font-semibold uppercase tracking-wider text-arena-900">Algunas de las organizaciones con las que trabajamos son:</h2>
           </div>
-        </div></div>
+        </div>
+      </div>
+
+
 
       {data.allContentfulC05Organizaciones.edges.map(edge => (
         <CardAction
