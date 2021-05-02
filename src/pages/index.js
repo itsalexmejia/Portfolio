@@ -45,7 +45,7 @@ const IndexPage = ({data}) => {
       </Helmet>
 
       {/* Mensaje impoortante */}
-      <AlertHome/>
+      {/* <AlertHome/> */}
       
 
       
@@ -55,7 +55,7 @@ const IndexPage = ({data}) => {
             {/* Hero card */}
             <div className="relative">
               <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-              <div className="mx-auto px-3 sm:px-5">
+              <div className="mx-auto sm:px-5">
               {/*sm:px-6 sm:pt-6 lg:px-8 lg:pt-8 max-w-7xl */}
               {/* <Swiper
                 spaceBetween={20}

@@ -28,7 +28,7 @@ const GridThree = props => {
                   <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{props.bulletTitle1}</p>
                 </dt>
                 <dd className="mt-2 text-base text-gray-500">{props.bulletCaption1}</dd>
-                <Link to = "/" className={`mt-2 text-sm font-medium space-x-1 text-arena-600 transition-all ease-in-out ${props.buttonShows} lg:mt-4 hover:space-x-3`}> <span>Conoce más</span> <span aria-hidden="true">&rarr;</span></Link>
+                <Link to = "/servicios/consulting/" className={`mt-2 text-sm font-medium space-x-1 text-arena-600 transition-all ease-in-out ${props.buttonShows} lg:mt-4 hover:space-x-3`}> <span>Conoce más</span> <span aria-hidden="true">&rarr;</span></Link>
 
               </div>
 
