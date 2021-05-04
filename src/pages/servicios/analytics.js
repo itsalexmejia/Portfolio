@@ -46,7 +46,8 @@ const AnalyticsPage = ({data}) => {
               <BackgroundHeader
                   key={edge.node.id}
                   title={edge.node.title}
-                  caption={edge.node.longCaption.childMarkdownRemark.html}
+                  // caption={edge.node.longCaption.childMarkdownRemark.html}
+                  caption = "Muchas empresas utilizan información interna y externa para analizar y reportar el estado del negocio, pero pocas la aprovechan al máximo para gestionar la estrategia en tiempo real. Las que lo están haciendo están logrando una ventaja competitiva."
                   image={edge.node.image.file.url}
                   alt={edge.node.image.title}
                   video={edge.node.video.file.url}

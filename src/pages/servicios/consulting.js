@@ -17,7 +17,8 @@ const ConsultingPage = ({data}) => {
               <BackgroundHeader
                   key={edge.node.id}
                   title={edge.node.title}
-                  caption={edge.node.longCaption.childMarkdownRemark.html}
+                  // caption={edge.node.longCaption.childMarkdownRemark.html}
+                  caption = "La Práctica de Consultoría de Arena Analytics nace de la experiencia y empuje de un grupo excepcional de profesionales con una amplia carrera tanto en el mundo de la consultoría, como también operando y siendo responsables de equipos de trabajo y resultados de negocio en diferentes industrias en México y el resto de Latinoamérica."
                   image={edge.node.image.file.url}
                   alt={edge.node.image.title}
                   video={edge.node.video.file.url}
