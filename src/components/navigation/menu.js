@@ -119,7 +119,7 @@ const MenuTop = ({data}) => {
                                       </div>
                                   </Link>
 
-                                  <Link to="/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                                  <Link to="/servicios/analytics/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50" activeClassName="bg-arena-50 rounded-xl">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
@@ -273,7 +273,7 @@ const MenuTop = ({data}) => {
                                                 <div className="ml-4 text-base font-medium text-gray-900">Práctica de Consultoría</div>
                                             </Link>
 
-                                            <Link to="/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                            <Link to="/servicios/analytics/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     <PresentationChartBarIcon className="h-6 w-6"/>
                                                     
