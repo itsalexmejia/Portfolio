@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { ExternalLinkIcon } from '@heroicons/react/solid'
 
 //Modal
 import { Fragment, useRef, useState } from 'react'

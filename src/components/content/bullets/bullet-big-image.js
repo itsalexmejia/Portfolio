@@ -1,4 +1,4 @@
-import { ChartPieIcon, ClipboardListIcon, GlobeAltIcon, GlobeIcon, LightningBoltIcon, MailIcon, ScaleIcon, UsersIcon } from '@heroicons/react/outline'
+import { ChartPieIcon, GlobeIcon, UsersIcon } from '@heroicons/react/outline'
 import * as React from 'react'
 
 const transferFeatures = [

@@ -1,15 +1,10 @@
 import * as React from 'react'
 import { Link } from "gatsby"
 
-//Modal
-import { Fragment, useRef, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
 
 
 // markup
 const GridSolutions = props => {
-    const [open, setOpen] = useState(false)
-  const cancelButtonRef = useRef()
   return (
     <Link to={props.url} className="flex flex-col rounded-lg shadow-lg bg-white overflow-hidden transition-all ease-in-out cursor-pointer sm:hover:shadow-2xl" key={props.name}>
       <div className="flex-shrink-0 border-b border-gray-200">

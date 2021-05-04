@@ -24,8 +24,8 @@ import HeroHome from "../components/hero";
 // import PostCard from "../components/content/insights/post-cards";
 import GridThree from "../components/content/bullets/grid-three";
 // import BackgroundHeader from "../components/content/header/header-bg";
-import ActionImageLeft from "../components/content/actions/image-left-action";
-import AlertHome from "../components/content/alert";
+// import ActionImageLeft from "../components/content/actions/image-left-action";
+// import AlertHome from "../components/content/alert";
 // import StatsHome from "../components/content/bullets/stats";
 import CardimageAction from "../components/content/actions/card-image";
 

@@ -6,11 +6,11 @@ import Layout from "../../components/layout"
 //components
 import HeaderLeft from "../../components/content/header/header-left"
 import StatsHome from "../../components/content/bullets/stats"
-import GridThreeBg from "../../components/content/bullets/grid-three-bg"
+// import GridThreeBg from "../../components/content/bullets/grid-three-bg"
 import BulletBig from "../../components/content/bullets/bullet-big-image"
 import BulletList from "../../components/content/bullets/bullet-list"
 import ActionBackground from "../../components/content/actions/bg-action"
-import BackgroundHeader from "../../components/content/header/header-bg"
+// import BackgroundHeader from "../../components/content/header/header-bg"
 
 
 

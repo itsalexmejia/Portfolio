@@ -6,7 +6,7 @@ import Layout from "../../components/layout"
 //components
 import HeaderLeft from "../../components/content/header/header-left"
 import CardAction from "../../components/content/actions/card-action"
-import { UsersIcon } from "@heroicons/react/outline"
+// import { UsersIcon } from "@heroicons/react/outline"
 
 
 // markup
