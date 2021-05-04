@@ -16,6 +16,7 @@ import logoHome2 from '../images/siteglobal/logo-home-2.png'
 import logoHome3 from '../images/siteglobal/logo-home-3.png'
 import logoHome4 from '../images/siteglobal/logo-home-4.png'
 import logoHome5 from '../images/siteglobal/logo-home-5.png'
+import logoHome6 from '../images/siteglobal/logo-home-6.png'
 
 
 //components
@@ -133,7 +134,7 @@ const IndexPage = ({data}) => {
                       <img className="h-12 object-contain" src={logoHome5} alt="Logo" />
                     </div>
                     <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                      <img className="h-12 object-contain" src={logoHome5} alt="Logo" />
+                      <img className="h-12 object-contain" src={logoHome6} alt="Logo" />
                     </div>
                   </div>
                 </div>
