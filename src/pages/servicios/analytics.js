@@ -10,6 +10,9 @@ import GridSolutions from "../../components/content/bullets/grid-solutions"
 import scheme from "../../images/siteglobal/scheme.jpg"
 
 import logoTool1 from "../../images/tools/logo-tool-1.png"
+import logoTool10 from "../../images/tools/logo-tool-10.png"
+import logoTool11 from "../../images/tools/logo-tool-11.png"
+import logoTool12 from "../../images/tools/logo-tool-12.png"
 import logoTool2 from "../../images/tools/logo-tool-2.png"
 import logoTool3 from "../../images/tools/logo-tool-3.png"
 import logoTool4 from "../../images/tools/logo-tool-4.png"
@@ -59,11 +62,11 @@ const AnalyticsPage = ({data}) => {
                   <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80" alt="people working" />
                   <div className="absolute inset-0 bg-brand-900 bg-opacity-70"></div>
               </div>
-              <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+              <div className="relative max-w-3xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                   <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                      <span className="block">Aseguramos la limpieza y estructura de los datos</span>
+                      <span className="block">Aseguramos la integración de los datos en la operación y la estrategia</span>
                   </h2>
-                  <p className="mt-4 text-lg leading-6 text-white">Esto lo logramos recabando distintas fuentes internas y externas, desarrollando mecanismos para asegurar la limpieza y estructura de los datos e integrando modelos predictivos en herramientas que mejoren la operación y definición de estrategia del negocio.</p>
+                  <p className="mt-4 text-lg leading-6 text-white">Esto lo logramos estructurando fuentes internas y externas de información al monitoreo, gestión y definición del negocio, adaptado a las condiciones de la industria y el contexto de la empresa.</p>
               </div>
           </div>
 
@@ -100,41 +103,53 @@ const AnalyticsPage = ({data}) => {
                           <p className="mt-3 max-w-3xl text-lg text-gray-500">Generalmente usamos una combinación de los siguientes recursos:</p>
                       </div>
                       <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-3">
-                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
-                              <img className="max-h-12 object-contain" src={logoTool1} alt="logotool1" />
-                          </div>
 
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool10} alt="logotool1" />
+                          </div>
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool4} alt="logotool1" />
+                          </div>
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool3} alt="logotool1" />
+                          </div>
                           <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
                               <img className="max-h-12 object-contain" src={logoTool2} alt="logotool1" />
                           </div>
 
                           <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
-                              <img className="max-h-12 object-contain" src={logoTool3} alt="logotool1" />
+                              <img className="max-h-12 object-contain" src={logoTool11} alt="logotool1" />
+                          </div>
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool12} alt="logotool1" />
                           </div>
 
-                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
-                              <img className="max-h-12 object-contain" src={logoTool4} alt="logotool1" />
-                          </div>
+
 
                           <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
                               <img className="max-h-12 object-contain" src={logoTool5} alt="logotool1" />
                           </div>
-
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool9} alt="logotool1" />
+                          </div>
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool1} alt="logotool1" />
+                          </div>
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool8} alt="logotool1" />
+                          </div>
+                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
+                              <img className="max-h-12 object-contain" src={logoTool7} alt="logotool1" />
+                          </div>
                           <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
                               <img className="max-h-12 object-contain" src={logoTool6} alt="logotool1" />
                           </div>
 
-                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
-                              <img className="max-h-12 object-contain" src={logoTool7} alt="logotool1" />
-                          </div>
+                          
 
-                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
-                              <img className="max-h-12 object-contain" src={logoTool8} alt="logotool1" />
-                          </div>
+                          
 
-                          <div className="col-span-1 flex justify-center py-8 px-8 bg-gray-50 rounded-2xl">
-                              <img className="max-h-12 object-contain" src={logoTool9} alt="logotool1" />
-                          </div>
+                          
                       </div>
                   </div>
               </div>
