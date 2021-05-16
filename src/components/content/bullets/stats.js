@@ -8,6 +8,7 @@ const StatsHome = props => {
       <div className="bg-brand-800">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
               <div className="max-w-4xl mx-auto text-center">
+                    <span className="block font-arena text-base font-semibold text-white tracking-wide uppercase">Nuestra experiencia</span>
                   <h2 className="font-arena text-3xl font-extrabold text-white sm:text-4xl">Lideramos proyectos de transformación.</h2>
                   <p className="mt-3 text-xl text-bluearena-100 sm:mt-4">Hemos trabajado con diversas empresas líderes en industrias de retail, bienes de consumo y B2B.</p>
               </div>

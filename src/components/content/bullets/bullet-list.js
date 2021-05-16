@@ -9,7 +9,7 @@ const results = [
       description: 'Nuestros proyectos tienen un ROI +10 a 1 con resultados tangibles y medibles. ',
     },
     { name: 'Empoderamiento de las organizaciones', description: 'Las organizaciones siguen madurando una vez acabado el proyecto. ' },
-    { name: 'Esfuerzo continuo', description: 'Adopción de la transformación y alineación del equipo para sostener el esfuerzo.' },
+    { name: 'Acompañamiento constante para asegurar la alineación del equipo y facilitar la adopción al cambio', description: 'Adopción de la transformación y alineación del equipo para sostener el esfuerzo.' },
   ]
 
 // markup

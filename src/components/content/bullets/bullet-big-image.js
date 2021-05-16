@@ -4,7 +4,7 @@ import * as React from 'react'
 const transferFeatures = [
     {
       id: 1,
-      name: 'Capital humano',
+      name: 'Talento y cultura',
       description:
         'Buscamos que la transformación ocurra desde el interior de las organizaciones y con su propia gente. Generamos y gestionamos cambios profundos de cultura para lograr objetivos trascendentales.',
       icon: UsersIcon,
@@ -13,14 +13,14 @@ const transferFeatures = [
       id: 2,
       name: 'Ciencia de datos',
       description:
-        'Aprovechamos la información que nuestros clientes ya tienen para generar análisis de valor que habiliten la toma de decisiones. Desarrollamos herramientas personalizadas y amigables para el usuario.',
+        'Utilizamos la información de nuestros clientes y complementamos con información externa para generar análisis que mejoren la toma de decisiones. Desarrollamos herramientas ad-hoc que facilitan la experiencia del usuario.',
       icon: ChartPieIcon,
     },
     {
       id: 3,
       name: 'Estrategia y procesos',
       description:
-        'Nuestros directores cuentan con más de 20 años de experiencia dirigiendo y transformando exitosamente empresas Latinoamericanas en distintas industrias. Estas transformaciones se han logrado diseñando estrategias e implementando nuevos procesos, herramientas y culturas de trabajo',
+        'Alineamos procesos existentes y nuevos con las estrategias que diseñamos, siempre tomando en cuenta el carácter único de cada cliente para garantizar el éxito y sostenibilidad en el negocio a largo plazo.',
       icon: GlobeIcon,
     },
   ]
