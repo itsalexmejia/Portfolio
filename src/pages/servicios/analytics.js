@@ -152,7 +152,7 @@ const AnalyticsPage = ({data}) => {
               <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
                   <div className="md:ml-auto md:w-1/2 md:pl-10">
                       <h2 className="font-arena text-base font-semibold uppercase tracking-wider text-arena-300">Nuestro equipo</h2>
-                      <p className="font-arena mt-2 text-gra-900 text-3xl font-extrabold tracking-tight sm:text-4xl">Tenemos un equipo de científicos de datos enfocados:</p>
+                      <p className="font-arena mt-2 text-gra-900 text-3xl font-extrabold tracking-tight sm:text-3xl">Tenemos un equipo de científicos de datos enfocados en:</p>
                       <p className="mt-5 text-lg text-gray-700">
                           <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />Arquitectura de Datos</p>
                       <p className="mt-3 text-lg text-gray-700">
