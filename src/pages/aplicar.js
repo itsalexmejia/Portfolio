@@ -22,7 +22,7 @@ const ApplyPage = () => {
           </p>
           </div>
           <div className="mt-12">
-            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
+            <form action="/" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
               <div>
                 <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
                   Nombre
@@ -32,7 +32,7 @@ const ApplyPage = () => {
                     type="text"
                     name="first_name"
                     id="first_name"
-                    autoComplete="given-name"
+                    // autoComplete="given-name"
                     className="py-3 px-4 block w-full shadow-sm focus:ring-arena-500 focus:border-arena-500 border-gray-300 rounded-md"
                     required
                   />
@@ -48,7 +48,7 @@ const ApplyPage = () => {
                     type="text"
                     name="last_name"
                     id="last_name"
-                    autoComplete="family-name"
+                    // autoComplete="family-name"
                     className="py-3 px-4 block w-full shadow-sm focus:ring-arena-500 focus:border-arena-500 border-gray-300 rounded-md"
                     required
                   />
@@ -114,7 +114,7 @@ const ApplyPage = () => {
                     id="perfil"
                     name="perfil"
                     type="text"
-                    autoComplete="perfil"
+                    // autoComplete="perfil"
                     placeholder="https://www.linkedin.com/mi-perfil"
                     className="py-3 px-4 block w-full shadow-sm focus:ring-arena-500 focus:border-arena-500 border-gray-300 rounded-md"
                     required
@@ -122,11 +122,11 @@ const ApplyPage = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="sm:col-span-2">
                 <label htmlFor="cv_attach" className="block text-sm font-medium text-gray-700">
                   Adjunta tu CV
               </label>
-                <div className="mt-1 py-3 px-4 block w-full shadow-sm focus:ring-arena-500 focus:border-arena-500 border-gray-300 rounded-md">
+                <div className="mt-1 py-3 px-4 block w-full shadow-sm border border-gray-300 rounded-md">
                   <input
                     type="file"
                     name="cv_attach"
@@ -137,61 +137,6 @@ const ApplyPage = () => {
                   />
                 </div>
               </div>
-
-              {/* 
-            <div className="sm:col-span-2">
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                Message
-              </label>
-              <div className="mt-1">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="py-3 px-4 block w-full shadow-sm focus:ring-arena-500 focus:border-arena-500 border-gray-300 rounded-md"
-                  defaultValue={''}
-                />
-              </div>
-            </div>
-             */}
-
-              {/* <div className="sm:col-span-2">
-              <div className="flex items-start">
-                <div className="flex-shrink-0">
-                  <Switch
-                    checked={agreed}
-                    onChange={setAgreed}
-                    className={classNames(
-                      agreed ? 'bg-arena-600' : 'bg-gray-200',
-                      'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500'
-                    )}
-                  >
-                    <span className="sr-only">Agree to policies</span>
-                    <span
-                      aria-hidden="true"
-                      className={classNames(
-                        agreed ? 'translate-x-5' : 'translate-x-0',
-                        'inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200'
-                      )}
-                    />
-                  </Switch>
-                </div>
-                <div className="ml-3">
-                  <p className="text-base text-gray-500">
-                    By selecting this, you agree to the{' '}
-                    <a href="#" className="font-medium text-gray-700 underline">
-                      Privacy Policy
-                    </a>{' '}
-                    and{' '}
-                    <a href="#" className="font-medium text-gray-700 underline">
-                      Cookie Policy
-                    </a>
-                    .
-                  </p>
-                </div>
-              </div>
-            </div>
-             */}
 
               <div className="sm:col-span-2">
                 <button
