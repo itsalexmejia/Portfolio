@@ -11,7 +11,7 @@ const ImageLeftBullet = props => {
           <div className="relative max-w-7xl mx-auto px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
               <div className="max-w-2xl mx-auto lg:max-w-none lg:mr-0 lg:ml-auto lg:w-1/2 lg:pl-10">
                   <div className="lg:col-start-2">
-                      <h3 className="font-arena mt-6 text-2xl font-extrabold text-brand-900 tracking-tight sm:text-3xl">Cómo desarrollamos a la gente</h3>
+                      <h3 className="font-arena mt-6 text-2xl font-extrabold text-brand-900 tracking-tight sm:text-3xl">¿Cómo nuestros proyectos impactan en tu desarrollo?</h3>
                       {/* <p className="mt-3 text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ex obcaecati natus eligendi delectus, cum deleniti sunt in labore nihil quod quibusdam expedita nemo.</p> */}
                       <dl className="mt-10 space-y-10">
                           <div className="relative">

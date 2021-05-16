@@ -9,15 +9,15 @@ const features = [
       icon: UserGroupIcon,
     },
     {
-      name: 'Confiamos en ti',
+      name: 'Nos gusta confiar en nuestra gente/equipo',
       description:
         'Te damos autonomía para que tomes tus propias decisiones. Escuchamos tus recomendaciones y las llevamos a la práctica.',
       icon: StarIcon,
     },
     {
-      name: 'Diversión en el camino',
+      name: 'Nos gusta que sea un camino de aprendizaje',
       description:
-        'Nos importa que aprendas, crezcas y saques tu mayor potencial pero, sobre todo, que te diviertas en el camino.',
+        'Te ayudamos a aprender, crecer y demostrar tu mayor potencial, pero sobro todo a que disfrutes el recorrido y seas tú mismo.',
       icon: EmojiHappyIcon,
     },
   ]

@@ -53,7 +53,7 @@ const CareersPage = ({data}) => {
         <div className="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
           <div className="space-y-12">
             <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-3xl">
-              <h2 className="font-arena text-3xl font-extrabold tracking-tight text-brand-700 sm:text-4xl sm:leading-snug">Nos interesan las personas ansiosas por generar valor y con ganas de innovar</h2>
+              <h2 className="font-arena text-3xl font-extrabold tracking-tight text-brand-700 sm:text-4xl sm:leading-snug">Conoce nuestra cultura y <br/> parte de nuestro equipo</h2>
               <p className="font-arena text-base font-semibold text-arena-600 tracking-wide uppercase">¡Conoce a nuestro equipo!</p>
             </div>
 
@@ -62,7 +62,7 @@ const CareersPage = ({data}) => {
                 <Swiper
                   // effect="fade"
                   autoplay = {
-                    {delay: 2000, disableOnInteraction: true}
+                    {delay: 8000, disableOnInteraction: true}
                   }
                   spaceBetween={0}
                   loop={true}

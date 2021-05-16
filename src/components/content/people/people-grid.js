@@ -12,14 +12,13 @@ const PeopleGrid = props => {
   const cancelButtonRef = useRef()
   return (
     <>
-      <li key={props.name} className="py-10 px-6 cursor-pointer bg-white transition-all text-center border border-gray-200 rounded-xl xl:px-10 hover:bg-gray-100 hover:border-gray-100" onClick={() => setOpen(true)}>
+      <li key={props.name} className="group py-10 px-6 cursor-pointer bg-white transition-all text-center border border-gray-200 rounded-xl xl:px-10 hover:bg-gray-100 hover:border-arena-100 hover:border-2" onClick={() => setOpen(true)}>
         <div className="space-y-6 xl:space-y-10">
-          <img className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={props.image} alt={props.name} />
+          <img className="mx-auto h-40 w-40 rounded-full xl:w-44 xl:h-44" src={props.image} alt={props.name} />
           <div className="space-y-2">
-
             <div className="font-arena leading-6 font-semibold space-y-1">
               <h3 className="text-xl ">{props.name}</h3>
-              <p className="text-base text-arena-400">Conoce más</p>
+              <p className="opacity-0 text-base text-arena-400 group-hover:opacity-100">Conoce más</p>
             </div>
           </div>
         </div>

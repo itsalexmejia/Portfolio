@@ -50,6 +50,7 @@ module.exports = {
     extend: {
       backgroundColor: ["active"],
       space: ["hover"],
+      borderWidth: ['hover', 'focus'],
     },
   },
   plugins: [

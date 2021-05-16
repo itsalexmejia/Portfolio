@@ -40,10 +40,10 @@ const GentePage = ({data}) => {
             <div className="space-y-12">
 
               <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-4xl text-center">
-                <p className="text-base text-gray-800 md:text-xl md:leading-relaxed">Su experiencia incluye empresas de consumo, manufactura, construcción y retail en México y América Latina, donde han implementado y rediseñado estrategias, procesos, organizaciones y tecnología por medio de inteligencia artificial, análisis predictivo y optimización de soluciones.</p>
+                <p className="text-base text-gray-800 md:text-xl md:leading-relaxed">Su experiencia incluye empresas de consumo, B2B, construcción y retail en México y América Latina, donde han implementado y rediseñado estrategias, procesos, organizaciones y tecnología por medio de inteligencia artificial, análisis predictivo y optimización de soluciones.</p>
               </div>
 
-              <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-3 lg:gap-8">
+              <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4 lg:gap-8">
                 {data.allContentfulC02OurTeam.edges.map(edge => (
                   <PeopleGrid
                     key={edge.node.id}
