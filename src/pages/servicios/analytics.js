@@ -5,7 +5,7 @@ import Layout from "../../components/layout"
 import ActionBackground from "../../components/content/actions/bg-action"
 import BackgroundHeader from "../../components/content/header/header-bg"
 
-import GridSolutions from "../../components/content/bullets/grid-solutions"
+// import GridSolutions from "../../components/content/bullets/grid-solutions"
 
 import scheme from "../../images/siteglobal/scheme.jpg"
 
@@ -56,7 +56,6 @@ const AnalyticsPage = ({data}) => {
                   video={edge.node.video.file.url}
               />
           ))}
-
           <div className="bg-arena-700 relative">
               <div className="absolute inset-0">
                   <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80" alt="people working" />
