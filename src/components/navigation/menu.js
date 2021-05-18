@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Transition } from '@headlessui/react'
 
 //assets
-import logoArena from '../../images/siteglobal/arenaLogo2.svg'
+import logoArena from '../../images/siteglobal/arenaLogo.svg'
 // import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
 import { ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
 // import FlyoutMenu from "./flyout"
@@ -102,7 +102,7 @@ const MenuTop = ({data}) => {
                           <div className="bg-white">
                               <div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:gap-10 lg:px-8 lg:py-12 xl:py-16">
 
-                                  <Link to="/servicios/consulting/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50" activeClassName="bg-arena-50 rounded-xl">
+                                  <Link to="/servicios/consulting/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
@@ -112,14 +112,14 @@ const MenuTop = ({data}) => {
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
                                                   <p className="text-base font-medium text-gray-900">Práctica de Consultoría</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                  <p className="mt-1 text-sm text-gray-500">Soluciones que potencializan la estrategia, los procesos, la tecnología y el talento humano de nuestros clientes.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
                                       </div>
                                   </Link>
 
-                                  <Link to="/servicios/analytics/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50" activeClassName="bg-arena-50 rounded-xl">
+                                  <Link to="/servicios/analytics/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
@@ -130,15 +130,15 @@ const MenuTop = ({data}) => {
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Ciencia de datos</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                  <p className="text-base font-medium text-gray-900">Ciencia de Datos</p>
+                                                  <p className="mt-1 text-sm text-gray-500">Asegura la integración de los datos en tu operación y la estrategia de negocio.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
                                       </div>
                                   </Link>
 
-                                  <Link to="/servicios/partners/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50" activeClassName="bg-arena-50 rounded-xl">
+                                  <Link to="/servicios/partners/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
@@ -148,8 +148,8 @@ const MenuTop = ({data}) => {
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Soluciones tecnológicas</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                  <p className="text-base font-medium text-gray-900">Nuestros Partners</p>
+                                                  <p className="mt-1 text-sm text-gray-500">Soluciones tecnológicas soportadas por IA que garantice el logro de resultados reales.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
@@ -205,21 +205,21 @@ const MenuTop = ({data}) => {
                       <div className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-2 px-2 w-screen max-w-md sm:px-0">
                           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                                  <Link to="/nosotros/que-hacemos/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
+                                  <Link to="/nosotros/que-hacemos/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
                                       <OfficeBuildingIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Sobre Nosotros</p>
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-                                  <Link to="/nosotros/liderazgo/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
+                                  <Link to="/nosotros/liderazgo/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
                                       <UserGroupIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Liderazgo</p>
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-                                  <Link to="/nosotros/responsabilidad/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150" activeClassName="bg-arena-50">
+                                  <Link to="/nosotros/responsabilidad/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
                                       <GlobeIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Responsabilidad Social</p>
@@ -278,21 +278,21 @@ const MenuTop = ({data}) => {
                                                     <PresentationChartBarIcon className="h-6 w-6"/>
                                                     
                                                 </div>
-                                                <div className="ml-4 text-base font-medium text-gray-900">Ciencia de datos</div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Ciencia de Datos</div>
                                             </Link>
 
                                             <Link to="/servicios/partners/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
                                                     <UserGroupIcon className="h-6 w-6"/>
                                                 </div>
-                                                <div className="ml-4 text-base font-medium text-gray-900">Soluciones tecnológicas</div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Nuestros Partners</div>
                                             </Link>
 
 
                                         </div>
-                                        <div className="mt-8 text-base">
+                                        {/* <div className="mt-8 text-base">
                                             <Link to="/insights/" className="font-medium text-brand-600 hover:text-bluearena-500">Ver últimos insights <span aria-hidden="true">&rarr;</span></Link>
-                                        </div>
+                                        </div> */}
                                     </nav>
                                 </div>
                             </div>

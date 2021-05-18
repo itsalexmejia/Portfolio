@@ -101,9 +101,9 @@ const IndexPage = ({data}) => {
               caption = "Utilizamos nuestra experiencia y conocimiento para generar e implementar estrategias, procesos y mejores prácticas." 
               bulletTitle1 = "Práctica de Consultoría"
               bulletCaption1 = "Beneficios tangibles y sostenibles a nuestros clientes en rentabilidad y ventas. Eficiencias operativas, flujo de efectivo y servicio."              
-              bulletTitle2 = "Ciencia de datos"
+              bulletTitle2 = "Ciencia de Datos"
               bulletCaption2 = "Aprovechamos la información que nuestros clientes ya tienen para generar análisis de valor que habiliten la toma de decisiones."
-              bulletTitle3 = "Soluciones tecnológicas"
+              bulletTitle3 = "Nuestros Partners"
               bulletCaption3 = "Hemos seleccionado soluciones tecnológicas soportadas por Inteligencia Artificial y que habiliten a la operación para lograr resultados reales."
               buttonShows = "flex"
             />

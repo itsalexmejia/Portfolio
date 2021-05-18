@@ -9,7 +9,7 @@ const features = [
       icon: UserGroupIcon,
     },
     {
-      name: 'Nos gusta confiar en nuestra gente/equipo',
+      name: 'Nos gusta confiar en nuestra gente',
       description:
         'Te damos autonomía para que tomes tus propias decisiones. Escuchamos tus recomendaciones y las llevamos a la práctica.',
       icon: StarIcon,

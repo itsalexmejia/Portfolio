@@ -14,7 +14,7 @@ const CardAction = props => {
                 
                 <div className={`h-56 bg-brand-600 sm:h-72 md:absolute md:${props.align} md:h-full md:w-1/2`}>
                     <img
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover object-top"
                         src={props.image}
                         alt={props.alt}
                     />

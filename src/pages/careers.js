@@ -54,7 +54,7 @@ const CareersPage = ({data}) => {
           <div className="space-y-12">
             <div className="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-3xl">
               <h2 className="font-arena text-3xl font-extrabold tracking-tight text-brand-700 sm:text-4xl sm:leading-snug">Conoce nuestra cultura y <br/> parte de nuestro equipo</h2>
-              <p className="font-arena text-base font-semibold text-arena-600 tracking-wide uppercase">¡Conoce a nuestro equipo!</p>
+              {/* <p className="font-arena text-base font-semibold text-arena-600 tracking-wide uppercase">¡Conoce a nuestro equipo!</p> */}
             </div>
 
             <section className="py-0 overflow-hidden border-t">
