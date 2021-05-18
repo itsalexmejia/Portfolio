@@ -159,7 +159,7 @@ const AnalyticsPage = ({data}) => {
               <div className="h-56 bg-arena-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
                   <img
                       className="w-full h-full object-cover"
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
+                      src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2549&q=80"
                       alt=""
                   />
               </div>

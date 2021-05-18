@@ -30,7 +30,7 @@ const NosotrosPage = ({data}) => {
       ))}
       <div className="bg-brand-700 relative">
         <div className="absolute inset-0">
-          <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80" alt="people working" />
+          <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1599067821475-c47c29093bf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1275&q=80" alt="people working" />
           <div className="absolute inset-0 bg-brand-900 bg-opacity-60"></div>
         </div>
         <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
