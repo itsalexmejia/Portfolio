@@ -17,7 +17,7 @@ const features = [
     {
       name: 'Nos gusta que sea un camino de aprendizaje',
       description:
-        'Te ayudamos a aprender, crecer y demostrar tu mayor potencial, pero sobro todo a que disfrutes el recorrido y seas tú mismo.',
+        'Te ayudamos a aprender, crecer y demostrar tu mayor potencial, pero sobre todo a que disfrutes el recorrido y seas tú mismo.',
       icon: EmojiHappyIcon,
     },
   ]

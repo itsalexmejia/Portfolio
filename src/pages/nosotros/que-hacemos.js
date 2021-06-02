@@ -23,7 +23,7 @@ const NosotrosPage = ({data}) => {
           key={edge.node.id}
           headline={edge.node.headline}
           title={edge.node.title}
-          caption={edge.node.caption}
+          caption="Optimizamos, transformamos y rentabilizamos la Cadena de Valor de nuestros clientes a través de un profundo entendimiento de sus operaciones. Con base en nuestra experiencia y conocimiento de las industrias, diseñamos soluciones sostenibles hechas a la medida, acompañamos a nuestros clientes durante la implementación, y garantizamos beneficios a corto, mediano y largo plazo."
           image={edge.node.image.file.url}
           alt={edge.node.image.title}
         />
@@ -42,7 +42,7 @@ const NosotrosPage = ({data}) => {
       </div>
       <StatsHome />
       <BulletBig />
-      <BulletList />
+      {/* <BulletList /> */}
       <ActionBackground />
     </Layout>
   )

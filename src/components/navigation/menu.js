@@ -75,6 +75,8 @@ const MenuTop = ({data}) => {
                                       </svg>
                                   </button>
                               </div>
+
+                              <Link to="/nosotros/responsabilidad/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">Responsabilidad Social</Link>
                           
                           </nav>
                           <div className="flex items-center md:ml-12">
@@ -219,13 +221,12 @@ const MenuTop = ({data}) => {
                                           {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
                                   </Link>
-                                  <Link to="/nosotros/responsabilidad/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                                  {/* <Link to="/nosotros/responsabilidad/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
                                       <GlobeIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
                                       <div className="ml-4">
                                           <p className="text-base font-medium text-gray-900">Responsabilidad Social</p>
-                                          {/* <p className="mt-1 text-sm text-gray-500"></p> */}
                                       </div>
-                                  </Link>
+                                  </Link> */}
                               </div>
                           </div>
                       </div>

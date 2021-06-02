@@ -79,7 +79,7 @@ query Partners {
     }
   }
 
-  allContentfulC04Partners(sort: {order: ASC, fields: createdAt}) {
+  allContentfulC04Partners(sort: {order: ASC, fields: name}) {
     edges {
       node {
         logo {
