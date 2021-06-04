@@ -18,7 +18,8 @@ const BackgroundHeader = props => {
     <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
       <h1 className="font-arena text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">{props.title}</h1>
       {/* <p className="mt-6 text-xl text-bluearena-100 max-w-3xl">{props.caption}</p> */}
-      <p className="mt-6 text-xl text-bluearena-100 max-w-3xl" dangerouslySetInnerHTML={{ __html: props.caption }} />
+      <div className="mt-6 text-xl text-bluearena-100 max-w-3xl" dangerouslySetInnerHTML={{ __html: props.caption }}/>
+      {/* <p className="mt-6 text-xl text-bluearena-100 max-w-3xl" dangerouslySetInnerHTML={{ __html: props.caption }} /> */}
     </div>
   </div> 
     

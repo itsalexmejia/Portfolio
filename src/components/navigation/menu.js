@@ -113,8 +113,8 @@ const MenuTop = ({data}) => {
                                           </div>
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
-                                                  <p className="text-base font-medium text-gray-900">Práctica de Consultoría</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Soluciones que potencializan la estrategia, los procesos, la tecnología y el talento humano de nuestros clientes.</p>
+                                                  <p className="text-base font-medium text-gray-900">Consultoría</p>
+                                                  <p className="mt-1 text-sm text-gray-500">Beneficios tangibles y sostenibles a nuestros clientes en rentabilidad y ventas. Eficiencias operativas, flujo de efectivo y servicio.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
@@ -133,7 +133,7 @@ const MenuTop = ({data}) => {
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
                                                   <p className="text-base font-medium text-gray-900">Ciencia de Datos</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Asegura la integración de los datos en tu operación y la estrategia de negocio.</p>
+                                                  <p className="mt-1 text-sm text-gray-500">Generamos la capacidad de crear valor con la información de nuestros clientes, transformando la manera en la que operan y mejoramos la toma de decisiones.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
@@ -151,7 +151,7 @@ const MenuTop = ({data}) => {
                                           <div className="ml-4 md:flex-1 md:flex md:flex-col md:justify-between lg:ml-0 lg:mt-4">
                                               <div>
                                                   <p className="text-base font-medium text-gray-900">Nuestros Partners</p>
-                                                  <p className="mt-1 text-sm text-gray-500">Soluciones tecnológicas soportadas por IA que garantice el logro de resultados reales.</p>
+                                                  <p className="mt-1 text-sm text-gray-500">Soluciones tecnológicas soportadas por Inteligencia Artificial que habilitan la operación para lograr resultados reales.</p>
                                               </div>
                                               <p className="mt-2 text-sm font-medium text-arena-600 lg:mt-4">Conoce más <span aria-hidden="true">&rarr;</span></p>
                                           </div>
