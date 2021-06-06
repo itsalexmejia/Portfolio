@@ -16,6 +16,7 @@ import {
     SortAscendingIcon,
     ShoppingCartIcon,
     PhoneIcon,
+    ClipboardListIcon,
   } from '@heroicons/react/outline'
 
 // markup
@@ -151,7 +152,7 @@ const b2bPage = ({data}) => {
                         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                             <p className="font-arena mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">{edge.node.section4Title}</p>
                             <div className="mt-12">
-                                <div className="grid grid-cols-1 gap-8 overflow-hidden sm:grid-cols-2 lg:grid-cols-5">
+                                <div className="grid grid-cols-1 gap-8 overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
                                     {/* AQUI */}
                                     <div className="relative">
                                         <div className="pt-6">
@@ -232,6 +233,23 @@ const b2bPage = ({data}) => {
                                                     </div>
                                                     <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet5}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription5}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ChevronRightIcon className="ml-2 hidden w-5 h-5 absolute inset-y-1/2 inset-x-full text-arena-400 md:block" />
+                                    </div>
+
+                                    <div className="relative">
+                                        <div className="pt-6">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                                <div className="-mt-6">
+                                                    <div>
+                                                        <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
+                                                            <ClipboardListIcon className="h-6 w-6 text-arena-900" aria-hidden="true" />
+                                                        </span>
+                                                    </div>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet6}</h3>
+                                                    <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription6}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -318,6 +336,8 @@ query b2bQuery {
         section4BulletDescription3
         section4BulletDescription4
         section4BulletDescription5
+        section4Bullet6
+        section4BulletDescription6
       }
     }
   }

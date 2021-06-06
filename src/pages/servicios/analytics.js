@@ -56,6 +56,11 @@ const AnalyticsPage = ({data}) => {
                   video={edge.node.video.file.url}
               />
           ))}
+
+
+{data.allContentfulP07CienciaDeDatos.edges.map(edge => (
+          <>
+
           <div className="bg-arena-700 relative">
               <div className="absolute inset-0">
                   <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80" alt="people working" />
@@ -63,33 +68,55 @@ const AnalyticsPage = ({data}) => {
               </div>
               <div className="relative max-w-3xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                   <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                      <span className="block">Aseguramos la integración de los datos en la operación y la estrategia</span>
+                      <span className="block">{edge.node.smallIntroduction}</span>
                   </h2>
-                  <p className="mt-4 text-lg leading-6 text-white">Esto lo logramos estructurando fuentes internas y externas de información al monitoreo, gestión y definición del negocio, adaptado a las condiciones de la industria y el contexto de la empresa.</p>
+                  <p className="mt-4 text-lg leading-6 text-white">{edge.node.descriptionText}</p>
               </div>
           </div>
 
           <div className="relative py-16 bg-arena-900 -mt-1 z-10 pb-72">
               <div className="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-                  <h2 className="font-arena text-3xl font-extrabold text-white sm:text-4xl">Nuestra Metodología.</h2>
-                  <p className="mt-3 max-w-3xl mb-10 text-lg text-white opacity-70">Principios de la metodología Arena para ejecución de Ciencia de Datos</p>
+                  <h2 className="font-arena text-3xl font-extrabold text-white sm:text-4xl">{edge.node.section2Title}</h2>
+                  <p className="mt-3 max-w-3xl mb-10 text-lg text-white opacity-70">{edge.node.section2Intro}</p>
                   <dl className="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8">
-                      {features.map((feature) => (
-                          <div key={feature.name}>
+                    {/* Biullets */}
+
+                          <div>
                               <dt>
                                   <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-white bg-opacity-10 text-white">
-                                      <feature.icon className="h-6 w-6" aria-hidden="true" />
+                                      <DatabaseIcon className="h-6 w-6" aria-hidden="true" />
                                   </div>
-                                  <p className="mt-5 text-lg leading-6 font-medium text-white">{feature.name}</p>
+                                  <p className="mt-5 text-lg leading-6 font-medium text-white">{edge.node.section2BulletTitle1}</p>
                               </dt>
-                              <dd className="mt-2 text-base text-white opacity-70">{feature.description}</dd>
+                              <dd className="mt-2 text-base text-white opacity-70">{edge.node.section2BulletDes1}</dd>
                           </div>
-                      ))}
+
+                          <div>
+                              <dt>
+                                  <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-white bg-opacity-10 text-white">
+                                      <SortAscendingIcon className="h-6 w-6" aria-hidden="true" />
+                                  </div>
+                                  <p className="mt-5 text-lg leading-6 font-medium text-white">{edge.node.section2BulletTitle2}</p>
+                              </dt>
+                              <dd className="mt-2 text-base text-white opacity-70">{edge.node.section2BulletDes2}</dd>
+                          </div>
+
+                          <div>
+                              <dt>
+                                  <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-white bg-opacity-10 text-white">
+                                      <ThumbUpIcon className="h-6 w-6" aria-hidden="true" />
+                                  </div>
+                                  <p className="mt-5 text-lg leading-6 font-medium text-white">{edge.node.section2BulletTitle3}</p>
+                              </dt>
+                              <dd className="mt-2 text-base text-white opacity-70">{edge.node.section2BulletDes3}</dd>
+                          </div>
+                      
+
                   </dl>
               </div>
           </div>
 
-          <img className="shadow-xl w-full my-20 -mt-56 relative z-10 object-contain m-auto max-w-screen-xl rounded-xl" src={scheme} alt="scheme" />
+          <img className="shadow-xl w-full my-20 -mt-56 relative z-10 object-contain m-auto max-w-screen-xl rounded-xl" src={edge.node.flowChartDraw.file.url} alt="scheme" />
 
 
 
@@ -97,9 +124,9 @@ const AnalyticsPage = ({data}) => {
               <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:pt-3">
                   <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
                       <div>
-                          <h2 className="font-arena text-3xl font-extrabold text-gray-900 sm:text-4xl">Herramientas</h2>
-                          <p className="mt-3 max-w-3xl text-lg text-gray-500">Utilizamos los habilitadores tecnológicos de acuerdo a las necesidades de manejo de datos, uso que se le dará al desarrollo y nivel de madurez de la organización</p>
-                          <p className="mt-3 max-w-3xl text-lg text-gray-500">Generalmente usamos una combinación de los siguientes recursos:</p>
+                          <h2 className="font-arena text-3xl font-extrabold text-gray-900 sm:text-4xl">{edge.node.section3Title}</h2>
+                          <p className="mt-3 max-w-3xl text-lg text-gray-500">{edge.node.section3Description}</p>
+                          <p className="mt-3 max-w-3xl text-lg text-gray-500">{edge.node.section3Des2}</p>
                       </div>
                       <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-3">
 
@@ -165,17 +192,21 @@ const AnalyticsPage = ({data}) => {
               </div>
               <div className="relative max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
                   <div className="md:ml-auto md:w-1/2 md:pl-10">
-                      <h2 className="font-arena text-base font-semibold uppercase tracking-wider text-arena-300">Nuestro equipo</h2>
-                      <p className="font-arena mt-2 text-gra-900 text-3xl font-extrabold tracking-tight sm:text-3xl">Tenemos un equipo de científicos de datos enfocados en:</p>
+                      <h2 className="font-arena text-base font-semibold uppercase tracking-wider text-arena-300">{edge.node.section4Tagline}</h2>
+                      <p className="font-arena mt-2 text-gra-900 text-3xl font-extrabold tracking-tight sm:text-3xl">{edge.node.section4Title}</p>
                       <p className="mt-5 text-lg text-gray-700">
-                          <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />Arquitectura de Datos</p>
+                          <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />{edge.node.section4Bullet1}</p>
                       <p className="mt-3 text-lg text-gray-700">
-                          <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />Ingeniería de Datos</p>
+                          <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />{edge.node.section4Bullet2}</p>
                       <p className="mt-3 text-lg text-gray-700">
-                          <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />Análisis y Modelado de Datos</p>
+                          <CheckIcon className="w-6 h-6 float-left text-arena-900 mr-6" />{edge.node.section4Bullet3}</p>
                   </div>
               </div>
           </div>
+          
+          </>
+          ))}
+
           <ActionBackground />
       </Layout>
   )
@@ -192,6 +223,39 @@ query AnalyticsGraph {
       keywords
     }
   }
+
+  allContentfulP07CienciaDeDatos(limit: 1) {
+    edges {
+      node {
+        smallIntroduction
+        descriptionText
+        section2Title
+        section2Intro
+        section2BulletTitle1
+        section2BulletDes1
+        section2BulletTitle2
+        section2BulletDes2
+        section2BulletTitle3
+        section2BulletDes3
+        flowChartDraw {
+          file {
+            url
+          }
+          title
+        }
+        section3Title
+        section3Description
+        section3Des2
+        section4Tagline
+        section4Title
+        section4Bullet1
+        section4Bullet2
+        section4Bullet3
+        spaceId
+      }
+    }
+  }
+
   allContentfulC03ContentHeader(filter: {atPage: {eq: "analytics"}}, limit: 1) {
     edges {
       node {
