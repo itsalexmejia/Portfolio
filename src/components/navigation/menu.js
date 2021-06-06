@@ -46,7 +46,7 @@ const MenuTop = ({data}) => {
                               
                                 <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                                  <button type="button" onClick={() => setOpenServiciosDesk(!openServiciosDesk) & setOpenMoreDesk(false)} className="group bg-white rounded-lg text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
+                                  <button type="button" onMouseOver={() => setOpenServiciosDesk(!openServiciosDesk) & setOpenMoreDesk(false)} className="group bg-white rounded-lg text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
                                       <span>Servicios</span>
                                       {/*
                                         Heroicon name: solid/chevron-down
@@ -64,7 +64,7 @@ const MenuTop = ({data}) => {
 
                               <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                                  <button type="button" onClick={() => setOpenMoreDesk(!openMoreDesk) & setOpenServiciosDesk(false)} className="group bg-white rounded-lg text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
+                                  <button type="button" onMouseOver={() => setOpenMoreDesk(!openMoreDesk) & setOpenServiciosDesk(false)} className="group bg-white rounded-lg text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-arena-500">
                                       <span>Nosotros</span>
                                       {/*
                                         Heroicon name: solid/chevron-down
@@ -100,7 +100,7 @@ const MenuTop = ({data}) => {
               leaveTo="opacity-0 translate-y-1"
             >
               {(ref) => (
-                      <div className="hidden md:block absolute z-10 inset-x-0 transform shadow-lg">
+                      <div className="hidden md:block absolute z-10 inset-x-0 transform shadow-lg" onMouseLeave={() => setOpenMoreDesk(false) & setOpenServiciosDesk(false)}>
                           <div className="bg-white">
                               <div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:gap-10 lg:px-8 lg:py-12 xl:py-16">
 
@@ -191,7 +191,7 @@ const MenuTop = ({data}) => {
             </Transition>
 
 
-              {/* More menu */}
+              {/* About us */}
 
               <Transition
                   as={React.Fragment}
@@ -204,7 +204,7 @@ const MenuTop = ({data}) => {
                   leaveTo="opacity-0 translate-y-1"
               >
                   {(ref) => (
-                      <div className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-2 px-2 w-screen max-w-md sm:px-0">
+                      <div className="absolute z-10 left-1/2 transform -translate-x-1/2 mt-2 px-2 w-screen max-w-md sm:px-0" onMouseLeave={() => setOpenMoreDesk(false) & setOpenServiciosDesk(false)}>
                           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                               <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                   <Link to="/nosotros/que-hacemos/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
