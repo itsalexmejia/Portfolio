@@ -10,9 +10,9 @@ const HeroHome = props => {
             <div className="mx-auto relative px-4 py-20 sm:px-6 sm:py-24 md:px-9 xl:py-40 xl:max-w-7xl">
                 {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
                 <h1 className="font-arena text-center">
-                    <span className="block text-arena-200 text-base font-semibold tracking-wide uppercase">{props.title}</span>
+                    <span className="block text-arena-200 text-lg font-semibold tracking-wide uppercase">{props.title}</span>
                     <span className="block text-white mt-4 text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl">{props.title2}</span>
-                    <span className="block text-white mt-4 text-base font-regular italic">{props.title2by}</span>
+                    <span className="block text-white mt-4 text-xs font-regular italic">{props.title2by}</span>
                 </h1>
                 {/* <p className="mt-6 max-w-lg mx-auto text-center text-xl text-white opacity-80 sm:text-2xl sm:max-w-3xl">{props.body}</p> */}
                 <div className="mt-6 max-w-lg mx-auto text-center text-xl text-white opacity-80 sm:text-2xl sm:max-w-4xl" dangerouslySetInnerHTML={{ __html: props.bigbody }}/>

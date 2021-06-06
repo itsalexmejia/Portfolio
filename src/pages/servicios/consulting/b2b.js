@@ -19,7 +19,7 @@ import {
   } from '@heroicons/react/outline'
 
 // markup
-const ConsumoPage = ({data}) => {
+const b2bPage = ({data}) => {
     return (
         <Layout>
             <TextHeader
@@ -251,10 +251,10 @@ const ConsumoPage = ({data}) => {
   )
 }
 
-export default ConsumoPage
+export default b2bPage
 
 export const query = graphql`
-query Consumo {
+query b2bQuery {
   site {
     siteMetadata {
       title
@@ -262,7 +262,7 @@ query Consumo {
       keywords
     }
   }
-  allContentfulC06ConsultingSolutions(filter: {linkTo: {eq: "/servicios/consulting/consumo/"}}) {
+  allContentfulC06ConsultingSolutions(filter: {linkTo: {eq: "/servicios/consulting/b2b/"}}) {
     edges {
       node {
         logo {
@@ -275,7 +275,7 @@ query Consumo {
       }
     }
   }
-  allContentfulP06ConsultingPages(filter: {pageId: {eq: "consumo"}}) {
+  allContentfulP06ConsultingPages(filter: {pageId: {eq: "b2b"}}) {
     edges {
       node {
         pageId
