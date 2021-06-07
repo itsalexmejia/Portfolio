@@ -5,7 +5,7 @@ import ParticlesAnimation from "./particles-bg";
 
 const HeroHome = props => {
     return (
-        <div className="relative bg-radial overflow-hidden sm:rounded-3xl sm:rounded-t-none sm:overflow-hidden">
+        <div className="relative bg-radial overflow-hidden xl:rounded-3xl xl:rounded-t-none xl:overflow-hidden">
             <ParticlesAnimation />
             <div className="mx-auto relative px-4 py-20 sm:px-6 sm:py-24 md:px-9 xl:py-40 xl:max-w-7xl">
                 {/* <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8"> */}
