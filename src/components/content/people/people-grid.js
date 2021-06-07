@@ -12,7 +12,8 @@ const PeopleGrid = props => {
   const cancelButtonRef = useRef()
   return (
     <>
-      <li key={props.name} className="group py-10 px-6 cursor-pointer bg-white transition-all text-center border border-gray-200 rounded-xl xl:px-10 hover:bg-gray-100 hover:border-arena-100 hover:border-2" onClick={() => setOpen(true)}>
+    <li className="px-2 py-2 mt-0 w-full md:w-1/2 lg:w-1/3 xl:w-1/4" key={props.name}>
+      <div className="group h-full flex flex-col py-10 px-6 cursor-pointer bg-white transition-all text-center border border-gray-200 rounded-xl xl:px-10 hover:bg-gray-100 hover:border-arena-100 hover:border-2" onClick={() => setOpen(true)}>
         <div className="space-y-6 xl:space-y-10">
           <img className="mx-auto h-40 w-40 rounded-full xl:w-44 xl:h-44" src={props.image} alt={props.name} />
           <div className="space-y-2">
@@ -22,6 +23,7 @@ const PeopleGrid = props => {
             </div>
           </div>
         </div>
+      </div>
       </li>
 
       <Transition.Root show={open} as={Fragment}>

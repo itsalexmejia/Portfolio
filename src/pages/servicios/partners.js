@@ -28,7 +28,8 @@ const PartnersPage = ({data}) => {
           <div className="space-y-5 sm:mx-auto sm:max-w-xl lg:max-w-4xl text-center">
             <p className="text-base text-gray-800 md:text-xl md:leading-relaxed">Nuestros partners ayudan en los diferentes eslabones de la cadena de valor y habilitan nuestras soluciones enfocadas en industrias de retail, bienes de consumo y B2B. </p>
           </div>
-          <div className="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none">
+          {/* <div className="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none"></div> */}
+          <div className="mt-12 max-w-lg mx-auto flex flex-wrap justify-center lg:max-w-none">
             {data.allContentfulC04Partners.edges.map(edge => (
               <GridTwo
                 image={edge.node.logo.file.url}

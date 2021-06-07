@@ -101,7 +101,7 @@ const retailPage = ({data}) => {
                                         </span>
                                     </div>
                                     <div className="mt-6">
-                                        <h3 className="text-lg font-medium text-gray-800">{edge.node.section3BulletTitle1}</h3>
+                                        <h3 className="text-lg font-medium text-gray-800 lg:h-12">{edge.node.section3BulletTitle1}</h3>
                                         <p className="mt-2 text-base text-gray-700">{edge.node.section3BulletDescription1}</p>
                                     </div>
                                 </div>
@@ -113,7 +113,7 @@ const retailPage = ({data}) => {
                                         </span>
                                     </div>
                                     <div className="mt-6">
-                                        <h3 className="text-lg font-medium text-gray-800">{edge.node.section3BulletTitle2}</h3>
+                                        <h3 className="text-lg font-medium text-gray-800 lg:h-12">{edge.node.section3BulletTitle2}</h3>
                                         <p className="mt-2 text-base text-gray-700">{edge.node.section3BulletDescription2}</p>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ const retailPage = ({data}) => {
                                         </span>
                                     </div>
                                     <div className="mt-6">
-                                        <h3 className="text-lg font-medium text-gray-800">{edge.node.section3BulletTitle3}</h3>
+                                        <h3 className="text-lg font-medium text-gray-800 lg:h-12">{edge.node.section3BulletTitle3}</h3>
                                         <p className="mt-2 text-base text-gray-700">{edge.node.section3BulletDescription3}</p>
                                     </div>
                                 </div>
@@ -137,7 +137,7 @@ const retailPage = ({data}) => {
                                         </span>
                                     </div>
                                     <div className="mt-6">
-                                        <h3 className="text-lg font-medium text-gray-800">{edge.node.section3BulletTitle4}</h3>
+                                        <h3 className="text-lg font-medium text-gray-800 lg:h-12">{edge.node.section3BulletTitle4}</h3>
                                         <p className="mt-2 text-base text-gray-700">{edge.node.section3BulletDescription4}</p>
                                     </div>
                                 </div>
@@ -154,8 +154,8 @@ const retailPage = ({data}) => {
                                 <div className="grid grid-cols-1 gap-8 overflow-hidden sm:grid-cols-2 lg:grid-cols-5">
                                     {/* AQUI */}
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -171,8 +171,8 @@ const retailPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -188,8 +188,8 @@ const retailPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -205,8 +205,8 @@ const retailPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -222,8 +222,8 @@ const retailPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">

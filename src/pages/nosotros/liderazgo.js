@@ -45,8 +45,8 @@ const GentePage = ({data}) => {
                 <div className="text-base text-gray-800 md:text-xl md:leading-relaxed" dangerouslySetInnerHTML={{ __html: edge.node.teamIntro.childMarkdownRemark.html }} />
               </div>
               ))}
-
-              <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4 lg:gap-8">
+              {/* <ul className="space-y-4 sm:grid sm:grid-cols-2 sm:gap-6 sm:space-y-0 lg:grid-cols-4 lg:gap-8"></ul> */}
+              <ul className="sm:flex sm:flex-wrap sm:justify-center">
                 {data.allContentfulC02OurTeam.edges.map(edge => (
                   <PeopleGrid
                     key={edge.node.id}

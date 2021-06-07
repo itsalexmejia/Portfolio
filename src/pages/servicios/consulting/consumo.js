@@ -154,8 +154,8 @@ const ConsumoPage = ({data}) => {
                                 <div className="grid grid-cols-1 gap-8 overflow-hidden sm:grid-cols-2 lg:grid-cols-5">
                                     {/* AQUI */}
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -171,8 +171,8 @@ const ConsumoPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -188,8 +188,8 @@ const ConsumoPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -205,8 +205,8 @@ const ConsumoPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
@@ -222,8 +222,8 @@ const ConsumoPage = ({data}) => {
                                     </div>
 
                                     <div className="relative">
-                                        <div className="pt-6">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                                        <div className="pt-6 h-full">
+                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
                                                 <div className="-mt-6">
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">

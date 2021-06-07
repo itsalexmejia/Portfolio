@@ -66,7 +66,7 @@ const AnalyticsPage = ({data}) => {
                   <img className="h-full w-full object-cover" src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2048&q=80" alt="people working" />
                   <div className="absolute inset-0 bg-brand-900 bg-opacity-70"></div>
               </div>
-              <div className="relative max-w-3xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+              <div className="relative max-w-3xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-1">
                   <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                       <span className="block">{edge.node.smallIntroduction}</span>
                   </h2>
