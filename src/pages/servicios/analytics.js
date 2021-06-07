@@ -7,8 +7,6 @@ import BackgroundHeader from "../../components/content/header/header-bg"
 
 // import GridSolutions from "../../components/content/bullets/grid-solutions"
 
-import scheme from "../../images/siteglobal/scheme.jpg"
-
 import logoTool1 from "../../images/tools/logo-tool-1.png"
 import logoTool10 from "../../images/tools/logo-tool-10.png"
 import logoTool11 from "../../images/tools/logo-tool-11.png"
@@ -23,23 +21,6 @@ import logoTool8 from "../../images/tools/logo-tool-8.png"
 import logoTool9 from "../../images/tools/logo-tool-9.png"
 import { SortAscendingIcon, ThumbUpIcon, DatabaseIcon, CheckIcon } from "@heroicons/react/outline"
 
-const features = [
-    {
-        description: 'Desarrollamos el componente de ciencia de datos en los proyectos a través de una metodología iterativa en 4 fases',
-        name: 'Metodología iterativa',
-        icon: DatabaseIcon,
-    },
-    {
-        description: 'De esta manera aseguramos que cada esfuerzo tiene beneficios incrementales alineados a las expectativas del cliente',
-        name: 'Beneficios incrementales',
-        icon: SortAscendingIcon,
-    },
-    {
-        description: 'Esto lo gestionamos a través de un esquema ágil basado en los principios de Scrum y Kanban',
-        name: 'Esquema ágil',
-        icon: ThumbUpIcon,
-    },
-]
 
 // markup
 const AnalyticsPage = ({data}) => {
