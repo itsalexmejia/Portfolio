@@ -108,6 +108,7 @@ const IndexPage = ({data}) => {
             title = {edge.node.section3Title}
             intro = {edge.node.section3Intro}
             description = {edge.node.section3Description}
+            image = {edge.node.section3Image.file.url}
           />
 
           {/* Logo cloud */}
@@ -197,6 +198,12 @@ query ArenaAnalyticsQuery {
         section3Intro
         section3Description
         ourPartnersIntro
+        section3Image {
+          file {
+            url
+          }
+          title
+        }
       }
     }
   }
