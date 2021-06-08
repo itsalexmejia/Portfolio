@@ -134,7 +134,7 @@ const ApplyPage = () => {
                     name="cv_attach"
                     accept="application/pdf"
                     id="cv_attach"
-                    className=""
+                    className="w-full"
                     required
                   />
                 </div>
