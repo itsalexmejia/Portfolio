@@ -92,14 +92,16 @@ const ApplyPage = () => {
                   </select>
                 </div>
                  */}
+                
                   <input
                     type="text"
                     name="phone_number"
                     id="phone_number"
                     autoComplete="tel"
                     className="py-3 px-4 block w-full focus:ring-arena-500 focus:border-arena-500 border-gray-300 rounded-md"
-                    placeholder="+52 (55) 4313 9528"
-                    required
+                    // placeholder="+52 (55) 4313 9528"
+                    defaultValue="+52 "
+                    // required
                   />
                 </div>
               </div>

@@ -10,7 +10,7 @@ const StatsHome = props => {
               <div className="max-w-4xl mx-auto text-center">
                     <span className="block font-arena text-base font-semibold text-white tracking-wide uppercase">Nuestra experiencia</span>
                   <h2 className="font-arena text-3xl font-extrabold text-white sm:text-4xl">Lideramos proyectos de transformación.</h2>
-                  <p className="mt-3 text-xl text-bluearena-100 sm:mt-4">Nuestros líderes han trabajado con diversas empresas líderes en industrias de retail, bienes de consumo y B2B.</p>
+                  <p className="mt-3 text-xl text-bluearena-100 sm:mt-4">Nuestros líderes han trabajado con diversas empresas líderes en industrias de Retail, Bienes de Consumo y B2B.</p>
               </div>
               <dl className="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
                   <div className="flex flex-col">

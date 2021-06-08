@@ -8,7 +8,7 @@ import { Transition } from '@headlessui/react'
 //assets
 import logoArena from '../../images/siteglobal/arenaLogo.svg'
 // import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
-import { ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
+import { BriefcaseIcon, ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
 // import FlyoutMenu from "./flyout"
 
 // markup
@@ -42,7 +42,7 @@ const MenuTop = ({data}) => {
                           <nav className="flex space-x-10">
                             
                                 
-                                <Link to="/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">Inicio</Link>
+                                <Link to="/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900">Inicio</Link>
                               
                                 <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
@@ -60,7 +60,7 @@ const MenuTop = ({data}) => {
 
                               {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Industrias</Link> */}
                               {/* <Link to="/" className="text-base font-medium text-gray-500 hover:text-gray-900">Insights</Link> */}
-                              <Link to="/careers/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">Careers</Link>
+                              <Link to="/careers/" className="px-2 text-base font-medium text-gray-500 hover:text-gray-900">Careers</Link>
 
                               <div className="relative">
                                   {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
@@ -75,8 +75,8 @@ const MenuTop = ({data}) => {
                                       </svg>
                                   </button>
                               </div>
-
-                              <Link to="/nosotros/responsabilidad/" className="hidden px-2 text-base font-medium xl:block text-gray-500 hover:text-gray-900" activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold">Responsabilidad Social</Link>
+                              {/* activeClassName="bg-arena-50 rounded-xl text-arena-600 font-semibold" */}
+                              <Link to="/nosotros/responsabilidad/" className="hidden px-2 text-base font-medium xl:block text-gray-500 hover:text-gray-900">Responsabilidad Social</Link>
                           
                           </nav>
                           <div className="flex items-center md:ml-12">
@@ -248,7 +248,7 @@ const MenuTop = ({data}) => {
                     {(ref) => (
                     <div className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                            <div className="pt-5 pb-6 px-5 sm:pb-8">
+                            <div className="pt-5 pb-6 px-5 border-b border-gray-200 sm:pb-8">
                                 <div className="flex items-center justify-between">
                                     <div>
                                         <img className="h-8 w-auto" src={logoArena} alt="arenalogos" />
@@ -264,18 +264,19 @@ const MenuTop = ({data}) => {
                                     </div>
                                 </div>
                                 <div className="mt-6 sm:mt-8">
+                                <p className="font-arena text-lef mb-4 text-sm font-semibold uppercase text-gray-500 tracking-wide">Servicios</p>
                                     <nav>
                                         <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
                                             <Link to="/servicios/consulting/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
                                                     <ChatAlt2Icon className="h-6 w-6"/>
                                                     
                                                 </div>
-                                                <div className="ml-4 text-base font-medium text-gray-900">Práctica de Consultoría</div>
+                                                <div className="ml-4 text-base font-medium text-gray-900">Consultoría</div>
                                             </Link>
 
                                             <Link to="/servicios/analytics/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
                                                     <PresentationChartBarIcon className="h-6 w-6"/>
                                                     
                                                 </div>
@@ -283,7 +284,7 @@ const MenuTop = ({data}) => {
                                             </Link>
 
                                             <Link to="/servicios/partners/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
-                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-2xl bg-brand-500 text-white sm:h-12 sm:w-12">
+                                                <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
                                                     <UserGroupIcon className="h-6 w-6"/>
                                                 </div>
                                                 <div className="ml-4 text-base font-medium text-gray-900">Nuestros Partners</div>
@@ -297,14 +298,42 @@ const MenuTop = ({data}) => {
                                     </nav>
                                 </div>
                             </div>
-                            <div className="py-6 px-5">
-                                <div className="grid grid-cols-2 gap-4">
-                                    {/* <Link to="/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Industrias</Link> */}
+                            <div className="relative grid gap-6 w-full bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                                <Link to="/careers/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                                      <BriefcaseIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
+                                      <div className="ml-4">
+                                          <p className="text-base font-medium text-gray-900">Careers</p>
+                                          {/* <p className="mt-1 text-sm text-gray-500"></p> */}
+                                      </div>
+                                  </Link>
+                                  <Link to="/nosotros/que-hacemos/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                                      <OfficeBuildingIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
+                                      <div className="ml-4">
+                                          <p className="text-base font-medium text-gray-900">Sobre Nosotros</p>
+                                          {/* <p className="mt-1 text-sm text-gray-500"></p> */}
+                                      </div>
+                                  </Link>
+                                  <Link to="/nosotros/liderazgo/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                                      <UserGroupIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
+                                      <div className="ml-4">
+                                          <p className="text-base font-medium text-gray-900">Liderazgo</p>
+                                          {/* <p className="mt-1 text-sm text-gray-500"></p> */}
+                                      </div>
+                                  </Link>
+                                  <Link to="/nosotros/responsabilidad/" className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 xl:hidden">
+                                      <GlobeIcon className="flex-shrink-0 h-6 w-6 text-arena-600"/>
+                                      <div className="ml-4">
+                                          <p className="text-base font-medium text-gray-900">Responsabilidad Social</p>
+                                      </div>
+                                  </Link>
+                              </div>
+                            <div className="py-6 px-6 pt-0 border-t border-gray-200">
+                                {/* <div className="grid grid-cols-2 gap-4">
                                     <Link to="/careers/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Careers</Link>
                                     <Link to="/nosotros/que-hacemos/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Nosotros</Link>
-                                    <Link to="/nosotros/responsabilidad/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Responsabilidad Social</Link>
                                     <Link to="/nosotros/liderazgo/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Liderazgo</Link>
-                                </div>
+                                    <Link to="/nosotros/responsabilidad/" className="rounded-md text-base font-medium text-gray-900 hover:text-gray-700">Responsabilidad Social</Link>
+                                </div> */}
                                 <div className="mt-6">
                                     <Link to="/contacto/" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-arena-600 hover:bg-brand-700" activeClassName="bg-gray-400">Contáctanos</Link>                                   
                                 </div>

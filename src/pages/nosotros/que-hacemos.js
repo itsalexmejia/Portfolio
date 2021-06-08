@@ -37,7 +37,7 @@ const NosotrosPage = ({data}) => {
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             <span className="block">Aseguramos la transformación deseada.</span>
           </h2>
-          <p className="mt-4 text-lg leading-6 text-white">Utilizamos nuestra experiencia y conocimiento en retail, bienes de consumo y B2B para generar e implementar estrategias, procesos y mejores prácticas de manera sostenible, empoderando a los colaboradores y habilitando la tecnología adecuada.</p>
+          <p className="mt-4 text-lg leading-6 text-white">Utilizamos nuestra experiencia y conocimiento en Retail, Bienes de Consumo y B2B para generar e implementar estrategias, procesos y mejores prácticas de manera sostenible, empoderando a los colaboradores y habilitando la tecnología adecuada.</p>
         </div>
       </div>
       <StatsHome />

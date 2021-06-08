@@ -5,7 +5,7 @@ import { graphql } from 'gatsby'
 // Slider
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import SwiperCore, { Autoplay, Navigation } from 'swiper';
+import SwiperCore, { Autoplay, Navigation, Scrollbar } from 'swiper';
 
 //Components
 import Layout from "../components/layout"
@@ -18,7 +18,7 @@ import HeaderLeft from "../components/content/header/header-left"
 import GridThreeBg from "../components/content/bullets/grid-three-bg";
 
 // SwiperCore.use([EffectFade]);
-SwiperCore.use([Navigation, Autoplay]);
+SwiperCore.use([Navigation, Autoplay, Scrollbar]);
 
 // markup
 const CareersPage = ({data}) => {
@@ -57,8 +57,8 @@ const CareersPage = ({data}) => {
               {/* <p className="font-arena text-base font-semibold text-arena-600 tracking-wide uppercase">¡Conoce a nuestro equipo!</p> */}
             </div>
 
-            <section className="py-0 overflow-hidden border-t">
-              <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="py-0 overflow-hidden border-t hidden md:block">
+              <div className="relative max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
                 <Swiper
                   // effect="fade"
                   autoplay = {
@@ -68,6 +68,37 @@ const CareersPage = ({data}) => {
                   loop={true}
                   navigation
                   pagination={{ clickable: true }}
+                  onSlideChange={() => console.log('slide change')}
+                  onSwiper={(swiper) => console.log(swiper)}
+                >
+                  {data.allContentfulC02OurTeam.edges.map(edge => (
+                    <SwiperSlide className="bg-gray-50">
+                      <PeopleSlide
+                        key={edge.node.id}
+                        name={edge.node.name}
+                        position={edge.node.position}
+                        image={edge.node.image.file.url}
+                        alt={edge.node.image.title}
+                        quote={edge.node.longDescription.childMarkdownRemark.html}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+            </section>
+
+            <section className="py-0 overflow-hidden border-t block md:hidden">
+              <div className="relative max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
+                <Swiper
+                  // effect="fade"
+                  autoplay = {
+                    {delay: 8000, disableOnInteraction: true}
+                  }
+                  spaceBetween={0}
+                  loop={true}
+                  // navigation
+                  // pagination={{ clickable: true }}
+                  scrollbar={{ draggable: true }}
                   onSlideChange={() => console.log('slide change')}
                   onSwiper={(swiper) => console.log(swiper)}
                 >

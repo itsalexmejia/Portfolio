@@ -8,7 +8,7 @@ const PeopleSlide = props => {
         <div className="relative">
           <blockquote className="mt-10">
             <div className="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
-                <div className="prose-xl leading-relaxed" dangerouslySetInnerHTML={{ __html: props.quote }}/>
+                <div className="prose leading-relaxed md:prose-xl" dangerouslySetInnerHTML={{ __html: props.quote }}/>
             </div>
             <footer className="mt-8">
               <div className="md:flex md:items-center md:justify-center">

@@ -31,7 +31,7 @@ const ConsultingPage = ({data}) => {
                   <div className="absolute inset-0 bg-brand-900 bg-opacity-60"></div>
               </div>
               {data.allContentfulP05Consulting.edges.map(edge => (
-              <div className="relative max-w-2xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+              <div className="relative max-w-3xl mx-auto text-center py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                   <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                       <span className="block">{edge.node.section2Title}</span>
                   </h2>
