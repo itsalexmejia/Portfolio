@@ -162,7 +162,7 @@ const ConsumoPage = ({data}) => {
                                                             <TruckIcon className="h-6 w-6 text-arena-900" aria-hidden="true" />
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet1}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet1}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription1}</p>
                                                 </div>
                                             </div>
@@ -179,7 +179,7 @@ const ConsumoPage = ({data}) => {
                                                             <OfficeBuildingIcon className="h-6 w-6 text-arena-900" aria-hidden="true" />
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet2}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet2}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription2}</p>
                                                 </div>
                                             </div>
@@ -196,7 +196,7 @@ const ConsumoPage = ({data}) => {
                                                             <CogIcon className="h-6 w-6 text-arena-900" aria-hidden="true" />
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet3}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet3}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription3}</p>
                                                 </div>
                                             </div>
@@ -213,7 +213,7 @@ const ConsumoPage = ({data}) => {
                                                             <CubeIcon className="h-6 w-6 text-arena-900" aria-hidden="true" />
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet4}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet4}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription4}</p>
                                                 </div>
                                             </div>
@@ -230,7 +230,7 @@ const ConsumoPage = ({data}) => {
                                                             <UsersIcon className="h-6 w-6 text-arena-900" aria-hidden="true" />
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet5}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet5}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription5}</p>
                                                 </div>
                                             </div>

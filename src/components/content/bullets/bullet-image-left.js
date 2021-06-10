@@ -31,7 +31,7 @@ const ImageLeftBullet = props => {
                                   </div>
                                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Proyectos en empresas líderes en México</p>
                               </dt>
-                              <dd className="mt-2 ml-16 text-base text-gray-600 leading-relaxed">Colaboramos con empresas que conoces y cuyos productos consumes en tu día a día. Empresas que son líderes en México y con presencia internacional, enfocadas principalmente en las industrias de retail, consumo y manufactura, ofreciendo soluciones personalizadas, ¡por eso nos prefieren!</dd>
+                              <dd className="mt-2 ml-16 text-base text-gray-600 leading-relaxed">Colaboramos con empresas que conoces y cuyos productos consumes en tu día a día. Empresas que son líderes en México y con presencia internacional, enfocadas principalmente en las industrias de Retail, Consumo y Manufactura, ofreciendo soluciones personalizadas, ¡por eso nos prefieren!</dd>
                           </div>
                       </dl>
                   </div>
