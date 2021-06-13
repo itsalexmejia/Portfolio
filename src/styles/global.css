@@ -18,6 +18,10 @@
         stroke: #192951 !important;
     }
 
+    .fillwhite{
+        fill: #ffffff;
+    }
+
     body{
         @apply antialiased
     }
