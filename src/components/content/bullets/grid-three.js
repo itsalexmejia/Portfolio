@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from 'gatsby'
 
 //icons
-import { ChatAlt2Icon, PresentationChartBarIcon, UserGroupIcon } from '@heroicons/react/outline'
+// import { ChatAlt2Icon, PresentationChartBarIcon, UserGroupIcon } from '@heroicons/react/outline'
 
 // markup
 const GridThree = props => {
@@ -22,10 +22,10 @@ const GridThree = props => {
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                 {/* <ChatAlt2Icon className="h-6 w-6" /> */}
 
-                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" className="h-10 w-10 fillwhite">
+                <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" className="h-8 w-8 fillwhite">
                   <g id="Expand">
                     <rect x="96" y="80" width="16" height="16" />
                     <rect x="128" y="80" width="80" height="16" />
@@ -63,10 +63,10 @@ const GridThree = props => {
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                 {/* <PresentationChartBarIcon className="h-6 w-6" /> */}
 
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" className="h-10 w-10 fillwhite">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" className="h-8 w-8 fillwhite">
                   <g id="Outlines">
                     <g>
                       <circle cx="264" cy="320" r="8" />
@@ -122,10 +122,10 @@ const GridThree = props => {
 
           <div>
             <dt>
-              <div className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500 text-white">
+              <div className="flex items-center justify-center h-12 w-12 rounded-2xl bg-arena-500 text-white">
                 {/* <UserGroupIcon className="h-6 w-6" /> */}
 
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 509.4" className="h-10 w-10 fillwhite">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 509.4" className="h-8 w-8 fillwhite">
                   <defs>
                   </defs>
                   <g>

@@ -22,6 +22,10 @@
         fill: #ffffff;
     }
 
+    .fillarena{
+        fill: #6f144d;
+    }
+
     body{
         @apply antialiased
     }
