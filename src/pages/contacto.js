@@ -30,7 +30,21 @@ const ContactPage = ({data}) => {
                   <div className="mt-9">
                     <a href={`tel:${edge.node.phoneNumber}`} className="flex text-arena-400 hover:text-brand-500 hover:underline" target="_blank" rel="noreferrer">
                       <div className="flex-shrink-0">
-                        <PhoneIcon className="h-7 w-7" aria-hidden="true" />
+                        {/* <PhoneIcon className="h-7 w-7" aria-hidden="true" /> */}
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 272 496" className="h-7 w-7 text-arena-400 fillarena">
+<defs>
+</defs>
+<g id="Smartphone_1_">
+	<path d="M232,0H40C17.9,0,0,17.9,0,40v416c0,22.1,17.9,40,40,40h192c22.1,0,40-17.9,40-40V40C272,17.9,254.1,0,232,0z M190.2,16
+		l-4.8,24H86.6l-4.8-24H190.2z M256,456c0,13.2-10.8,24-24,24H40c-13.2,0-24-10.8-24-24V40c0-13.2,10.8-24,24-24h25.4l6.7,33.6
+		c0.7,3.7,4,6.4,7.8,6.4h112c3.8,0,7.1-2.7,7.8-6.4l6.7-33.6H232c13.2,0,24,10.8,24,24V456z"/>
+	<path d="M88,448H40c-4.4,0-8,3.6-8,8s3.6,8,8,8h48c4.4,0,8-3.6,8-8S92.4,448,88,448z"/>
+	<path d="M120,448h-8c-4.4,0-8,3.6-8,8s3.6,8,8,8h8c4.4,0,8-3.6,8-8S124.4,448,120,448z"/>
+</g>
+</svg>
+
+                        
                       </div>
                       <div className="ml-3 text-base text-gray-500">
                         <p>{edge.node.phoneNumber}</p>
@@ -39,7 +53,32 @@ const ContactPage = ({data}) => {
                     </a>
                     <a href={`mailto:${edge.node.email}`} className="mt-6 flex text-arena-400 hover:text-brand-500 hover:underline" target="_blank" rel="noreferrer">
                       <div className="flex-shrink-0">
-                        <MailIcon className="h-7 w-7" aria-hidden="true" />
+                        {/* <MailIcon className="h-7 w-7" aria-hidden="true" /> */}
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 346" className="h-7 w-7 text-arena-400 fillarena">
+                      <defs>
+                      </defs>
+                      <g>
+                          <g>
+                              <path d="M137.5,0h-0.1c-5.5,0-10,4.5-10,10s4.5,10,10,10h0.1c5.5,0,10-4.5,10-10S143,0,137.5,0z" />
+                          </g>
+                      </g>
+                      <g>
+                          <g>
+                              <path d="M472,0H182.1c-5.5,0-10,4.5-10,10s4.5,10,10,10H472c0.5,0,1,0,1.5,0.1L445.6,48H315.1c-5.5,0-10,4.5-10,10s4.5,10,10,10
+			h110.4L286.2,207.4c-16.7,16.7-43.8,16.7-60.4,0L38.5,20.1c0.5,0,1-0.1,1.5-0.1h53c5.5,0,10-4.5,10-10S98.5,0,93,0H40
+			C17.9,0,0,17.9,0,40v266c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V40C512,17.9,494.1,0,472,0z M20,306V40
+			c0-3,0.7-5.8,1.8-8.3L161,170.9L20.7,311.2C20.3,309.6,20,307.8,20,306z M472,326H40c-1.8,0-3.5-0.3-5.2-0.7L175.1,185l36.5,36.5
+			c12.2,12.2,28.3,18.3,44.3,18.3s32.1-6.1,44.3-18.3l36.5-36.5l140.3,140.3C475.5,325.8,473.8,326,472,326z M492,306
+			c0,1.8-0.3,3.5-0.7,5.2L351,170.9L490.2,31.7c1.2,2.5,1.8,5.3,1.8,8.3V306z"/>
+                          </g>
+                      </g>
+                      <g>
+                          <g>
+                              <path d="M273.3,48h-0.1c-5.5,0-10,4.5-10,10s4.5,10,10,10h0.1c5.5,0,10-4.5,10-10S278.8,48,273.3,48z" />
+                          </g>
+                      </g>
+                  </svg>
+
                       </div>
                       <div className="ml-3 text-base text-gray-500">
                         <p>{edge.node.email}</p>
