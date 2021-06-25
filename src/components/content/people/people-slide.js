@@ -14,7 +14,7 @@ const PeopleSlide = props => {
               <div className="md:flex md:items-center md:justify-center">
                 <div className="md:flex-shrink-0">
                   <img
-                    className="mx-auto h-14 w-14 rounded-full xl:h-36 xl:w-36"
+                    className="mx-auto h-14 w-14 rounded-full object-cover xl:h-36 xl:w-36"
                     src={props.image}
                     alt={props.alt}
                   />
