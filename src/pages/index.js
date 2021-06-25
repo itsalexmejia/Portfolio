@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
+// import { Helmet } from 'react-helmet'
 // import { Swiper, SwiperSlide } from 'swiper/react';
 
 //css
@@ -37,11 +37,7 @@ const IndexPage = ({data}) => {
 
   return (
     <Layout>
-      <Helmet title={data.site.siteMetadata.title}>
-        <link rel="icon" href={favicon} />
-        {/* <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no"/> */}
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale = 1.0, user-scalable = no, viewport-fit = cover" />
-      </Helmet>
+      
       {/* Mensaje impoortante */}
       {/* <AlertHome/> */}
       {data.allContentfulP04Inicio.edges.map(edge => (
