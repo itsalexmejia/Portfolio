@@ -6,6 +6,12 @@ import favicon from '../images/favicon.ico'
 //components
 import MenuTop from "./navigation/menu"
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-KZESM808LM');
+
+ReactGA.pageview('/');
+ReactGA.pageview('/nosotros/que-hacemos');
+
 export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-white">
