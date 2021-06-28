@@ -22,7 +22,8 @@ const ApplyPage = () => {
           </p>
           </div>
           <div className="mt-12">
-            <form name="apply_position_form" action="/exito/" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true">
+            <form action="POST" data-netlify="true" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            {/* <form name="apply_position_form" action="/exito/" method="POST" className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8" data-netlify="true"> */}
               <div>
                 <label htmlFor="first_name" className="block text-sm font-medium text-gray-700">
                   Nombre
@@ -139,6 +140,10 @@ const ApplyPage = () => {
                     required
                   />
                 </div>
+              </div>
+
+              <div className="sm:col-span-2">
+                <div data-netlify-recaptcha="true"></div>
               </div>
 
               <div className="sm:col-span-2">
