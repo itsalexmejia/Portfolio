@@ -8,7 +8,7 @@ import { Transition } from '@headlessui/react'
 //assets
 import logoArena from '../../images/siteglobal/arenaLogo.svg'
 // import bannerBackground from '../../images/mainpage/buildoffices.jpeg'
-import { BriefcaseIcon, ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
+// import { BriefcaseIcon, ChatAlt2Icon, GlobeIcon, OfficeBuildingIcon, PresentationChartBarIcon, UserGroupIcon } from "@heroicons/react/outline"
 // import FlyoutMenu from "./flyout"
 
 // markup

@@ -6,16 +6,7 @@ import ActionBackground from "../../../components/content/actions/bg-action"
 import TextHeader from '../../../components/content/header/header-txt'
 import { CheckIcon } from '@heroicons/react/solid'
 import {
-    UsersIcon,
     ChevronRightIcon,
-    CursorClickIcon,
-    CubeIcon,
-    ShoppingBagIcon,
-    ClipboardListIcon,
-    CurrencyDollarIcon,
-    SortAscendingIcon,
-    ShoppingCartIcon,
-    PhoneIcon,
   } from '@heroicons/react/outline'
 
 // markup

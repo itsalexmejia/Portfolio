@@ -1,4 +1,4 @@
-import { PuzzleIcon, SparklesIcon } from '@heroicons/react/outline'
+// import { PuzzleIcon, SparklesIcon } from '@heroicons/react/outline'
 import * as React from 'react'
 
 // markup

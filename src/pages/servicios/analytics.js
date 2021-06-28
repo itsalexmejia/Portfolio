@@ -19,7 +19,7 @@ import logoTool6 from "../../images/tools/logo-tool-6.png"
 import logoTool7 from "../../images/tools/logo-tool-7.png"
 import logoTool8 from "../../images/tools/logo-tool-8.png"
 import logoTool9 from "../../images/tools/logo-tool-9.png"
-import { SortAscendingIcon, ThumbUpIcon, DatabaseIcon, CheckIcon } from "@heroicons/react/outline"
+import { CheckIcon } from "@heroicons/react/outline"
 
 
 // markup

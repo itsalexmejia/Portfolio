@@ -1,7 +1,7 @@
 import * as React from 'react'
 // import Particles from 'react-particles-js';
 import { Link } from 'gatsby'
-import { MailIcon } from '@heroicons/react/outline'
+// import { MailIcon } from '@heroicons/react/outline'
 import ParticlesAnimation from '../../particles-bg'
 
 // markup

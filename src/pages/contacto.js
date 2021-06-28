@@ -1,6 +1,6 @@
 import * as React from "react"
 import { graphql } from 'gatsby'
-import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
+// import { MailIcon, PhoneIcon } from '@heroicons/react/outline'
 import Layout from "../components/layout"
 // import { Link } from 'gatsby'
 
