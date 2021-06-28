@@ -7,7 +7,7 @@ import favicon from '../images/favicon.ico'
 import MenuTop from "./navigation/menu"
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('G-KZESM808LM');
+ReactGA.initialize('UA-189714880-1');
 
 ReactGA.pageview('/');
 ReactGA.pageview('/nosotros/que-hacemos');
