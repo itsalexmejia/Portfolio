@@ -10,12 +10,12 @@ import {
   } from '@heroicons/react/outline'
 
 // markup
-const b2bPage = ({data}) => {
+const ConsumoPage = ({data}) => {
     return (
         <Layout>
             <TextHeader
-                headline="Industria del Consumo"
-                title="Industria del Consumo"
+                headline="Industria de Consumo"
+                title="Industria de Consumo"
             // title2 = "Industria del Consumo"
             // caption="Como una de las principales generadoras de actividad económica en México, la Industria de Consumo (en sus diferentes sectores) está enfrentando retos tanto sistémicos como coyunturales, que de no enfrentarse degradan tanto la capacidad de atender al Mercado, como también la rentabilidad y sustentabilidad de las Cadenas de Valor que la conforman:"
             />
@@ -89,7 +89,6 @@ const b2bPage = ({data}) => {
                                     <div>
                                         <span className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500">
                                             {/* <CurrencyDollarIcon className="h-6 w-6 text-white" aria-hidden="true" /> */}
-
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 496 496" className="h-8 w-8 text-white fillwhite">
                                                 <defs>
                                                 </defs>
@@ -130,7 +129,6 @@ const b2bPage = ({data}) => {
                                     <div>
                                         <span className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500">
                                             {/* <SortAscendingIcon className="h-6 w-6 text-white" aria-hidden="true" /> */}
-
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 433.8" className="h-8 w-8 text-white fillwhite">
                                                 <defs>
                                                 </defs>
@@ -185,6 +183,7 @@ const b2bPage = ({data}) => {
                                     <div>
                                         <span className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500">
                                             {/* <ShoppingCartIcon className="h-6 w-6 text-white" aria-hidden="true" /> */}
+
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 444.6 512" className="h-8 w-8 text-white fillwhite">
                                                 <defs>
                                                 </defs>
@@ -241,7 +240,6 @@ const b2bPage = ({data}) => {
                                     <div>
                                         <span className="flex items-center justify-center h-14 w-14 rounded-2xl bg-arena-500">
                                             {/* <PhoneIcon className="h-6 w-6 text-white" aria-hidden="true" /> */}
-
                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 511.4" className="h-8 w-8 text-white fillwhite">
                                                 <defs>
                                                 </defs>
@@ -302,7 +300,7 @@ const b2bPage = ({data}) => {
                         <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
                             <p className="font-arena mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">{edge.node.section4Title}</p>
                             <div className="mt-12">
-                                <div className="grid grid-cols-1 gap-8 overflow-hidden sm:grid-cols-2 lg:grid-cols-3">
+                                <div className="grid grid-cols-1 gap-8 overflow-hidden sm:grid-cols-2 lg:grid-cols-5">
                                     {/* AQUI */}
                                     <div className="relative">
                                         <div className="pt-6 h-full">
@@ -352,7 +350,7 @@ const b2bPage = ({data}) => {
 
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet1}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet1}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription1}</p>
                                                 </div>
                                             </div>
@@ -367,6 +365,7 @@ const b2bPage = ({data}) => {
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
                                                             {/* <OfficeBuildingIcon className="h-6 w-6 text-arena-900" aria-hidden="true" /> */}
+
                                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 480" className="h-8 w-8 text-arena-900 fillarena">
                                                                 <defs>
                                                                 </defs>
@@ -398,7 +397,7 @@ const b2bPage = ({data}) => {
 
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet2}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet2}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription2}</p>
                                                 </div>
                                             </div>
@@ -481,7 +480,7 @@ const b2bPage = ({data}) => {
 
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet3}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet3}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription3}</p>
                                                 </div>
                                             </div>
@@ -547,7 +546,7 @@ const b2bPage = ({data}) => {
 
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet4}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet4}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription4}</p>
                                                 </div>
                                             </div>
@@ -562,6 +561,7 @@ const b2bPage = ({data}) => {
                                                     <div>
                                                         <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
                                                             {/* <UsersIcon className="h-6 w-6 text-arena-900" aria-hidden="true" /> */}
+
                                                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512" className="h-8 w-8 text-arena-900 fillarena">
                                                                 <defs>
                                                                 </defs>
@@ -648,66 +648,8 @@ const b2bPage = ({data}) => {
 
                                                         </span>
                                                     </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet5}</h3>
+                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight lg:h-12">{edge.node.section4Bullet5}</h3>
                                                     <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription5}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <ChevronRightIcon className="ml-2 hidden w-5 h-5 absolute inset-y-1/2 inset-x-full text-arena-400 md:block" />
-                                    </div>
-
-                                    <div className="relative">
-                                        <div className="pt-6 h-full">
-                                            <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full">
-                                                <div className="-mt-6">
-                                                    <div>
-                                                        <span className="inline-flex items-center justify-center p-3 bg-white border border-gray-400 rounded-2xl shadow-lg">
-                                                            {/* <ClipboardListIcon className="h-6 w-6 text-arena-900" aria-hidden="true" /> */}
-                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 480 480" className="h-8 w-8 text-arena-900 fillarena">
-                                                                <defs>
-                                                                </defs>
-                                                                <g id="Outlines_1_">
-                                                                    <g>
-                                                                        <path d="M472,152H8c-4.4,0-8,3.6-8,8s3.6,8,8,8h464c4.4,0,8-3.6,8-8S476.4,152,472,152z" />
-                                                                        <path d="M472,0h-96c-4.4,0-8,3.6-8,8v112h-16v-6.1c0-13-3-25.8-8.8-37.5c-4.7-9.4-7.2-19.8-7.2-30.3V8c0-4.4-3.6-8-8-8h-32
-			c-4.4,0-8,3.6-8,8v38.1c0,10.5-2.5,20.9-7.2,30.3c-0.3,0.6-0.5,1.3-0.8,2c-0.3-0.6-0.5-1.3-0.8-2c-4.7-9.4-7.2-19.8-7.2-30.3V8
-			c0-4.4-3.6-8-8-8h-32c-4.4,0-8,3.6-8,8v38.1c0,10.5-2.5,20.9-7.2,30.3c-5.8,11.6-8.8,24.5-8.8,37.5v6.1h-80V67.3
-			c0-5.1,2-10,5.7-13.6c6.6-6.6,10.4-15.6,10.3-25V16h16v12.7c0,9.4,3.7,18.4,10.3,25c3.6,3.6,5.7,8.5,5.7,13.6V96c0,4.4,3.6,8,8,8
-			s8-3.6,8-8V67.3c0-9.4-3.7-18.4-10.3-25c-3.6-3.6-5.7-8.5-5.7-13.6V8c0-4.4-3.6-8-8-8h-32c-4.4,0-8,3.6-8,8v20.7
-			c0,5.1-2,10-5.7,13.6c-0.8,0.9-1.6,1.9-2.3,2.9c-0.7-1-1.5-1.9-2.3-2.9c-3.6-3.6-5.7-8.5-5.7-13.6V8c0-4.4-3.6-8-8-8H72
-			c-4.4,0-8,3.6-8,8v20.7c0,5.1-2,10-5.7,13.6C51.7,48.9,48,57.9,48,67.3V120H8c-4.4,0-8,3.6-8,8s3.6,8,8,8h464c4.4,0,8-3.6,8-8
-			s-3.6-8-8-8h-88V96h80c0,4.4,3.6,8,8,8s8-3.6,8-8V8C480,3.6,476.4,0,472,0z M320,16v24h-16V16H320z M69.7,53.7
-			c6.6-6.6,10.4-15.6,10.3-25V16h16v12.7c0,9.4,3.7,18.4,10.3,25c3.6,3.6,5.7,8.5,5.7,13.6V80H64V67.3C64,62.2,66,57.3,69.7,53.7z
-			 M64,96h48v24H64V96z M224,113.9c0-10.5,2.5-20.9,7.2-30.3c5.8-11.6,8.8-24.5,8.8-37.5V16h16v30.1c0,13,3,25.8,8.8,37.5
-			c4.7,9.4,7.2,19.8,7.2,30.3v6.1h-48V113.9z M288,120v-6.1c0-10.5,2.5-20.9,7.2-30.3c4.3-8.7,7.1-18,8.2-27.6h17.2
-			c1.1,9.6,3.9,18.9,8.2,27.6c4.7,9.4,7.2,19.8,7.2,30.3v6.1H288z M464,16v16h-80V16H464z M384,80V48h80v32H384z"/>
-                                                                        <path d="M472,336H8c-4.4,0-8,3.6-8,8s3.6,8,8,8h456v112H352v-88c0-4.4-3.6-8-8-8s-8,3.6-8,8v88h-16v-56c0-4.4-3.6-8-8-8H192
-			c-4.4,0-8,3.6-8,8v56h-24v-88c0-4.4-3.6-8-8-8H24c-4.4,0-8,3.6-8,8v88H8c-4.4,0-8,3.6-8,8s3.6,8,8,8h464c4.4,0,8-3.6,8-8V344
-			C480,339.6,476.4,336,472,336z M304,432h-24v-16h24V432z M264,432h-24v-16h24V432z M224,416v16h-24v-16H224z M144,403.1
-			c-11.3-13.3-31.3-14.8-44.5-3.5c-1.2,1.1-2.4,2.2-3.5,3.5V384h48V403.1z M136,424c0,8.8-7.2,16-16,16s-16-7.2-16-16s7.2-16,16-16
-			S136,415.2,136,424z M32,416h48v16H32V416z M80,384v16H32v-16H80z M32,448h48v16H32V448z M96,464v-19.1
-			c11.3,13.3,31.3,14.8,44.5,3.5c1.2-1.1,2.4-2.2,3.5-3.5V464H96z M200,448h24v16h-24V448z M240,448h24v16h-24V448z M280,464v-16h24
-			v16H280z"/>
-                                                                        <path d="M440,432c4.4,0,8-3.6,8-8v-32c0-4.4-3.6-8-8-8h-64c-4.4,0-8,3.6-8,8v32c0,4.4,3.6,8,8,8H440z M384,400h48v16h-48V400z" />
-                                                                        <path d="M464,217.5V192c0-4.4-3.6-8-8-8h-32c-4.4,0-8,3.6-8,8v25.5c-9.6,3.4-16,12.4-16,22.5v56c0,2.7,0.5,5.4,1.5,8H376v-48
-			c4.4,0,8-3.6,8-8s-3.6-8-8-8h-64c-4.4,0-8,3.6-8,8s3.6,8,8,8v48h-24v-72c0-4.4-3.6-8-8-8h-96c-4.4,0-8,3.6-8,8v72h-16v-8
-			c0-4.4-3.6-8-8-8s-8,3.6-8,8v8H96v-52.7c0-5.1,2-10,5.7-13.6c6.6-6.6,10.4-15.6,10.3-25V200h16v12.7c0,9.4,3.7,18.4,10.3,25
-			c3.6,3.6,5.7,8.5,5.7,13.6V264c0,4.4,3.6,8,8,8s8-3.6,8-8v-12.7c0-9.4-3.7-18.4-10.3-25c-3.6-3.6-5.7-8.5-5.7-13.6V192
-			c0-4.4-3.6-8-8-8h-32c-4.4,0-8,3.6-8,8v20.7c0,5.1-2,10-5.7,13.6c-0.8,0.9-1.6,1.9-2.3,2.9c-0.7-1-1.5-1.9-2.3-2.9
-			c-3.6-3.6-5.7-8.5-5.7-13.6V192c0-4.4-3.6-8-8-8H40c-4.4,0-8,3.6-8,8v20.7c0,5.1-2,10-5.7,13.6c-6.6,6.6-10.4,15.6-10.3,25V304H8
-			c-4.4,0-8,3.6-8,8s3.6,8,8,8h464c4.4,0,8-3.6,8-8c0-2.1-0.9-4.2-2.4-5.7c1.6-3.2,2.4-6.7,2.4-10.3v-56
-			C480,229.9,473.6,220.9,464,217.5z M37.7,237.7c6.6-6.6,10.4-15.6,10.3-25V200h16v12.7c0,9.4,3.7,18.4,10.3,25
-			c3.6,3.6,5.7,8.5,5.7,13.6V264H32v-12.7C32,246.2,34,241.3,37.7,237.7z M32,280h48v24H32V280z M432,200h16v16h-16V200z M424,232
-			h32c4.4,0,8,3.6,8,8v24h-48v-24C416,235.6,419.6,232,424,232z M272,272h-32v-32h32V272z M224,240v16h-32v-16H224z M192,272h32v32
-			h-32V272z M240,304v-16h32v16H240z M328,304v-48h32v48H328z M424,304c-4.4,0-8-3.6-8-8v-16h48v16c0,4.4-3.6,8-8,8H424z"/>
-                                                                    </g>
-                                                                </g>
-                                                            </svg>
-
-                                                        </span>
-                                                    </div>
-                                                    <h3 className="font-arena mt-8 text-base font-semibold text-gray-900 tracking-tight">{edge.node.section4Bullet6}</h3>
-                                                    <p className="mt-5 text-sm text-gray-700">{edge.node.section4BulletDescription6}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -727,10 +669,10 @@ const b2bPage = ({data}) => {
   )
 }
 
-export default b2bPage
+export default ConsumoPage
 
 export const query = graphql`
-query b2bQuery {
+query Consumo {
   site {
     siteMetadata {
       title
@@ -738,7 +680,7 @@ query b2bQuery {
       keywords
     }
   }
-  allContentfulC06ConsultingSolutions(filter: {linkTo: {eq: "/servicios/consulting/b2b/"}}) {
+  allContentfulC06ConsultingSolutions(filter: {linkTo: {eq: "/servicios/consultoria/consumo/"}}) {
     edges {
       node {
         logo {
@@ -751,7 +693,7 @@ query b2bQuery {
       }
     }
   }
-  allContentfulP06ConsultingPages(filter: {pageId: {eq: "b2b"}}) {
+  allContentfulP06ConsultingPages(filter: {pageId: {eq: "consumo"}}) {
     edges {
       node {
         pageId
@@ -794,8 +736,6 @@ query b2bQuery {
         section4BulletDescription3
         section4BulletDescription4
         section4BulletDescription5
-        section4Bullet6
-        section4BulletDescription6
       }
     }
   }

@@ -104,7 +104,7 @@ const MenuTop = ({data}) => {
                           <div className="bg-white">
                               <div className="max-w-7xl mx-auto grid gap-y-6 px-4 py-6 sm:grid-cols-2 sm:gap-8 sm:px-6 sm:py-8 lg:grid-cols-3 lg:gap-10 lg:px-8 lg:py-12 xl:py-16">
 
-                                  <Link to="/servicios/consulting/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
+                                  <Link to="/servicios/consultoria/" className="-m-3 p-3 flex flex-col justify-between rounded-lg hover:bg-gray-50">
                                       <div className="flex md:h-full lg:flex-col">
                                           <div className="flex-shrink-0">
                                               <span className="inline-flex items-center justify-center h-10 w-10 rounded-2xl bg-arena-500 text-white sm:h-12 sm:w-12">
@@ -486,7 +486,7 @@ const MenuTop = ({data}) => {
                                 <p className="font-arena text-lef mb-4 text-sm font-semibold uppercase text-gray-500 tracking-wide">Servicios</p>
                                     <nav>
                                         <div className="grid gap-7 sm:grid-cols-2 sm:gap-y-8 sm:gap-x-4">
-                                            <Link to="/servicios/consulting/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
+                                            <Link to="/servicios/consultoria/" className="-m-3 flex items-center p-3 rounded-lg hover:bg-gray-50">
                                                 <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-xl bg-arena-500 text-white sm:h-12 sm:w-12">
                                                     {/* <ChatAlt2Icon className="h-6 w-6"/> */}
                                                     <svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" className="h-7 w-7 fillwhite">

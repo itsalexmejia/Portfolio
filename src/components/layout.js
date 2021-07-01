@@ -10,10 +10,10 @@ import ReactGA from 'react-ga';
 ReactGA.initialize('UA-189714880-1');
 
 ReactGA.pageview('/');
-ReactGA.pageview('/servicios/consulting');
-ReactGA.pageview('/servicios/consulting/consumo');
-ReactGA.pageview('/servicios/consulting/retail');
-ReactGA.pageview('/servicios/consulting/b2b');
+ReactGA.pageview('/servicios/consultoria');
+ReactGA.pageview('/servicios/consultoria/consumo');
+ReactGA.pageview('/servicios/consultoria/retail');
+ReactGA.pageview('/servicios/consultoria/b2b');
 ReactGA.pageview('/servicios/analytics');
 ReactGA.pageview('/servicios/partners');
 ReactGA.pageview('/careers');
